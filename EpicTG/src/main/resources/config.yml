@@ -1,0 +1,62 @@
+telegram:
+  enabled: false
+  token: 'PASTE_TELEGRAM_BOT_TOKEN_HERE'
+  poll-timeout-seconds: 25
+  link-code-expire-minutes: 10
+  buttons:
+    shop: 'Магазин'
+    profile: 'Профиль'
+    support: 'Тех поддержка'
+    reward: 'Получить награду за привязку'
+  messages:
+    start: |-
+      Привет! Чтобы привязать аккаунт, напиши:
+      link "ник"
+
+      После этого зайди на сервер и подтверди код командой /confirm <код>.
+    need-link: |-
+      Сначала привяжи аккаунт командой:
+      link "ник"
+    link-usage: 'Использование: link "ник"'
+    invalid-nick: 'Ник должен быть обычным Minecraft-ником: 3-16 символов, латиница, цифры и _.'
+    nick-busy: 'Этот ник уже привязан к другому Telegram.'
+    already-linked: 'Твой Telegram уже привязан к нику %player%.'
+    code-created: |-
+      Код для ника %player%: %code%
+
+      В игре напиши команду:
+      /confirm %code%
+
+      Код действует %minutes% минут.
+    link-success: 'Готово! Аккаунт %player% привязан. Теперь доступно меню Профиль.'
+    menu: 'Аккаунт %player% привязан. Выбери нужный раздел:'
+    unknown: 'Выбери раздел через кнопки меню.'
+    shop-stub: 'Магазин скоро будет готов. Сейчас это заглушка оболочки.'
+    support-stub: 'Тех поддержка скоро будет готова. Сейчас это заглушка оболочки.'
+    profile: |-
+      Ваш профиль
+      Ник: %player%
+      Награда: %reward_status%
+    reward-status-taken: 'уже получена'
+    reward-status-available: 'можно получить'
+    reward-success: 'Награда выдана: 4000 донат-валюты.'
+    reward-already-taken: 'Ты уже получал награду за привязку.'
+    reward-failed: 'Не удалось выдать награду. Проверь команду награды и наличие EpicCoins.'
+
+reward:
+  commands:
+    - 'coins add %player% 4000'
+
+messages:
+  game:
+    no-permission: '&cНет прав.'
+    only-players: '&cКоманда доступна только игрокам.'
+    confirm-usage: '&fИспользование: &e/confirm <код>'
+    pending-code: '&6EpicTG &8» &fДля привязки Telegram напишите &e/confirm %code%'
+    code-not-found: '&cКод не найден или уже истек.'
+    wrong-player: '&cЭтот код создан для ника &e%player%&c.'
+    nick-already-linked: '&cЭтот ник уже привязан к другому Telegram.'
+    telegram-already-linked: '&cЭтот Telegram уже привязан к другому нику.'
+    link-success: '&aАккаунт успешно привязан к Telegram.'
+    reward-success: '&aВы получили 4000 донат-валюты за привязку Telegram.'
+    reload: '&aEpicTG перезагружен.'

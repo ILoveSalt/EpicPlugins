@@ -1,0 +1,19 @@
+name: EpicTG
+version: '1.0'
+main: hgds.epicgrief.EpicTG
+api-version: '26.1.2'
+authors: [ hgds_2 ]
+softdepend: [ EpicCoins ]
+
+commands:
+  confirm:
+    description: Confirm Telegram account link code.
+    usage: /confirm <code>
+  epictg:
+    description: EpicTG admin command.
+    usage: /epictg reload
+    permission: epictg.admin
+
+permissions:
+  epictg.admin:
+    default: op

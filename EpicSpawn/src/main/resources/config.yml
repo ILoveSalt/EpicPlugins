@@ -1,0 +1,30 @@
+spawn:
+  world: ''
+  x: 0.5
+  y: 64.0
+  z: 0.5
+  yaw: 0.0
+  pitch: 0.0
+  set-world-spawn: true
+
+join:
+  enabled: true
+
+respawn:
+  enabled: true
+
+messages:
+  spawn-usage: '&cИспользование: &e/spawn [игрок]'
+  player-not-found: '&cИгрок &e%player% &cне найден.'
+  teleport-other-success: '&aИгрок &e%player% &aтелепортирован на спавн.'
+  teleport-by-other: '&aВы телепортированы на спавн.'
+  prefix: '&6&lEpicSpawn &8▪ &f'
+  only-players: '&cЭту команду может использовать только игрок.'
+  no-permission: '&cУ вас недостаточно прав.'
+  spawn-not-set: '&cСпавн ещё не установлен. Используйте &e/setspawn&c.'
+  world-not-found: '&cМир спавна &e%world% &cне найден.'
+  teleport-start: '&aТелепортация на спавн...'
+  teleport-success: '&aВы телепортированы на спавн.'
+  setspawn-success: '&aСпавн установлен: &e%world% &7(&e%x%&7, &e%y%&7, &e%z%&7).'
+  reload-success: '&aКонфиг EpicSpawn перезагружен.'
+  unknown-command: '&cИспользование: &e/epicspawn reload'

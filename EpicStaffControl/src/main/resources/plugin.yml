@@ -1,0 +1,27 @@
+name: EpicStaffControl
+version: '${version}'
+main: hgds.epicgrief.EpicStaffControl
+api-version: '26.1.2'
+load: STARTUP
+authors: [hgds_2]
+softdepend: [EpicAnimationChat]
+
+commands:
+  staff:
+    description: Управление составом, сменами, зарплатой и повышениями
+    usage: /staff help
+    aliases: [staffcontrol, esc]
+  spec:
+    description: Запросить наблюдение или телепортироваться к игроку по запросу
+    usage: /spec [игрок]
+
+permissions:
+  epicstaffcontrol.admin:
+    description: Выдача и снятие должностей, изменение статистики и reload
+    default: op
+  epicstaffcontrol.notify:
+    description: Получение уведомлений о действиях состава
+    default: op
+  epicstaffcontrol.spec:
+    description: Получение spec-запросов и телепорт к игрокам
+    default: op

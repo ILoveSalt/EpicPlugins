@@ -1,0 +1,178 @@
+settings:
+  command-give:
+    - tab set %player% tabsuffix %formatted%
+    - tab set %player% tagsuffix %formatted%
+    - lp user %player% meta setsuffix "%formatted%"
+  max-length: 11
+  color-char: '^'
+  check-chars: false
+suffixes:
+  '&eSuffix':
+    - player1
+    - player2
+messages:
+  no-perms: '&6&lКАСТОМИЗАЦИЯ: &cУ вас нет разрешения на использование данной команды.'
+  max-length-error: '&6&lКАСТОМИЗАЦИЯ: &fМаксимальная длина личного титула &f&l➲ &6&l11 &fсимволов. Придумайте другой личный титул.'
+  incorrect-symbols: '&6&lКАСТОМИЗАЦИЯ: &fЛичный титул содержит некорректные символы. Придумайте другой личный титул.'
+  custom-suffix-set: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно установили личный титул &f&l➲ %suffix%
+    &fЛичный титул был автоматически зарегистрирован в систему личных титулов, для управления
+    личными титулами, выполните команду &f&l➲ &6&l/suffix'
+  set-suffix: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно установили личный титул &f&l➲ %suffix%'
+  reload-success: '&6&lКАСТОМИЗАЦИЯ: &aКонфигурация плагина успешно перезагружена.'
+  give: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно выдали &f&l➲ &6&l%count% &fличных титулов, игроку &f&l➲&6&l%player%&f&l.'
+  received-count: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно получили &f&l➲ &6&l%count% &fличных титулов.
+    &fДля установки, помощи установки личного титула, выполните команду &f&l➲ &6&l/suffix'
+  give-count: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно выдали &f&l➲ &6&l%count% &fличных титулов, &f&l➲ игроку &6&l%player%&f&l.'
+  expired-count: '&6&lКАСТОМИЗАЦИЯ: &fУ вас нет возможности ставить личный титул.
+    &fЛичный титул можно приобрести на нашем сайте &f&l➲ &6&l&nEPICGRIEF.SU&6'
+  received-suffix: '&6&lКАСТОМИЗАЦИЯ: &fВы получили титул %suffix%'
+  give-suffix: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно выдали игроку &6&l%player% &fтитул &f&l➲ %suffix%'
+  enter-title: '&6&lКАСТОМИЗАЦИЯ: &fНапишите в чат название личного титула. Для отмены напишите &6&lотмена&f.'
+  input-cancelled: '&6&lКАСТОМИЗАЦИЯ: &fСоздание личного титула отменено.'
+  count: '&6&lКАСТОМИЗАЦИЯ: &fДоступно созданий личного титула &f&l➲ &6&l%count%'
+  usage: '&6&lКАСТОМИЗАЦИЯ: &fИспользование &f&l➲ &6&l%usage%'
+inventory:
+  title: '&0&l&nЛИЧНЫЕ ТИТУЛЫ'
+  size: 6 # двойной сундук
+  suffix-slots: 11,12,13,14,15,20,21,22,23,24,29,30,31,32,33,38,39,40,41,42
+  empty-item:
+    material: BARRIER
+    display: '&c&l&nПУСТО&c'
+    lore:
+      - ''
+      - ' &6&l▌ &fУ вас нет не одного личного титула.'
+      - ' &6&l▌ &fЛичный титул можно приобрести на нашем сайте &f&l➲ &6&l&nEPICGRIEF.SU&6'
+      - ''
+    slot: 22
+  suffix-item:
+    material: SKULL_ITEM
+    data: 3
+    skull: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTI4Mzk2NTkyM2MwZTNlYWQwZmU4NzYwZTA4Y2JhODk4MmUzM2E2YWNkYjg5MWVjYzZmNmRmZTZkNWQxODBiYyJ9fX0==
+    display: '&fТитул &f&l➲ %suffix%'
+    lore:
+      - ''
+      - ' &c&l❤ &fНажмите, чтобы установить данный титул.'
+      - ''
+  items:
+    glass1:
+      material: STAINED_GLASS_PANE
+      data: 15
+      slot: 0,1,9,7,8,17,36,45,46,52,53,44,4,48,50
+      display: '&6&l&nEPICGRIEF'
+    glass2:
+      material: STAINED_GLASS_PANE
+      data: 4
+      slot: 2,6,18,26,27,35
+      display: '&6&l&nEPICGRIEF'
+    glass3:
+      material: STAINED_GLASS_PANE
+      data: 1
+      slot: 10,16,19,25,28,34,37,43
+      display: '&6&l&nEPICGRIEF'
+    skull1:
+      material: SKULL_ITEM
+      data: 3
+      skull: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0=
+      display: '&6&l&nСТЕРЕТЬ ТИТУЛ&6'
+      lore:
+        - ''
+        - ' &6&l▌ &a&lНажмите&f&l, &fчтобы'
+        - ' &6&l▌ &c&lстереть &e&lтитул&f&l.'
+        - ''
+        - ' &c&l❤ &fНажмите, чтобы стереть титул.'
+        - ''
+      back-item: false
+      close: true
+      slot: 3
+      commands:
+        - lp user %player% meta setsuffix ""
+        - tab clear %player% tabsuffix
+        - tab clear %player% tagsuffix
+      messages:
+        - '&6&lКАСТОМИЗАЦИЯ: &fВы успешно стерли титул.'
+    skull2:
+      material: SKULL_ITEM
+      data: 3
+      skull: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDliMmJlZTM5YjZlZjQ3ZTE4MmQ2ZjFkY2E5ZGVhODQyZmNkNjhiZGE5YmFjYzZhNmQ2NmE4ZGNkZjNlYyJ9fX0=
+      display: '&6&l&nВЕРНУТЬСЯ НАЗАД&6'
+      lore:
+        - ''
+        - ' &c&l❤ &fНажмите, чтобы вернуться назад.'
+        - ''
+      back-item: true
+      slot: 47
+      commands-if-first-page:
+        - dm open TITLE %player%
+    skull3:
+      material: SKULL_ITEM
+      data: 3
+      skull: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQxZmY2YmM2N2E0ODEyMzJkMmU2NjllNDNjNGYwODdmOWQyMzA2NjY1YjRmODI5ZmI4Njg5MmQxM2I3MGNhIn19fQ==
+      display: '&6&l&nВПЕРЕД&6'
+      lore:
+        - ''
+        - ' &c&l❤ &fНажмите, чтобы перейти вперед.'
+        - ''
+      next-item: true
+      slot: 49
+    skull4:
+      material: SKULL_ITEM
+      data: 3
+      skull: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWZkMjQwMDAwMmFkOWZiYmJkMDA2Njk0MWViNWIxYTM4NGFiOWIwZTQ4YTE3OGVlOTZlNGQxMjlhNTIwODY1NCJ9fX0=
+      display: '&6&l&nЗАКРЫТЬ МЕНЮ&6'
+      lore:
+        - ''
+        - ' &c&l❤ &fНажмите, чтобы закрыть меню.'
+        - ''
+      back-item: false
+      close: true
+      slot: 51
+    skull5:
+      material: SKULL_ITEM
+      data: 3
+      slot: 5
+      skull: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGM1ZTUyNGFlNGVhZGVjY2I1YTFhZjMzNGE0YWYwOWIzOTQxMjdjZmYyNTM1NzdiZDExODBlZGE3MTJmZDgyIn19fQ==
+      create-title: true
+      display: '&6&l&nСОЗДАТЬ ЛИЧНЫЙ ТИТУЛ&6'
+      lore:
+        - ''
+        - ' &c&l❤ &fНажмите, чтобы создать личный титул.'
+        - ' &6&l▌ &fПосле клика напишите название титула в чат.'
+        - ''
+        - ' &6&l▌ &fКоманда для установки личного титула &f&l➲ &6&l/suffixcustom set
+        &f&l<&6&lНазвание личного титула&f&l>'
+        - ''
+        - ' &6&l▌ &fПосле выполнения данной команды, ваш личный титул будет автоматически
+        установлен,'
+        - ' &6&l▌ &fа также зарегистрирован в систему личных титулов, для управления
+        личными титулами,'
+        - ' &6&l▌ &fвыполните команду &f&l➲ &6&l/suffix'
+        - ''
+        - ' &6&l▌ &fПример создания личного титула зеленым цветом &f&l➲ &6&l^a &fНаглядный
+        пример &f&l➲ &aEPICGRIEF'
+        - ' &6&l▌ &fПример создания личного титула зеленым цветом, жирным шрифтом &f&l➲ &6&l^a^l &fНаглядный
+        пример &f&l➲ &a&lEPICGRIEF'
+        - ' &6&l▌ &fПример создания личного титула зеленым цветом, подчеркнутым &f&l➲
+        &6&l^a^n &fНаглядный пример &f&l➲ &a&nEPICGRIEF'
+        - ' &6&l▌ &fПример создания личного титула зеленым цветом, зачеркнутым &f&l➲
+        &6&l^a^m &fНаглядный пример &f&l➲ &a&mEPICGRIEF'
+        - ' &6&l▌ &fПример создания личного титула зеленым цветом, подчеркнутым, жирным
+        шрифтом, зачеркнутым &f&l➲ &6&l^a^n^l^m &fНаглядный пример &f&l➲ &a&l&n&mEPICGRIEF'
+        - ' &6&l▌ &fПример создания личного титула зеленым цветом, подчеркнутым, жирным
+        шрифтом &f&l➲ &6&l^a^n^l &fНаглядный пример &f&l➲ &a&l&nEPICGRIEF'
+        - ''
+        - ' &6&l▌ &fЧерный цвет &f&l➲ &6&l^0 &fНаглядный пример &f&l➲ &0EPICGRIEF'
+        - ' &6&l▌ &fТемной синий цвет &f&l➲ &6&l^1 &fНаглядный пример &f&l➲ &1EPICGRIEF'
+        - ' &6&l▌ &fЗеленый цвет &f&l➲ &6&l^a &fНаглядный пример &f&l➲ &aEPICGRIEF'
+        - ' &6&l▌ &fТемная вода цвет &f&l➲ &6&l^3 &fНаглядный пример &f&l➲ &3EPICGRIEF'
+        - ' &6&l▌ &fТемно красный цвет &f&l➲ &6&l^4 &fНаглядный пример &f&l➲ &4EPICGRIEF'
+        - ' &6&l▌ &fОранжевый цвет &f&l➲ &6&l^6 &fНаглядный пример &f&l➲ &6EPICGRIEF'
+        - ' &6&l▌ &fСерый цвет &f&l➲ &6&l^7 &fНаглядный пример &f&l➲ &7EPICGRIEF'
+        - ' &6&l▌ &fТемно серый цвет &f&l➲ &6&l^8 &fНаглядный пример &f&l➲ &8EPICGRIEF'
+        - ' &6&l▌ &fСиний цвет &f&l➲ &6&l^9 &fНаглядный пример &f&l➲ &9EPICGRIEF'
+        - ' &6&l▌ &fТемно зеленый цвет &f&l➲ &6&l^2 &fНаглядный пример &f&l➲ &2EPICGRIEF'
+        - ' &6&l▌ &fЦвет морской волны &f&l➲ &6&l^b &fНаглядный пример &f&l➲ &bEPICGRIEF'
+        - ' &6&l▌ &fСветло красный цвет &f&l➲ &6&l^c &fНаглядный пример &f&l➲ &cEPICGRIEF'
+        - ' &6&l▌ &fСветло фиолетовый цвет &f&l➲ &6&l^d &fНаглядный пример &f&l➲ &dEPICGRIEF'
+        - ''
+        - ' &c&l⚠ &f&lТИТУЛЫ РЕКЛАМИРУЮЩИЕ СЕРВЕРА ЗАПРЕЩЕНЫ &c&l⚠'
+        - ''

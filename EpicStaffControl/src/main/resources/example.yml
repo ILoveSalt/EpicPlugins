@@ -1,0 +1,26 @@
+# Пример минимальной должности. Ключ группы используется в командах /staff give и next-rank.
+groups:
+  example-rank:
+    display-name: 'Тестовая должность'
+    command-give: 'lp user "{player}" parent set example'
+    command-take: 'lp user "{player}" parent set "{return_group}"'
+    command-salary: 'coins give "{player}" 1000'
+    salary-amount: 1000
+    command-cooldown-salary: 43200
+    command-salary-message: '§aВы получили 1000 монет.'
+    command-salary-cooldown-message: '§cСледующая зарплата будет доступна через {time}.'
+    command-on: '%prefix%§aВы начали смену в {time}.'
+    command-off: '%prefix%§aВы закончили смену в {time}.'
+    command-info:
+      - '§eОписание тестовой должности.'
+    command-up:
+      - '§aВы повышены до {next_rank}.'
+    command-deny-up: '§cТребуется {required_work_time} работы и {required_punishments} наказаний.'
+    next-rank: ''
+    required-work-seconds: 0
+    required-punishments: 0
+
+# Поддерживаемые подстановки:
+# {player}, {rank}, {rank_id}, {amount}, {return_group}, {time},
+# {worked_time}, {required_work_time}, {punishments}, {required_punishments},
+# {current_rank}, {next_rank}; для сообщений также работает вид %placeholder%.

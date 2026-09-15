@@ -1,0 +1,33 @@
+name: EpicSuffixes
+version: '${version}'
+
+main: hgds.epicgrief.EpicSuffixes
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+softdepend: [ LuckPerms, TAB, PlaceholderAPI ]
+
+commands:
+  suffix:
+    description: Opens personal suffixes menu
+    usage: /suffix
+    aliases: [ suffixes, title, titles ]
+  suffixcustom:
+    description: Creates custom personal suffixes
+    usage: /suffixcustom
+    aliases: [ customsuffix, titlecustom ]
+
+permissions:
+  epicsuffixes.use:
+    default: true
+  epicsuffixes.custom:
+    default: true
+  epicsuffixes.give:
+    default: op
+  epicsuffixes.reload:
+    default: op
+  epicsuffixes.bypass:
+    default: op
+  epicsuffixes.admin:
+    default: op

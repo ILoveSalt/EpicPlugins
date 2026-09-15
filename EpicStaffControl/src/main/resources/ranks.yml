@@ -1,0 +1,9 @@
+# Группы, которые нужно вернуть игрокам после /staff take.
+# Можно использовать имя игрока или UUID. Если записи нет, берется
+# settings.default-return-group из Config.yml.
+players: {}
+
+# Пример:
+# players:
+#   PlayerName: legend
+#   00000000-0000-0000-0000-000000000000: default

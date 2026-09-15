@@ -1,0 +1,8 @@
+name: hgdsFixer
+version: '${version}'
+
+main: hgds.epicgrief.Fixer
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]

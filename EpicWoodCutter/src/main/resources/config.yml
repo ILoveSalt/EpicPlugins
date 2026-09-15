@@ -1,0 +1,87 @@
+money:
+  min: 10
+  max: 50
+
+random:
+  change: 1%
+  coins: 4500
+
+messages:
+  prefix: '§e§lWOOD §8▪ §f'
+  usage: '§e§lWOOD §8▪ §fИспользование команды: §e/woodcutter salary'
+  breaked: 'actionbar:§l§f+ §e⛂%earn%'
+  onlyWood: 'actionbar: §cВы не можете ломать другие блоки'
+  cut: 'actionbar:§fОсталось срубить §e%number% §fраз'
+  unknown: '§e§lWOOD §8▪ §fАргумент не найден.'
+  config-reloaded: 'Конфигурация перезагружена.'
+  noPermission: 'У вас недостаточно прав.'
+  salary-zero: 'Для того, чтобы получить зарплату, вам необходимо нарубить древесину.'
+  salary-gived: 'Вы получили зарплату в размере §e⛂%salary%'
+  console: 'Команду можно выполнять только от имени игрока.'
+  full: 'У вас переполнен рюкзак, сдайте руду.'
+  random-change: 'Вы добыли редкое дереве возрастом миллиарды лет и вам заплатили 4500 Франков'
+
+scoreboard:
+  title: "&e&lWOOD"
+  values:
+    - "§l"
+    - "  §8▪ §fНик: §e§l%player_name%"
+    - "  §8▪ §fДонат: %vault_rankprefix%"
+    - "§r §l"
+    - "  §8▪ §fСрубленно деревьев: §e%backpackCurrent%"
+    - "  §8▪ §fБустер: §ex%booster%"
+    - "  §8▪ §fРюкзак: §a%backpackCurrent%§7/§c%backpackMax%"
+    - "§l §l §l §l"
+    - "  §8▪ §fЗарплата: §e⛂%salary%"
+    - "§l §l §l §l §l"
+groups:
+  default:
+    max: 10
+    booster: 1.0
+  warrior:
+    max: 13
+    booster: 1.1
+  prince:
+    max: 15
+    booster: 1.2
+  knight:
+    max: 17
+    booster: 1.3
+  lord:
+    max: 19
+    booster: 1.4
+  triton:
+    max: 21
+    booster: 1.5
+  zeus:
+    max: 23
+    booster: 1.6
+  epic:
+    max: 25
+    booster: 1.7
+  dragon:
+    max: 30
+    booster: 1.8
+  staff:
+    max: 40
+    booster: 2.0
+  santa:
+    max: 50
+    booster: 2.5
+  helper:
+    max: 50
+    booster: 2.5
+  moder:
+    max: 50
+    booster: 2.5
+  stmoder:
+    max: 50
+    booster: 2.5
+  admin:
+    max: 50
+    booster: 2.5
+
+regions:
+  wood:
+    earn: 5
+    cooldown: 10

@@ -1,0 +1,37 @@
+name: EpicSpawn
+version: '${version}'
+
+main: hgds.epicgrief.EpicSpawn
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+
+commands:
+  spawn:
+    description: Teleport to spawn.
+    usage: /<command> [player]
+  setspawn:
+    description: Set the server spawn point.
+    usage: /<command>
+  epicspawn:
+    description: EpicSpawn admin command.
+    usage: /<command> reload
+    aliases: [ espawn ]
+
+permissions:
+  epicspawn.spawn:
+    description: Allows teleporting to spawn.
+    default: true
+  epicspawn.spawn.other:
+    description: Allows teleporting another player to spawn.
+    default: op
+  epicspawn.setspawn:
+    description: Allows setting the spawn point.
+    default: op
+  epicspawn.reload:
+    description: Allows reloading EpicSpawn config.
+    default: op
+  epicspawn.admin:
+    description: Allows using all EpicSpawn commands.
+    default: op

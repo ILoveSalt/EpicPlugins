@@ -1,0 +1,26 @@
+name: EpicWoodCutter
+version: '${version}'
+
+main: hgds.epicgrief.EpicWoodCutter
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+
+softdepend:
+  - WorldGuard
+  - Vault
+
+commands:
+  woodcutter:
+    description: Команды лесоруба
+    aliases: [ wood ]
+    usage: /woodcutter salary
+
+permissions:
+  epicwoodcutter.use:
+    description: Использовать систему лесоруба
+    default: true
+  epicwoodcutter.admin:
+    description: Администрирование EpicWoodCutter
+    default: op

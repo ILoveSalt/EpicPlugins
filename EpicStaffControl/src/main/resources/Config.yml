@@ -1,0 +1,182 @@
+settings:
+  prefix: '§8[§6EpicStaff§8] §r'
+  default-return-group: default
+  salary-requires-duty: true
+  time-zone: system
+  punishment-commands:
+    - ban
+    - tempban
+    - mute
+    - tempmute
+    - kick
+    - warn
+    - jail
+  spec:
+    notify-ranks:
+      - moderator
+      - senior-moderator
+      - administrator
+
+groups:
+  helper:
+    display-name: 'Helper'
+    command-give: 'lp user "{player}" parent set helper'
+    command-take: 'lp user "{player}" parent set "{return_group}"'
+    command-salary: 'coins give "{player}" 9500'
+    salary-amount: 9500
+    command-cooldown-salary: 43200
+    command-salary-message: '§aВы получили зарплату в размере §e9500 монет§a.'
+    command-salary-cooldown-message: '§cВы уже получили зарплату. Следующая будет доступна через §e{time}§c.'
+    command-on: '%prefix%§aВы начали работу. Время начала: §e{time}'
+    command-off: '%prefix%§aВы закончили работу. Время окончания: §e{time}'
+    command-info:
+      - '§6Информация о должности Helper:'
+      - '§eЗарплата: §a9500 монет'
+      - '§eЗадания: §aПроверять чат и помогать игрокам.'
+      - '§eПовышение: §a12 часов работы и 10 наказаний.'
+    command-up:
+      - '§6Поздравляем! Вы повышены до должности {next_rank}!'
+      - '§eПродолжайте работать, чтобы достичь следующей должности.'
+    command-deny-up: '§cДля повышения нужно отработать {required_work_time} и выдать {required_punishments} наказаний. Сейчас: {worked_time}, {punishments} наказаний.'
+    next-rank: senior-helper
+    required-work-seconds: 43200
+    required-punishments: 10
+
+  senior-helper:
+    display-name: 'Старший Helper'
+    command-give: 'lp user "{player}" parent set senior-helper'
+    command-take: 'lp user "{player}" parent set "{return_group}"'
+    command-salary: 'coins give "{player}" 15000'
+    salary-amount: 15000
+    command-cooldown-salary: 43200
+    command-salary-message: '§aВы получили зарплату в размере §e15000 монет§a.'
+    command-salary-cooldown-message: '§cВы уже получили зарплату. Следующая будет доступна через §e{time}§c.'
+    command-on: '%prefix%§aВы начали работу. Время начала: §e{time}'
+    command-off: '%prefix%§aВы закончили работу. Время окончания: §e{time}'
+    command-info:
+      - '§6Информация о должности Старший Helper:'
+      - '§eЗарплата: §a15000 монет'
+      - '§eЗадания: §aПроверять младший состав, чат и помогать игрокам.'
+      - '§eПовышение: §a24 часа работы и 20 наказаний.'
+    command-up:
+      - '§6Поздравляем! Вы повышены до должности {next_rank}!'
+      - '§eПродолжайте работать, чтобы достичь следующей должности.'
+    command-deny-up: '§cДля повышения нужно отработать {required_work_time} и выдать {required_punishments} наказаний. Сейчас: {worked_time}, {punishments} наказаний.'
+    next-rank: moderator
+    required-work-seconds: 86400
+    required-punishments: 20
+
+  moderator:
+    display-name: 'Модератор'
+    command-give: 'lp user "{player}" parent set moder'
+    command-take: 'lp user "{player}" parent set "{return_group}"'
+    command-salary: 'coins give "{player}" 25000'
+    salary-amount: 25000
+    command-cooldown-salary: 43200
+    command-salary-message: '§aВы получили зарплату в размере §e25000 монет§a.'
+    command-salary-cooldown-message: '§cВы уже получили зарплату. Следующая будет доступна через §e{time}§c.'
+    command-on: '%prefix%§aВы начали работу. Время начала: §e{time}'
+    command-off: '%prefix%§aВы закончили работу. Время окончания: §e{time}'
+    command-info:
+      - '§6Информация о должности Модератор:'
+      - '§eЗарплата: §a25000 монет'
+      - '§eЗадания: §aПроверять игровой процесс, игроков и младший состав.'
+      - '§eПовышение: §a48 часов работы и 50 наказаний.'
+    command-up:
+      - '§6Поздравляем! Вы повышены до должности {next_rank}!'
+      - '§eПродолжайте работать, чтобы достичь следующей должности.'
+    command-deny-up: '§cДля повышения нужно отработать {required_work_time} и выдать {required_punishments} наказаний. Сейчас: {worked_time}, {punishments} наказаний.'
+    next-rank: senior-moderator
+    required-work-seconds: 172800
+    required-punishments: 50
+
+  senior-moderator:
+    display-name: 'Старший Модератор'
+    command-give: 'lp user "{player}" parent set senior-moder'
+    command-take: 'lp user "{player}" parent set "{return_group}"'
+    command-salary: 'coins give "{player}" 35000'
+    salary-amount: 35000
+    command-cooldown-salary: 43200
+    command-salary-message: '§aВы получили зарплату в размере §e35000 монет§a.'
+    command-salary-cooldown-message: '§cВы уже получили зарплату. Следующая будет доступна через §e{time}§c.'
+    command-on: '%prefix%§aВы начали работу. Время начала: §e{time}'
+    command-off: '%prefix%§aВы закончили работу. Время окончания: §e{time}'
+    command-info:
+      - '§6Информация о должности Старший Модератор:'
+      - '§eЗарплата: §a35000 монет'
+      - '§eЗадания: §aКонтролировать игровой процесс и работу младшего состава.'
+      - '§eПовышение: §a72 часа работы и 100 наказаний.'
+    command-up:
+      - '§6Поздравляем! Вы повышены до должности {next_rank}!'
+      - '§eПродолжайте поддерживать порядок на сервере.'
+    command-deny-up: '§cДля повышения нужно отработать {required_work_time} и выдать {required_punishments} наказаний. Сейчас: {worked_time}, {punishments} наказаний.'
+    next-rank: administrator
+    required-work-seconds: 259200
+    required-punishments: 100
+
+  administrator:
+    display-name: 'Администратор'
+    command-give: 'lp user "{player}" parent set admin'
+    command-take: 'lp user "{player}" parent set "{return_group}"'
+    command-salary: 'coins give "{player}" 50000'
+    salary-amount: 50000
+    command-cooldown-salary: 43200
+    command-salary-message: '§aВы получили зарплату в размере §e50000 монет§a.'
+    command-salary-cooldown-message: '§cВы уже получили зарплату. Следующая будет доступна через §e{time}§c.'
+    command-on: '%prefix%§aВы начали работу. Время начала: §e{time}'
+    command-off: '%prefix%§aВы закончили работу. Время окончания: §e{time}'
+    command-info:
+      - '§6Информация о должности Администратор:'
+      - '§eЗарплата: §a50000 монет'
+      - '§eЗадания: §aКонтролировать сервер и работу состава.'
+      - '§eПовышение: §aЭто высшая должность.'
+    command-up: []
+    command-deny-up: '§cВы уже находитесь на высшей должности.'
+    next-rank: ''
+    required-work-seconds: 0
+    required-punishments: 0
+
+messages:
+  no-permission: '%prefix%§cУ вас нет прав на выполнение этой команды.'
+  player-only: '%prefix%§cЭта команда доступна только игроку.'
+  player-not-found: '%prefix%§cИгрок §e%player% §cне найден.'
+  spec-request-sent: '%prefix%&aЗапрос отправлен модерации. Ожидайте сотрудника.'
+  spec-request: '%prefix%&eИгрок &6%player% &eпросит проспекать его. &aНажмите сюда &7или напишите &f/spec %player%&7.'
+  spec-hover: '&aТелепортироваться к %player%'
+  spec-teleported: '%prefix%&aВы телепортировались к игроку &e%player%&a.'
+  no-rank: '%prefix%§cУ игрока §e%player% §cнет должности.'
+  invalid-rank: '%prefix%§cДолжность §e%rank% §cне найдена.'
+  already-working: '%prefix%§cВы уже на смене.'
+  not-working: '%prefix%§cВы сейчас не на смене.'
+  salary-requires-duty: '%prefix%§cЧтобы получить зарплату, сначала начните смену.'
+  command-failed: '%prefix%§cСерверная команда не выполнилась. Проверьте Config.yml и консоль.'
+  rank-given: '%prefix%§a%admin% выдал должность %rank% игроку %player%.'
+  rank-taken: '%prefix%§a%admin% снял должность %rank% с игрока %player%. Возвращена группа %return_group%.'
+  salary-received: '%prefix%§a%rank% %player% получил зарплату %amount% монет.'
+  work-started: '%prefix%§a%rank% %player% начал смену в %time%.'
+  work-stopped: '%prefix%§a%rank% %player% закончил смену в %time%. Всего отработано: %worked_time%.'
+  rank-up: '%prefix%§aИгрок %player% повышен до должности %rank%!'
+  punishment-counted: '%prefix%§aНаказание учтено. Всего: §e%punishments%§a.'
+  punishments-set: '%prefix%§aИгроку %player% установлено наказаний: §e%punishments%§a.'
+  status-working: '§aна смене'
+  status-offline: '§7не на смене'
+  stats:
+    - '%prefix%§6Статистика %player%:'
+    - '§eДолжность: §a%rank%'
+    - '§eСтатус: %status%'
+    - '§eОтработано: §a%worked_time%'
+    - '§eНаказаний: §a%punishments%'
+  rank-list:
+    - '%prefix%§6Список должностей:'
+    - '§ehelper §7- Helper'
+    - '§esenior-helper §7- Старший Helper'
+    - '§emoderator §7- Модератор'
+    - '§esenior-moderator §7- Старший Модератор'
+    - '§eadministrator §7- Администратор'
+  help-header: '%prefix%§6Команды плагина:'
+  usage-give: '%prefix%§cИспользование: /staff give <игрок> <должность>'
+  usage-take: '%prefix%§cИспользование: /staff take <игрок>'
+  usage-setpunishments: '%prefix%§cИспользование: /staff setpunishments <игрок> <количество>'
+  invalid-number: '%prefix%§cЗначение §e%value% §cдолжно быть целым неотрицательным числом.'
+  reloaded: '%prefix%§aКонфигурация перезагружена.'
+  reload-failed: '%prefix%§cНе удалось перезагрузить конфигурацию: %error%'

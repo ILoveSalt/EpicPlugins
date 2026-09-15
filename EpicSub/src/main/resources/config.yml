@@ -1,0 +1,59 @@
+settings:
+  prefix: '&6&lＥＰＩＣ+'
+  default-duration: '30d'
+  warning-before: '3d'
+  check-interval-seconds: 60
+  permission-add-commands:
+  - 'lp user %player% permission set %permission% true'
+  permission-remove-commands:
+  - 'lp user %player% permission unset %permission%'
+
+subscription:
+  permissions:
+  - kit.sub
+  - epiccoins.coins.pay
+  plus-prefix: '&6&l+'
+  fallback-tab-name: ''
+  tab:
+    enabled: true
+    tablist: true
+    nametag: true
+  luckperms:
+    enabled: true
+    prefix-priority: 10000
+
+messages:
+  no_sub: '&cУ вас нет подписки.'
+  sub_time: '&aВаша подписка активна еще &e%time%&a.'
+  sub_time_end: '&cВаша подписка закончилась.'
+  sub_time_end_soon: '&cВаша подписка закончится через &e%time%&c.' # это сообщение появится за 3 дня до конца подписки
+  sub_buy: '&aВы успешно купили подписку на &e%time%&a.'
+  sub_renew: '&aВы успешно продлили подписку на &e%time%&a.'
+  admin_give: '%prefix% &fВыдали подписку игроку &e%player% &fдо &e%expires%&f.'
+  admin_renew: '%prefix% &fПродлили подписку игроку &e%player% &fдо &e%expires%&f.'
+  admin_take: '%prefix% &fПодписка игрока &e%player% &fснята.'
+  admin_status: '%prefix% &fПодписка игрока &e%player% &fактивна еще &e%time% &7(до %expires%).'
+  no_permission: '%prefix% &cУ вас нет прав.'
+  player_not_found: '%prefix% &cИгрок не найден.'
+  invalid_time: '%prefix% &cНеверное время: &e%input%&c. Пример: &e30d&c, &e12h&c, &e1w&c.'
+  usage: '%prefix% &fИспользование: &e%usage%'
+  reload: '%prefix% &aКонфиг и хранилище перезагружены.'
+  help:
+  - '%prefix% &f/sub info &7- информация о подписке'
+  - '%prefix% &f/sub status &7- срок вашей подписки'
+  - '%prefix% &f/sub give <ник> [время] &7- выдать/продлить'
+  - '%prefix% &f/sub take <ник> &7- снять подписку'
+  - '%prefix% &f/sub reload &7- перезагрузить плагин'
+  sub_info:
+  - '&c&l❤ &f&lПОДПИСКА &6&lＥＰＩＣ+ &8&l∫ &6&l30 дней&f&l/&6&l400 рублей &4&l+ &a&l5000₣'
+  - '&7&l╔═════════════════════════'
+  - '&7&l║ &6&l✪ ВОЗМОЖНОСТИ &4&l⇩'
+  - '&7&l║ &c&l① &fСвой уникальный набор &f&l➲ &6&l/kit preview sub &f&l<&6&lРаз в неделю&f&l>'
+  - '&7&l║ &c&l② &fПеревести франки другому игроку &f&l➲ &6&l/coins pay &f&l<&6&lНикнейм&f&l> &f&l<&6&lСумма&f&l>'
+  - '&7&l║ &c&l③ &fЛичная зарплата в три часа, которая суммируется с текущей,'
+  - '&7&l║ &c&l④ &fвашей привилегий &f&l➲ &6&l60000⛃ &8&l∫ &a&l1400₣'
+  - '&7&l║ &c&l⑤ &fВы сможете писать любым текстом в чате.'
+  - '&7&l╚═════════════════════════' 
+  - ''
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU&6'
+  - ''
