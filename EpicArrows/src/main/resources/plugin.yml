@@ -1,0 +1,28 @@
+name: EpicArrows
+version: '${version}'
+
+main: hgds.epicgrief.EpicArrows
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+
+commands:
+  arrows:
+    description: EpicArrows admin commands.
+    usage: /<command> give <player> <arrow> [amount]
+    aliases: [ arrow, epicarrows, earr ]
+
+permissions:
+  epicarrows.admin:
+    description: Allows using all EpicArrows commands.
+    default: op
+  epicarrows.command.give:
+    description: Allows giving custom arrows.
+    default: op
+  epicarrows.command.reload:
+    description: Allows reloading EpicArrows config.
+    default: op
+  epicarrows.command.manage:
+    description: Allows enabling and disabling custom arrows.
+    default: op

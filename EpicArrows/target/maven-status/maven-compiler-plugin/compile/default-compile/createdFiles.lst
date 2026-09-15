@@ -1,0 +1,13 @@
+hgds\epicgrief\arrows\MessageService.class
+hgds\epicgrief\arrows\ArrowsCommand.class
+hgds\epicgrief\arrows\ArrowItemService.class
+hgds\epicgrief\EpicArrows.class
+hgds\epicgrief\arrows\ParticleOptions.class
+hgds\epicgrief\arrows\ArrowType.class
+hgds\epicgrief\arrows\IceOptions.class
+hgds\epicgrief\arrows\ArrowListener$1.class
+hgds\epicgrief\arrows\ArrowListener.class
+hgds\epicgrief\arrows\ArrowDefinition.class
+hgds\epicgrief\arrows\ExplosionOptions.class
+hgds\epicgrief\arrows\TeleportOptions.class
+hgds\epicgrief\arrows\ArrowConfigService.class

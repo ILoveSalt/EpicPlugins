@@ -1,0 +1,40 @@
+name: EpicBosses
+version: '${version}'
+
+main: hgds.epicgrief.EpicBosses
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+
+commands:
+  boss:
+    description: EpicBosses admin commands.
+    usage: /<command> <reload|spawn|info|loot|kill>
+    aliases: [ bosses, epicbosses ]
+
+permissions:
+  epicbosses.admin:
+    description: Allows using all EpicBosses commands.
+    default: op
+    children:
+      epicbosses.command.reload: true
+      epicbosses.command.spawn: true
+      epicbosses.command.info: true
+      epicbosses.command.loot: true
+      epicbosses.command.kill: true
+  epicbosses.command.reload:
+    description: Allows reloading EpicBosses config.
+    default: op
+  epicbosses.command.spawn:
+    description: Allows spawning bosses.
+    default: op
+  epicbosses.command.info:
+    description: Allows viewing current boss info.
+    default: op
+  epicbosses.command.loot:
+    description: Allows giving boss rewards from config.
+    default: op
+  epicbosses.command.kill:
+    description: Allows removing current boss.
+    default: op

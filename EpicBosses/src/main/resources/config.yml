@@ -1,0 +1,107 @@
+time: 3600 # 1 час
+bosses:
+  boss1:
+    name: "§c§l⚠ §c§lʙыбиʙᴀтᴇль ᴋᴏᴄтᴇй §f§l➲ §f§l<§6§l{health}§f§l/§6§l{maxHealth}§f§l> §c§l❤ §c§l⚠"
+    type: WITHER_SKELETON # тип монстра
+    location: pvp;-85;89;-66;0;0 # точка спавна босса
+    maxHealth: 1000
+    push: # Отталкивания при ударе
+      chance: 0
+      x: 0
+      y: 0
+      z: 0
+    damage:
+      chance: 50
+      multiply: 2.53
+    spawn: # команды, которые производятся после создания босса
+      - "broadcast: §r"
+      - "broadcast: §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§dဍ§c▄§6▀§e▄§a▀§b▄§9▀§dᄍ"
+      - "broadcast: §r"
+      - "broadcast: §8 §8§l╔ §fʜᴀ §6§lПвП-Арене§f§l, §fпᴏяʙилᴄя §f§l➲ §c§lʙыбиʙᴀтᴇль ᴋᴏᴄтᴇй §c§l⚠"
+      - "broadcast: §8 §8§l╚ §fʜᴀйти ᴇгᴏ ᴍᴏжʜᴏ ʜᴀ §6§lпʙп-ᴀᴘᴇʜᴇ§f§l, §fʙыпᴏлʜиʙ ᴋᴏᴍᴀʜду §f§l➲ §6§l/warp pvp"
+      - "broadcast: §r"
+      - "broadcast: §c §c§l⚠ &f&lигᴘᴏᴋ, ᴋᴏтᴏᴘый убьᴇт ᴇгᴏ, пᴏлучит &6&lȹᴘᴀʜᴋи&f&l, &6&lᴍᴏʜᴇты&f&l, §c§l⚠"
+      - "broadcast: &6 &6&lдᴏʜᴀтᴇᴘᴄᴋиᴇ ʙᴇщи §c§l⚠"
+      - "broadcast: §r"
+      - "broadcast: §c▄§6▀§e▄§a▀§b▄§9▀§dᄍ§c▀§6▄§e▀§a▄§b▀§9▄§dဍ§c▄§6▀§e▄§a▀§b▄§9▀§dᄍ"
+      - "broadcast: §r"
+    reward: # команды, которые производятся после смерти босса
+      - "kit give boss {player}"
+      - "eco give {player} 15000"
+      - "coins add {player} 200"
+    timeout: # команды, которые производятся при удалении босса по таймеру
+      - "broadcast: §r"
+      - "broadcast: §c▄§6▀§e▄§a▀§b▄§9▀§dᄍ§c▀§6▄§e▀§a▄§b▀§9▄§dဍ§c▄§6▀§e▄§a▀§b▄§9▀§dᄍ"
+      - "broadcast: §r"
+      - "broadcast: §8 §8§l╔ §c§lʙᴏꜱꜲ §f§l{name} §c§lʙыл ᴜдалᴇн §c§l⚠"
+      - "broadcast: §8 §8§l╚ §fʙᴏꜱꜲ ᴘᴏᴋинул §6§lпʙп-ᴀᴘᴇнᴜ §f§l➲ §6§l/WARP PVP"
+      - "broadcast: §r"
+      - "broadcast: §c▄§6▀§e▄§a▀§b▄§9▀§dᄍ§c▀§6▄§e▀§a▄§b▀§9▄§dဍ§c▄§6▀§e▄§a▀§b▄§9▀§dᄍ"
+      - "broadcast: §r"
+    spawnMob:
+      time: 99999 # 30 секунд
+      types:
+        - "SKELETON;100;500"
+        - "SKELETON;100;500"
+        - "HUSK;100;300"
+        - "HUSK;100;300"
+        - "HUSK;100;300"
+        - "GUARDIAN;100;100"
+        - "STRAY;100;250"
+    lifeTime: 3600 # Время жизни босса в секундах. Если босса не убьют за это время - он будет удалён (0 = отключить удаление по таймеру)
+    items:
+      - ""
+    stages:
+      '70':
+        speed: 0.9
+        damage: 13.0
+      '30':
+        speed: 0.6
+        damage: 11.0
+    effects:
+      - 'JUMP;30-60'
+      - 'FREEZE;60-120'
+messages:
+  no_permission: "§6§lʙᴏꜱꜱᴇꜱ: §cУ вас нет разрешения на использование данной команды."
+  command:
+    notExist: "§6§lʙᴏꜱꜱᴇꜱ: §fБосс не найден."
+    failedSpawn: "§6§lʙᴏꜱꜲᴇꜱ: §fНеудачный спавн босса."
+    only_players: "§6§lʙᴏꜱꜲᴇꜱ: §cКоманда только для игроков."
+    help: |-
+      §r §r
+      §c▄§6▀§e▄§a▀§b▄§9▀§dᄍ§c▀§6▄§e▀§a▄§b▀§9▄§dဍ§c▄§6▀§e▄§a▀§b▄§9▀§dᄍ
+      §r §r
+      §6§l▌ §fПерезагрузить конфигурацию плагина §f§l➲ §6§l/boss reload
+      §6§l▌ §fЗаспавнить босса §f§l➲ §6§l/boss spawn §f§l<§6§lназвание босса§f§l>
+      §r §r
+      §c▄§6▀§e▄§a▀§b▄§9▀§dᄍ§c▀§6▄§e▀§a▄§b▀§9▄§dဍ§c▄§6▀§e▄§a▀§b▄§9▀§dᄍ
+      §r §r
+    info:
+      notSpawned: "Currently boss not spawned!"
+      spawned:
+        - "Name: {id}/{name}"
+        - "Type: {type}"
+        - "Health: {health}/{maxHealth}"
+    spawn: "Boss has been spawned"
+    loot: "Loot has been gived!"
+    reload: "&6&lʙᴏꜱꜲᴇꜱ: §aКонфигурация плагина успешно перезагружена."
+
+settings:
+  bossbar:
+    title: '§c§l⚠ §6§lбᴏᴄᴄ ʜᴀxᴏдитᴄя ʜᴀ §6§lпʙп-ᴀᴘᴇʜᴇ §f§l➲ §6§l/WARP PVP §c§l⚠'
+    color: YELLOW
+    style: SOLID
+  bossbar-on-end:
+    title: '§c§l⚠ §c§lбᴏᴄᴄ был уᴄпᴇшʜᴏ убит §c§l⚠'
+    color: RED
+    style: SOLID
+    time-to-delete: 10 #  Секунды до удаления боссбара
+  effects:
+    freeze:
+      time: 5
+      effect: 'BLINDNESS;5;1'
+      title: '§c§l⚠ §b§lзᴀᴍᴏᴘᴏзᴋᴀ §c§l⚠'
+    throw:
+      min: 5
+      max: 10
+      title: '§c§l⚠ §c§lᴏтᴋидыʙᴀʜиᴇ §c§l⚠'

@@ -1,0 +1,148 @@
+messages:
+  prefix: '&e&lARROW &8▪ &f'
+  no-allowed: 'У вас недостаточно прав.'
+  no-permission: 'У вас недостаточно прав.'
+  unknown-command: 'Вы ввели неверный аргумент.'
+  only-players: 'Команду можно использовать только от имени игрока.'
+  give:
+    usage: 'Использование: &e/arrows give &f(&eигрок&f) &f(&eстрела&f)'
+    player-null: 'Игрока нет на сервере.'
+    item-null: 'Стрелы не существует.'
+    gived: 'Вы выдали стрелу.'
+    received: 'Вы получили &e%name% %amount%'
+  reload:
+    usage: 'Использование: &e/arrows reload'
+    reload: 'Конфигурация перезагружена.'
+  disable:
+    usage: 'Эта стрела отключена администратором'
+    broadcast: '&fСтрелы &e%name% %fбыли &cотключены'
+  disable_regions:
+    usage: 'Эта стрела отключена администратором в этом мире'
+    broadcast: '&fСтрелы &e%name% %fбыли &cотключены в этом мире'
+
+disable-worlds:
+  - 'spawn'
+
+arrows_disable: # здесь будут стрелы которые отключены
+  - ''
+
+arrows:
+  arrow_aim:
+    item:
+      title: '&e&lСАМОНАВОДЯЩАЯСЯ СТРЕЛА'
+      type: tipped_arrow
+      amount: 32
+      lore:
+        - ''
+        - '&e▪ &fСтрела будет сама наводиться на игрока'
+        - ''
+      arrow-color: '#55FF55'
+      flags:
+        - 'hide_potion_effects'
+    arrow-type: AIM
+    arrow-settings: FIREWORKS_SPARK true
+    arrow-settings-aim: 10.0
+  arrow_explode:
+    item:
+      title: '&e&lВЗРЫВНАЯ СТРЕЛА'
+      type: tipped_arrow
+      amount: 32
+      lore:
+        - ''
+        - '&e▪ &fВзрывается при попадении в игрока или блок'
+        - ''
+      arrow-color: '#FF5555'
+      flags:
+        - 'hide_potion_effects'
+    arrow-type: EXPLODE
+    arrow-settings: FIREWORKS_SPARK true
+    arrow-settings-explode: 4 false false
+  arrow_teleport:
+    item:
+      title: '&6&l&nТЕЛЕПОРТИРУЮЩАЯ СТРЕЛА'
+      type: tipped_arrow
+      amount: 1
+      lore:
+        - ''
+        - '&e▪ &fТелепортирует вас на место падения стрелы'
+        - ''
+      arrow-color: '#5555FF'
+      flags:
+        - 'hide_potion_effects'
+    arrow-type: TELEPORT
+    arrow-settings: FIREWORKS_SPARK true
+    arrow-settings-teleport: ENTITY_ENDERMEN_TELEPORT BARRIER
+  arrow_clean:
+    item:
+      title: '&6&l&nОЧИЩАЮЩАЯ СТРЕЛА'
+      type: tipped_arrow
+      amount: 1
+      lore:
+        - ''
+        - '&e▪ &fОчищает все эффекты игрока'
+        - ''
+      arrow-color: '#FFFFFF'
+      flags:
+        - 'hide_potion_effects'
+    arrow-type: CLEAR
+    arrow-settings: FIREWORKS_SPARK true
+  arrow_mix:
+    item:
+      title: '&e&lПЕРЕМЕШИВАЮЩАЯ СТРЕЛА'
+      type: tipped_arrow
+      amount: 32
+      lore:
+        - ''
+        - '&e▪ &fМеняет предметы в руках игрока местами'
+        - ''
+      arrow-color: '#00AA00'
+      flags:
+        - 'hide_potion_effects'
+    arrow-type: MIX_ITEMS
+    arrow-settings: FIREWORKS_SPARK true
+  arrow_change:
+    item:
+      title: '&e&lОБМЕНИВАЮЩАЯ СТРЕЛА'
+      type: tipped_arrow
+      amount: 32
+      lore:
+        - ''
+        - '&e▪ &fМеняет игроков местами'
+        - ''
+      arrow-color: '#FFFF55'
+      flags:
+        - 'hide_potion_effects'
+    arrow-type: CHANGE
+    arrow-settings: FIREWORKS_SPARK true
+  arrow_ice:
+    item:
+      title: '&6&l&nЗАМОРАЖИВАЮЩАЯ СТРЕЛА'
+      type: tipped_arrow
+      amount: 1
+      lore:
+        - ''
+        - '&e▪ &fЗамораживает игрока на 5 секунд'
+        - ''
+      arrow-color: '#AAAAAA'
+      flags:
+        - 'hide_potion_effects'
+    arrow-type: ICE
+    arrow-settings: FIREWORKS_SPARK true
+    arrow-settings-ice: 2 2
+  arrow_megaaim:
+    item:
+      title: '&e&lСАМОНАВОДЯЩАЯСЯ СТРЕЛА + МОМЕНТАЛЬНЫЙ УРОН III'
+      type: tipped_arrow
+      amount: 32
+      lore:
+        - ''
+        - '&e▪ &fСтрела будет сама наводиться на игрока'
+        - ''
+      arrow-color: '#00AA00'
+      arrow-effects:
+        - 'INCREASE_DAMAGE:500:1'
+      flags:
+        - 'hide_potion_effects'
+    arrow-type: AIM
+    arrow-settings: FIREWORKS_SPARK true
+    arrow-settings-aim: 300.0
