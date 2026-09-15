@@ -1,0 +1,100 @@
+# ==========================================================
+# EpicSalary — автовыдача зарплаты донат-группам.
+# Зарплата выдаётся САМА, без команды: раз в checkTime минут плагин проверяет
+# всех онлайн-игроков. Для каждого игрока ищется донат-группа по разрешению:
+#     epicsalary.salary.<группа>
+# где <группа> — ключ секции 'salary' ниже (warrior, prince, knight и т.д.).
+# Если игрок имеет право на несколько групп — берётся первая по порядку.
+# Выдача происходит только когда кулдаун (cooldown, в секундах) истёк.
+# Дата последней выдачи каждого игрока хранится в файле игрецкой папки
+# плагина: plugins/EpicSalary/salary.yml
+# ==========================================================
+
+# Как часто проверять игроков и выдавать зарплату (в минутах)
+checkTime: 5
+
+messages:
+  onlyPlayer: "&6&lЗАРПЛАТА: &fКоманда доступна только игрокам."
+  noPermission: "&6&lЗАРПЛАТА: &cУ вас нет разрешения на использование данной команды."
+  salaryEmpty: "&6&lЗАРПЛАТА: &cУ вас нет зарплаты."
+
+salary:
+  warrior:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l800⛃"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l800⛃"
+    commands:
+      - 'eco give {player} 800'
+  prince:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l1100⛃"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l1100⛃"
+    commands:
+      - 'eco give {player} 1100'
+  knight:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l1600⛃"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l1600⛃"
+    commands:
+      - 'eco give {player} 1600'
+  lord:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l2100⛃"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l2100⛃"
+    commands:
+      - 'eco give {player} 2100'
+  triton:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l2700⛃"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l2700⛃"
+    commands:
+      - 'eco give {player} 2700'
+  zeus:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l3400⛃ &8&l∫ &a&l35₣"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l3400⛃ &8&l∫ &a&l35₣"
+    commands:
+      - 'eco give {player} 3400'
+      - 'coins add {player} 350'
+  epic:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l4500⛃ &8&l∫ &a&l50₣"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l4500⛃ &8&l∫ &a&l50₣"
+    commands:
+      - 'eco give {player} 4500'
+      - 'coins add {player} 500'
+  dragon:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l10000⛃ &8&l∫ &a&l70₣"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l10000⛃ &8&l∫ &a&l70₣"
+    commands:
+      - 'eco give {player} 10000'
+      - 'coins add {player} 700'
+  staff:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l20000⛃ &8&l∫ &a&l150₣"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l20000⛃ &8&l∫ &a&l150₣"
+    commands:
+      - 'eco give {player} 20000'
+      - 'coins add {player} 1500'
+  santa:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l30000⛃ &8&l∫ &a&l250₣"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l30000⛃ &8&l∫ &a&l250₣"
+    commands:
+      - 'eco give {player} 30000'
+      - 'coins add {player} 2500'
+  youtube:
+    cooldown: 2700
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l30000⛃ &8&l∫ &a&l250₣"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l30000⛃ &8&l∫ &a&l250₣"
+    commands:
+      - 'eco give {player} 30000'
+      - 'coins add {player} 2500'
+  subscription:
+    cooldown: 10800
+    message: "&6&lЗАРПЛАТА: &fВы успешно получили зарплату &f&l➲ &6&l60000⛃ &8&l∫ &a&l400₣"
+    cooldownMessage: "&6&lЗАРПЛАТА: &fВы сможете получить зарплату через &f&l➲ &6&l{time} &fв размере &6&l60000⛃ &8&l∫ &a&l400₣"
+    commands:
+      - 'eco give {player} 60000'
+      - 'coins add {player} 4000'

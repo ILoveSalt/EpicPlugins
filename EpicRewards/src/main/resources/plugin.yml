@@ -1,0 +1,18 @@
+name: EpicRewards
+version: '${version}'
+
+main: hgds.epicgrief.EpicRewards
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+
+commands:
+  epicrewards:
+    description: EpicRewards admin command.
+    usage: /epicrewards reload
+    permission: epicrewards.admin
+
+permissions:
+  epicrewards.admin:
+    default: op

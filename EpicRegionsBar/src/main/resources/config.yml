@@ -1,0 +1,22 @@
+region-placeholder:
+  spawn: '&6&lСПАВН'
+
+pvp-on: '&2&lВключено'
+pvp-off: '&4&lВыключено'
+
+no-rg: '&4&lНет'
+global-name: '&a&lГлобал'
+
+region-viewer: '&6&l▌ &fРегион &f&l➲ &6&l%region%&r &8&l⎰ &fПвп &f&l➲ %pvp% &6&l▌'
+messages:
+  help:
+    - ''
+    - '&c▄&6▀&e▄&a▀&b▄&9▀&d▄&c▀&6▄&e▀&a▄&b▀&9▄&d▀&c▄&6▀&e▄&a▀&b▄&9▀&d▄'
+    - ''
+    - '&6&l▌ &fПомощь по плагину &f&l➲ &6&l/vregbar help'
+    - '&6&l▌ &aПерезагрузить конфигурацию плагина &f&l➲ &6&l/vregbar reload'
+    - ''
+    - '&c▄&6▀&e▄&a▀&b▄&9▀&d▄&c▀&6▄&e▀&a▄&b▀&9▄&d▀&c▄&6▀&e▄&a▀&b▄&9▀&d▄'
+    - ''
+  reload: '&6&lРЕГИОН: &aКонфигурация плагина перезагружена.'
+  command-not-found: '&6&lРЕГИОН: &cНеизвестная команда.'

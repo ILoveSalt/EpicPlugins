@@ -1,0 +1,22 @@
+name: EpicSocialBonus
+version: '${version}'
+
+main: hgds.epicgrief.EpicSocialBonus
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+
+commands:
+  free:
+    description: Shows Telegram reward instructions.
+    aliases: [ FREE ]
+  tgbonus:
+    description: Shows Telegram reward instructions.
+  epicsocialbonus:
+    description: EpicSocialBonus admin command.
+    permission: epicsocialbonus.admin
+
+permissions:
+  epicsocialbonus.admin:
+    default: op

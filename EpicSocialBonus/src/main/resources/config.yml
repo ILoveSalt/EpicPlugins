@@ -1,0 +1,48 @@
+database:
+  host: "127.0.0.1:3306"
+  base: "auth"
+  userName: "root"
+  password: ""
+
+tg_settings:
+  token: ""
+  chat_id: "" # id чат админа для получения уведомлений о новых привязках аккаунтов (сообщение будет присылатся ботом при каждой новой привязке аккаунта к боту в телеграмм)
+
+telegram:
+  enabled: true
+  timeout-seconds: 25
+  retry-delay-millis: 5000
+  command-aliases:
+    - "/account reward tg"
+    - "/tg"
+  messages:
+    usage: "Напишите в боте: /tg ВашНик или /account reward tg ВашНик"
+    invalid-player: "Ник должен быть Minecraft-ником: 3-16 символов, латиница, цифры и _."
+    already-player: "Этот Minecraft-аккаунт уже получал награду."
+    other-account: "С этого Telegram-аккаунта уже получали награду за другой Minecraft-ник."
+    success: "Награда успешно выдана."
+
+tg_message_admin:
+  linkAccount: 
+    - "Аккаунт {player} привязал к боту в Телеграмм и получил награду за это!"
+tg_message_player:
+  linkAccount: 
+    - "Вы успешно выполнили команду и привязали аккаунт к боту в Телеграмм и в замен получили награду за это!"
+  command:
+    - "/account reward tg"
+    - "/tg"
+
+
+
+messages:
+  onlyPlayer: "&6&lХАЛЯВА: &cИспользовать команду можно только от имени игрока."
+  commandUsage: "&6&lХАЛЯВА: &fЧтобы получить награду &c&l⚠ &a&l&n2000-4000 ФРАНКОВ БЕСПЛАТНО&a &c&l⚠ &fВыполните команду в боте &f&l➲ &6&l/account reward tg {player} &8&l∫ &6&l/tg {player}"
+  notLinkedTG: "&6&lХАЛЯВА: &fПривяжите аккаунт к боту в &9&lТелеграмм &fчтобы получить награду &c&l⚠ &a&l&n2000 ФРАНКОВ БЕСПЛАТНО&a &c&l⚠ &fЧтобы получить инструкцию по привязке аккаунта, выполните команду &f&l➲ &6&l&n/ＦＲＥＥ&6"
+  alreadyTG: "&6&lХАЛЯВА: &fВы уже получали награду за привязку аккаунта к боту в &9&lТелеграмм&f&l."
+  successfulLinkTG: "&6&lХАЛЯВА: &fВы успешно получили награду за привязку к боту в &9&lТелеграмм&f&l."
+  otherAccountLinked: "&6&lХАЛЯВА: &fВы уже получили награду за привязку другого аккаунта."
+
+
+tgCommands:
+  - 'lp user {player} permission set epicbonus.linked'
+  - 'coins add {player} 4000'

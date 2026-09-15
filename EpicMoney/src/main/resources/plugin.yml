@@ -1,0 +1,9 @@
+name: EpicMoney
+version: '${version}'
+
+main: hgds.epicgrief.EpicMoney
+api-version: '26.1.2'
+load: POSTWORLD
+softdepend: [ Vault ]
+
+authors: [ hgds_2 ]

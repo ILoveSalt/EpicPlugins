@@ -1,0 +1,131 @@
+PLAYER:
+  enable: true
+  money: 3%
+LLAMA:
+  enable: true
+  money: 25-50
+  display: 'Ламу' #можно убрать, будет писать просто вы убили LLAMA
+CHICKEN:
+  enable: true
+  money: 5-8
+  display: 'Курицу' #можно убрать, будет писать просто вы убили CHICKEN
+COW:
+  enable: true
+  money: 5-8
+  display: 'Корову' #можно убрать, будет писать просто вы убили COW
+SHEEP:
+  enable: true
+  money: 5-8
+  display: 'Овцу' #можно убрать, будет писать просто вы убили SHEEP
+HORSE:
+  enable: true
+  money: 10-15
+  display: 'Лошадь' #можно убрать, будет писать просто вы убили HORSE
+RABBIT:
+  enable: true
+  money: 5-8
+  display: 'Зайца' #можно убрать, будет писать просто вы убили RABBIT
+WOLF:
+  enable: true
+  money: 5-8
+  display: 'Волка' #можно убрать, будет писать просто вы убили WOLF
+OCELOT:
+  enable: true
+  money: 10-15
+  display: 'Оцелота' #можно убрать, будет писать просто вы убили OCELOT
+BAT:
+  enable: true
+  money: 10-15
+  display: 'Летучую мышь' #можно убрать, будет писать просто вы убили BAT
+BLAZE:
+  enable: true
+  money: 5-13
+  display: 'Ифрита' #можно убрать, будет писать просто вы убили BLAZE
+CAVE_SPIDER:
+  enable: true
+  money: 5-10
+  display: 'Пещерного паука' #можно убрать, будет писать просто вы убили CAVE_SPIDER
+CREEPER:
+  enable: true
+  money: 10-15
+  display: 'Крипера' #можно убрать, будет писать просто вы убили CREEPER
+ENDER_DRAGON:
+  enable: true
+  money: 250-500
+  display: 'Дракона' #можно убрать, будет писать просто вы убили ENDER_DRAGON
+ENDERMAN:
+  enable: true
+  money: 20-25
+  display: 'Эндермена' #можно убрать, будет писать просто вы убили ENDERMAN
+ENDERMITE:
+  enable: true
+  money: 5-15
+  display: 'Эндермита' #можно убрать, будет писать просто вы убили ENDERMITE
+GHAST:
+  enable: true
+  money: 25-50
+  display: 'Гаста' #можно убрать, будет писать просто вы убили GHAST
+GIANT:
+  enable: true
+  money: 10-15
+  display: 'Гиганта' #можно убрать, будет писать просто вы убили GIANT
+GUARDIAN:
+  enable: true
+  money: 10-15
+  display: 'Стража' #можно убрать, будет писать просто вы убили GUARDIAN
+PIG:
+  enable: true
+  money: 5-8
+  display: 'Свинью' #можно убрать, будет писать просто вы убили PIG
+IRON_GOLEM:
+  enable: true
+  money: 25-30
+  display: 'Железного голема' #можно убрать, будет писать просто вы убили IRON_GOLEM
+MAGMA_CUBE:
+  enable: true
+  money: 5-10
+  display: 'Магмового куба' #можно убрать, будет писать просто вы убили MAGMA_CUBE
+SLIME:
+  enable: true
+  money: 5-10
+  display: 'Блок слизи' #можно убрать, будет писать просто вы убили SLIME
+MUSHROOM_COW:
+  enable: true
+  money: 25-30
+  display: 'Муухомор' #можно убрать, будет писать просто вы убили MUSHROOM_COW
+PIG_ZOMBIE:
+  enable: true
+  money: 10-15
+  display: 'Свинозомби' #можно убрать, будет писать просто вы убили PIG_ZOMBIE
+SILVERFISH:
+  enable: true
+  money: 10-15
+  display: 'Чешуйницу' #можно убрать, будет писать просто вы убили SILVERFISH
+SKELETON:
+  enable: true
+  money: 10-15
+  display: 'Скелета' #можно убрать, будет писать просто вы убили SKELETON
+SNOWMAN:
+  enable: true
+  money: 10-15
+  display: 'Снеговика' #можно убрать, будет писать просто вы убили SNOWMAN
+SPIDER:
+  enable: true
+  money: 5-10
+  display: 'Паука' #можно убрать, будет писать просто вы убили SPIDER
+SQUID:
+  enable: true
+  money: 10-15
+  display: 'Осьминога' #можно убрать, будет писать просто вы убили SQUID
+VILLAGER:
+  enable: true
+  money: 25-30
+  display: 'Жителя' #можно убрать, будет писать просто вы убили VILLAGER
+WITHER:
+  enable: true
+  money: 50-75
+  display: 'Визера' #можно убрать, будет писать просто вы убили WITHER
+ZOMBIE:
+  enable: true
+  money: 10-20
+  display: 'Зомби' #можно убрать, будет писать просто вы убили ZOMBIE

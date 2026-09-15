@@ -1,0 +1,8 @@
+name: EpicSalary
+version: '${version}'
+
+main: hgds.epicgrief.EpicSalary
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]

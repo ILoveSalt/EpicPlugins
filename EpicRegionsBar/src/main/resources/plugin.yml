@@ -1,0 +1,14 @@
+name: EpicRegionsBar
+version: '${version}'
+
+main: hgds.epicgrief.EpicRegionsBar
+api-version: '26.1.2'
+load: STARTUP
+softdepend: [ WorldGuard ]
+
+authors: [ hgds_2 ]
+
+commands:
+  vregbar:
+    description: Управление EpicRegionsBar
+    usage: /vregbar help

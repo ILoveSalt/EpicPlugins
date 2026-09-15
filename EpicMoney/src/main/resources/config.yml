@@ -1,0 +1,9 @@
+sound: BLOCK_NOTE_PLING
+money-add-action:
+  - '[message-entity] &6&lЗАРАБОТОК: &fВы были убиты игроком &f&l➲ &6&l{killer}'
+  - '[message-entity] &6&lЗАРАБОТОК: &fВы потеряли &f&l➲ &6&l{money} ⛃'
+  - '[message-killer] &6&lЗАРАБОТОК: &fВы успешно убили &f&l➲ &6&l{entity} &fи получили &f&l➲ &6&l{money} ⛃'
+  - '[actionbar-entity] &6&l▌ &fВы потеряли &f&l➲ &6&l{money} ⛃ &6&l▌'
+  - '[actionbar-killer] &6&l▌ &fВы получили &f&l➲ &6&l{money} ⛃ &6&l▌'
+disabled-worlds:
+  - 'none'
