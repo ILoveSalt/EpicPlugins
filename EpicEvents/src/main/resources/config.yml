@@ -1,0 +1,40 @@
+prefix: "&7[&bEpicEvents&7] &r"
+
+help:
+  - '&7Available commands:'
+  - '&b/event help &7- Show this help message.'
+  - '&b/event telegram &7- Link your Telegram account for enhanced security and notifications.'
+  - '&b/vote &7- Проголосовать за следующий ивент.'
+
+GUI:
+  title: '&bEpicEvents &7- &fVote for the next event'
+  vote_button_1:
+    name: '&aVote for this event'
+    lore:
+    slot: 13
+      - '%event_name%.'
+      - '&7Click to vote for this event.'
+      - '&7Votes: &b%votes%'
+    requirements: #если ивентов больше чем 1 то этот выбор будет активен и будет виден в gui типо если event больше или равно 1 то показывать этот ивент в гуй
+     event >= 1 - view
+    
+      
+  vote_button_2:
+    name: '&aVote for this event'
+    lore:
+    slot: 22
+      - '%event_name%.'
+      - '&7Click to vote for this event.'
+      - '&7Votes: &b%votes%'
+
+      
+  vote_button_3:
+    name: '&aVote for this event'
+    lore:
+    slot: 31
+      - '%event_name%.'
+      - '&7Click to vote for this event.'
+      - '&7Votes: &b%votes%'
+  requirements: #если ивентов больше чем 2 то этот выбор будет активен и будет виден в gui типо если event больше или равно 2 то показывать этот ивент в гуй
+     event >= 2 - view
+  

@@ -1,0 +1,20 @@
+name: EpicGranter
+version: '1.0'
+
+main: hgds.epicgrief.EpicGranter
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+
+commands:
+  grant:
+    description: Grant player privileges with configured limits
+    usage: /grant
+    aliases: [ granter, epicgranter ]
+
+permissions:
+  epicgranter.admin:
+    default: op
+  epicgranter.reload:
+    default: op

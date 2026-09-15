@@ -1,0 +1,682 @@
+messages:
+  permission: '&6&lАЙТЕМЫ: &cУ вас нет разрешения на использование данной команды.'
+  reload: '&6&lАЙТЕМЫ: §aКонфигурация плагина успешно перезагружена.'
+  item-not-find: '&6&lАЙТЕМЫ: §fПредмет &f&l➲ &6&l%item% &fне найден.'
+  player-not-find: '&6&lАЙТЕМЫ: §fИгрок &f&l➲ &6&l%player% &fне найден.'
+  item-give: '&6&lАЙТЕМЫ: §fВы успешно выдали предмет &f&l➲ &6&l%item% &fигроку &f&l➲ &6&l%player%&f&l.'
+  argument: '&6&lАЙТЕМЫ: &cНеизвестная команда. &fПосмотреть актуальные команды, можно с помощью команды &f&l➲ &6&l/customitems help'
+  give-usage: '&6&lАЙТЕМЫ: &cИспользование: &6/customitems give <ник> <предмет> <кол-во>'
+  help:
+    - ''
+    - '&c▄&6▀&e▄&a▀&b▄&9▀&d▄&c▀&6▄&e▀&a▄&b▀&9▄&d▀&c▄&6▀&e▄&a▀&b▄&9▀&d▄'
+    - ''
+    - '&6&l▌ &fПерезагрузить конфигурацию плагина &f&l➲ &6&l/customitems reload'
+    - '&6&l▌ &fВыдать предмет &f&l➲ &6&l/customitems give &f&l<&6&lНикнейм игрока&f&l> &f&l<&6&lПредмет&f&l>'
+    - '&6&l▌ &f&l<&6&lКоличество&f&l>'
+    - ''
+    - '&c▄&6▀&e▄&a▀&b▄&9▀&d▄&c▀&6▄&e▀&a▄&b▀&9▄&d▀&c▄&6▀&e▄&a▀&b▄&9▀&d▄'
+    - ''
+items:
+  leave1:
+    type: 'feather'
+    noRightUse: false
+    displayName: '&6&l&nПЕРЫШКО&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fПодкидывает вас вверх на 10 блоков.'
+      - ''
+      - ' &c&l❤ &fНажмите &6&lПКМ&f&l, &fчтобы взлететь.'
+      - ''
+    megaJumpAfterRightClick: 13
+    clearAfterRightClick: true
+  leave2:
+    type: 'fireball'
+    noRightUse: false
+    displayName: '&6&l&nМОМЕНТАЛЬНАЯ ЛИВАЛКА&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fТелепортирует вас на спавн, даже в режиме &6&lПвП&f&l.'
+      - ''
+      - ' &c&l❤ &fНажмите &6&lПКМ&f&l, &fчтобы телепортироваться на спавн.'
+      - ''
+    clearAfterRightClick: true
+    clearAntiRelog: true
+    commands:
+    - 'spawn %player%'
+  leave3:
+    type: 'chorus_fruit'
+    noRightUse: false
+    displayName: '&6&l&nЛИВАЛКА ИЗ ЛОВУШЕК&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fТелепортирует из ловушки.'
+      - ''
+      - ' &c&l❤ &fНажмите &6&lПКМ&f&l, &fчтобы телепортироваться из ловушки.'
+      - ''
+    clearAfterRightClick: true
+    teleportToNearHighestLocation: true
+  enderchest:
+    data: 3
+    noRightUse: false
+    type: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYTZjYzQ4NmMyYmUxY2I5ZGZjYjJlNTNkZDlhM2U5YTg4M2JmYWRiMjdjYjk1NmYxODk2ZDYwMmI0MDY3In19fQ=='
+    displayName: '&6&l&nПЕРЕНОСНОЙ ЭНДЕР СУНДУК&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fОткрывает &6&lЭндер-Сундук &fв любом месте,'
+      - ' &6&l▌ &fдаже в режиме &6&lПвП&f&l.'
+      - ''
+      - ' &c&l❤ &fНажмите &6&lПКМ&f&l, &fчтобы открыть &6&lЭндер-Сундук&f&l.'
+      - ''
+    enderchestOpenAfterRightClick: true
+    clearAfterRightClick: true
+  pickaxe1:
+    type: 'DIAMOND_PICKAXE'
+    dropAfterDeath: false
+    noRightUse: false
+    displayName: '&6&l&nАВТО-ПЕРЕПЛАВЛЯЮЩИЯ КИРКА&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на авто-переплавляющейся кирке &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fЭффективность &6&lV&f&l.'
+      - ' &6&l▌ &c&l② &fУдача &6&lIV&f&l.'
+      - ' &6&l▌ &c&l③ &fПрочность &6&lVI&f&l.'
+      - ' &6&l▌ &c&l④ &fПочинка.'
+      - ' &6&l▌ &c&l⑤ &c&lПроклятие утраты&f&l.'
+      - ''
+      - ' &6&l▌ &fХарактеристики авто-переплавляющейся кирки &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fАвтоматически переплавяет руду.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    remeltingAfterBreak: true
+    enchantments:
+    - "DIG_SPEED:5"
+    - "DURABILITY:6"
+    - "LOOT_BONUS_BLOCKS:4"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  pickaxe2:
+    type: 'DIAMOND_PICKAXE'
+    dropAfterDeath: false
+    noRightUse: false
+    displayName: '&6&l&nРАДИУСНАЯ КИРКА&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на радиусной кирке &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fЭффективность &6&lV&f&l.'
+      - ' &6&l▌ &c&l② &fУдача &6&lIV&f&l.'
+      - ' &6&l▌ &c&l③ &fПрочность &6&lVI&f&l.'
+      - ' &6&l▌ &c&l④ &fПочинка.'
+      - ' &6&l▌ &c&l⑤ &c&lПроклятие утраты&f&l.'
+      - ''
+      - ' &6&l▌ &fХарактеристики радиусной кирки &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fЛомает блоки в радиусе &f&l➲ &6&l3x3&f&l.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    breakRadius: 1
+    enchantments:
+    - "DIG_SPEED:5"
+    - "DURABILITY:6"
+    - "LOOT_BONUS_BLOCKS:4"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  pickaxe3:
+    type: 'DIAMOND_PICKAXE'
+    dropAfterDeath: false
+    noRightUse: false
+    displayName: '&6&l&nСПАВНЕРНАЯ КИРКА&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на спавнерной кирке &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fЭффективность &6&lV&f&l.'
+      - ' &6&l▌ &c&l② &fУдача &6&lIV&f&l.'
+      - ' &6&l▌ &c&l③ &fПрочность &6&lVI&f&l.'
+      - ' &6&l▌ &c&l④ &fПочинка.'
+      - ' &6&l▌ &c&l⑤ &c&lПроклятие утраты&f&l.'
+      - ''
+      - ' &6&l▌ &fХарактеристики спавнерной кирки &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fЛомает спавнера, оставляя в них яйцо.'
+      - ' &6&l▌ &c&l② &fМожно использовать &f&l➲ &6&l3 &fраза на ломание спавнера.'
+      - ''
+      - ' &c&l❤ &fОсталось использований &f&l➲ &6&l%brokenBlocks%'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    spawnerDropAfterBreak: true
+    brokenBlocksToDestroyPickaxe: 3
+    blocksToDestroyPickaxe:
+    - 'MOB_SPAWNER'
+    enchantments:
+    - "DIG_SPEED:5"
+    - "DURABILITY:6"
+    - "LOOT_BONUS_BLOCKS:4"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  mascot_god:
+    data: 3
+    noRightUse: false
+    usedSlots:
+      - 'LEFT_HAND'
+      - 'RIGHT_HAND'
+      - 'HEAD'
+    type: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzM2ODdlMjVjNjMyYmNlOGFhNjFlMGQ2NGMyNGU2OTRjM2VlYTYyOWVhOTQ0ZjRjZjMwZGNmYjRmYmNlMDcxIn19fQ=='
+    displayName: '&c&l&nРУНА БОГА&c'
+    lore:
+      - ''
+      - ' &6&l▌ &fЭффекты, атрибут, дающиеся игроку при использовании руны &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fДобавляет &f&l➲ &c&l❤❤❤❤ &fздоровья.'
+      - ' &6&l▌ &c&l② &6&lСила II &f&l<&6&lБесконечно&f&l>'
+      - ' &6&l▌ &c&l③ &6&lСкорость II &f&l<&6&lБесконечно&f&l>'
+      - ' &6&l▌ &c&l④ &6&lОгнестойкость II &f&l<&6&lБесконечно&f&l>'
+      - ' &6&l▌ &c&l⑤ &6&lСопротивление III &f&l<&6&lБесконечно&f&l>'
+      - ''
+    effects:
+    - 'health_boost:1:20'
+    - 'increase_damage:1:20'
+    - 'speed:1:20'
+    - 'fire_resistance:0:20'
+    - 'damage_resistance:2:20'
+  mascot_resistance:
+    noRightUse: false
+    usedSlots:
+      - 'LEFT_HAND'
+      - 'RIGHT_HAND'
+      - 'HEAD'
+    data: 3
+    type: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjgyMjAyODJmMmVlNTk5NTExYjRmYzc0NjExMWM5NzM2ZDdiNDkxZThiY2ZiNjQ4YThhMTU2MjkyODFlZTUifX19'
+    displayName: '&6&l&nРУНА СОПРОТИВЛЕНИЯ&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fЭффект, дающийся игроку при использовании руны &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &6&lСопротивление III &f&l<&6&lБесконечно&f&l>'
+      - ''
+    effects:
+    - 'damage_resistance:2:20'
+  mascot_mixed:
+    data: 3
+    usedSlots:
+      - 'LEFT_HAND'
+      - 'RIGHT_HAND'
+      - 'HEAD'
+    type: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTZjODQ0N2E4YjZiMGUwYzdlNzYyOWM2ODk4ZWM5Yzc0OWE3YTBhMmI0NTJiOWMzODUyYzc4NDdiYjRkYzUifX19'
+    displayName: '&6&l&nРУНА СИЛЫ И ОГНЕСТОЙКОСТИ&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fЭффекты, дающиеся игроку при использовании руны &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &6&lСила II &f&l<&6&lБесконечно&f&l>'
+      - ' &6&l▌ &c&l② &6&lОгнестойкость I &f&l<&6&lБесконечно&f&l>'
+      - ''
+    effects:
+    - 'increase_damage:1:20'
+    - 'fire_resistance:0:20'
+  mascot_ginger:
+    data: 3
+    usedSlots:
+      - 'LEFT_HAND'
+      - 'RIGHT_HAND'
+      - 'HEAD'
+    type: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzdlOGNiNTdmZTc5MGU5NjVlM2NmYTZjNGZiYzE2ZTMyMjYyMTBkNjVmNTYxNGU4ODUzZmE5ZmI4NDA3NDQ0MSJ9fX0='
+    displayName: '&6&l&nИМБОВАЯ РУНА&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fЭффекты, дающиеся игроку при использовании руны &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &6&lСила II &f&l<&6&lБесконечно&f&l>'
+      - ' &6&l▌ &c&l② &6&lСкорость II &f&l<&6&lБесконечно&f&l>'
+      - ' &6&l▌ &c&l③ &6&lСопротивление II &f&l<&6&lБесконечно&f&l>'
+      - ''
+    effects:
+    - 'increase_damage:1:20'
+    - 'speed:1:20'
+    - 'damage_resistance:1:20'
+  mascot_cheats:
+    data: 3
+    usedSlots:
+      - 'LEFT_HAND'
+      - 'RIGHT_HAND'
+      - 'HEAD'
+    type: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3OTliZmFhM2EyYzYzYWQ4NWRkMzc4ZTY2ZDU3ZDlhOTdhM2Y4NmQwZDlmNjgzYzQ5ODYzMmY0ZjVjIn19fQ=='
+    displayName: '&6&l&nРУНА ЧИТОВ&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fАтрибуты, дающиеся игроку при использовании руны &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fДобавляет &f&l➲ &c&l❤❤❤❤❤ &fздоровья.'
+      - ' &6&l▌ &c&l② &fДобавляет &f&l➲ &6&l20 &fурона.'
+      - ' &6&l▌ &c&l③ &fДобавляет &f&l➲ &6&l15 &fк не отбрасыванию.'
+      - ''
+    flags:
+      - 'HIDE_ATTRIBUTES'
+    attributes:
+      akb:
+        name: 'Akb'
+        amount: 0.1
+        minecraftId: generic.knockbackResistance
+        operationId: 0
+      damage:
+        name: 'Damage'
+        amount: 5.0
+        minecraftId: generic.attackDamage
+        operationId: 0
+      hp:
+        name: 'Hp'
+        amount: 10
+        minecraftId: generic.maxHealth
+        operationId: 0
+  mascot_noknockback:
+    data: 3
+    usedSlots:
+      - 'LEFT_HAND'
+      - 'RIGHT_HAND'
+      - 'HEAD'
+    type: 'head:eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTY3OTliZmFhM2EyYzYzYWQ4NWRkMzc4ZTY2ZDU3ZDlhOTdhM2Y4NmQwZDlmNjgzYzQ5ODYzMmY0ZjVjIn19fQ=='
+    displayName: '&6&l&nРУНА НЕ ОТБРАСЫВАНИЯ&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fАтрибуты, дающиеся игроку при использовании руны &4&l⇩'
+      - ''
+      - ' &6&l▌ &c&l① &fДобавляет &6&l100 &fк не отбрасыванию.'
+      - ' &6&l▌ &c&l② &fОтнимает &c&l❤❤ &fздоровья.'
+      - ''
+    flags:
+      - 'HIDE_ATTRIBUTES'
+    attributes:
+      akb:
+        name: 'Akb'
+        amount: 100
+        minecraftId: generic.knockbackResistance
+        operationId: 0
+      hp:
+        name: 'Hp'
+        amount: -4
+        minecraftId: generic.maxHealth
+        operationId: 0
+  sword_staff:
+    type: 'diamond_sword'
+    dropAfterDeath: false
+    displayName: '&6&l&nМЕЧ АФИНА&6'
+    noRightUse: false
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на мече афина &4&l⇩'
+      - ''
+      - ' &6&l▌ &fОстрота &6&lVII'
+      - ' &6&l▌ &fЗаговор огня &6&lIII'
+      - ' &6&l▌ &fДобыча &6&lIII'
+      - ' &6&l▌ &fПрочность &6&lVI'
+      - ' &6&l▌ &fПочинка.'
+      - ' &6&l▌ &c&lПроклятие утраты&f&l.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - 'DAMAGE_ALL:7'
+    - 'FIRE_ASPECT:3'
+    - 'LOOT_BONUS_MOBS:3'
+    - "DURABILITY:6"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  axe_staff:
+    type: 'diamond_axe'
+    dropAfterDeath: false
+    displayName: '&6&l&nТОПОР АФИНА&6'
+    noRightUse: false
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на топоре афина &4&l⇩'
+      - ''
+      - ' &6&l▌ &fОстрота &6&lVIII'
+      - ' &6&l▌ &fЗаговор огня &6&lIII'
+      - ' &6&l▌ &fДобыча &6&lIII'
+      - ' &6&l▌ &fЭффективность &6&lVI'
+      - ' &6&l▌ &fПрочность &6&lVI'
+      - ' &6&l▌ &fПочинка.'
+      - ' &6&l▌ &c&lПроклятие утраты&f&l.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - 'DIG_SPEED:6'
+    - 'DAMAGE_ALL:8'
+    - 'FIRE_ASPECT:3'
+    - 'LOOT_BONUS_MOBS:3'
+    - "DURABILITY:6"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  pickaxe_staff:
+    dropAfterDeath: false
+    type: 'diamond_pickaxe'
+    displayName: '&6&l&nКИРКА АФИНА&6'
+    noRightUse: false
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на кирке афина &4&l⇩'
+      - ''
+      - ' &6&l▌ &fЭффективность &6&lX'
+      - ' &6&l▌ &fУдача &6&lIV'
+      - ' &6&l▌ &fПрочность &6&lVI'
+      - ' &6&l▌ &fПочинка.'
+      - ' &6&l▌ &c&lПроклятие утраты&f&l.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - "DIG_SPEED:10"
+    - "DURABILITY:6"
+    - "LOOT_BONUS_BLOCKS:4"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  bow_staff:
+    dropAfterDeath: false
+    type: 'bow'
+    displayName: '&6&l&nЛУК АФИНА&6'
+    noRightUse: false
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на луке афина &4&l⇩'
+      - ''
+      - ' &6&l▌ &fСила &6&lX'
+      - ' &6&l▌ &fПрочность &6&lVI'
+      - ' &6&l▌ &fБесконечность'
+      - ' &6&l▌ &fГорящая стрела'
+      - ' &6&l▌ &fПочинка.'
+      - ' &6&l▌ &c&lПроклятие утраты&f&l.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - "ARROW_DAMAGE:10"
+    - "ARROW_FIRE:1"
+    - "ARROW_INFINITE:1"
+    - "DURABILITY:6"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  helmet_staff:
+    type: 'diamond_helmet'
+    noRightUse: false
+    displayName: '&6&l&nШЛЕМ АФИНА&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на шлеме афина &4&l⇩'
+      - ''
+      - ' &6&l▌ &fЗащита &6&lVI'
+      - ' &6&l▌ &fОгнеупорность &6&lVI'
+      - ' &6&l▌ &fВзрывоустойчивость &6&lVI'
+      - ' &6&l▌ &fЗащита от снарядов &6&lVI'
+      - ' &6&l▌ &fПодводое дыхание &6&lIV'
+      - ' &6&l▌ &fПрочность &6&lIII'
+      - ' &6&l▌ &fПодводник.'
+      - ' &6&l▌ &fПочинка.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - "PROTECTION_ENVIRONMENTAL:6"
+    - "PROTECTION_FIRE:6"
+    - "PROTECTION_EXPLOSIONS:6"
+    - "PROTECTION_PROJECTILE:6"
+    - "WATER_WORKER:1"
+    - "OXYGEN:4"
+    - "DURABILITY:3"
+    - "MENDING:1"
+  chestplate_staff:
+    type: 'diamond_chestplate'
+    noRightUse: false
+    displayName: '&6&l&nНАГРУДНИК АФИНА&6'
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на нагруднике афина &4&l⇩'
+      - ''
+      - ' &6&l▌ &fЗащита &6&lVI'
+      - ' &6&l▌ &fОгнеупорность &6&lVI'
+      - ' &6&l▌ &fВзрывоустойчивость &6&lVI'
+      - ' &6&l▌ &fЗащита от снарядов &6&lVI'
+      - ' &6&l▌ &fПрочность &6&lIII'
+      - ' &6&l▌ &fПочинка.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - "PROTECTION_ENVIRONMENTAL:6"
+    - "PROTECTION_FIRE:6"
+    - "PROTECTION_EXPLOSIONS:6"
+    - "PROTECTION_PROJECTILE:6"
+    - "DURABILITY:3"
+    - "MENDING:1"
+  leggings_staff:
+    type: 'diamond_leggings'
+    noRightUse: false
+    displayName: '&6&l&nПОНОЖИ АФИНА&6'
+    lore:
+     - ''
+     - ' &6&l▌ &fЗачарования на поножи афина &4&l⇩'
+     - ''
+     - ' &6&l▌ &fЗащита &6&lVI'
+     - ' &6&l▌ &fОгнеупорность &6&lVI'
+     - ' &6&l▌ &fВзрывоустойчивость &6&lVI'
+     - ' &6&l▌ &fЗащита от снарядов &6&lVI'
+     - ' &6&l▌ &fПрочность &6&lIII'
+     - ' &6&l▌ &fПочинка.'
+     - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - "PROTECTION_ENVIRONMENTAL:6"
+    - "PROTECTION_FIRE:6"
+    - "PROTECTION_EXPLOSIONS:6"
+    - "PROTECTION_PROJECTILE:6"
+    - "DURABILITY:3"
+    - "MENDING:1"
+  boots_staff:
+    type: 'diamond_boots'
+    noRightUse: false
+    displayName: '&6&l&nБОТИНКИ АФИНА&6'
+    lore:
+     - ''
+     - ' &6&l▌ &fЗачарования на ботинке афина &4&l⇩'
+     - ''
+     - ' &6&l▌ &fЗащита &6&lVI'
+     - ' &6&l▌ &fОгнеупорность &6&lVI'
+     - ' &6&l▌ &fНевесомость &6&lVI'
+     - ' &6&l▌ &fВзрывоустойчивость &6&lVI'
+     - ' &6&l▌ &fЗащита от снарядов &6&lVI'
+     - ' &6&l▌ &fПодводная ходьба &6&lIII' 
+     - ' &6&l▌ &fПрочность &6&lIII'
+     - ' &6&l▌ &fПочинка.'
+     - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - "PROTECTION_ENVIRONMENTAL:6"
+    - "PROTECTION_FIRE:6"
+    - "PROTECTION_EXPLOSIONS:6"
+    - "PROTECTION_PROJECTILE:6"
+    - "PROTECTION_FALL:6"
+    - "DEPTH_STRIDER:3"
+    - "DURABILITY:3"
+    - "MENDING:1"
+  totem_health1:
+    type: 'totem'
+    displayName: '&6&l&nМЕГА ТОТЕМ&6'
+    noRightUse: false
+    lore:
+     - ''
+     - ' &6&l▌ &fАтрибут, дающийся игроку при использовании тотема &4&l⇩'
+     - ''
+     - ' &6&l▌ &fДобавляет &f&l➲ &c&l❤❤❤❤❤❤❤❤❤❤ &fздоровья.'
+     - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    effects:
+    - 'health_boost:4:20'
+  totem_health2:
+    type: 'totem'
+    displayName: '&6&l&nСУПЕР ТОТЕМ&6'
+    noRightUse: false
+    lore:
+     - ''
+     - ' &6&l▌ &fАтрибут, дающийся игроку при использовании тотема &4&l⇩'
+     - ''
+     - ' &6&l▌ &fДобавляет &f&l➲ &c&l❤❤ &fздоровья.'
+     - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    effects:
+    - 'health_boost:0:20'
+  totem_speed:
+    type: 'totem'
+    displayName: '&6&l&nТОТЕМ СКОРОСТИ&6'
+    noRightUse: false
+    lore:
+    - ''
+    - ' &6&l▌ &fЭффект, дающийся игроку при использовании тотема &4&l⇩'
+    - ''
+    - ' &6&l▌ &c&l① &6&lСкорость II &f&l<&6&lБесконечно&f&l>'
+    - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    effects:
+    - 'speed:1:20'
+  totem_strength:
+    type: 'totem'
+    displayName: '&6&l&nТОТЕМЫ СИЛЫ&6'
+    noRightUse: false
+    lore:
+    - ''
+    - ' &6&l▌ &fЭффект, дающийся игроку при использовании тотема &4&l⇩'
+    - ''
+    - ' &6&l▌ &c&l① &6&lСила II &f&l<&6&lБесконечно&f&l>'
+    - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    effects:
+    - 'increase_damage:1:20'
+  shield_health1:
+    type: 'shield'
+    displayName: '&6&l&nМЕГА ЩИТ&6'
+    noRightUse: false
+    lore:
+     - ''
+     - ' &6&l▌ &fАтрибут, дающийся игроку при использовании щита &4&l⇩'
+     - ''
+     - ' &6&l▌ &c&l① &fДобавляет &f&l➲ &c&l❤❤❤❤❤❤❤❤❤❤ &fздоровья.'
+     - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    effects:
+    - 'health_boost:4:20'
+  shield_health2:
+    type: 'shield'
+    displayName: '&6&l&nСУПЕР ЩИТ&6'
+    noRightUse: false
+    lore:
+     - ''
+     - ' &6&l▌ &fАтрибут, дающийся игроку при использовании щита &4&l⇩'
+     - ''
+     - ' &6&l▌ &c&l① &fДобавляет &f&l➲ &c&l❤❤ &fздоровья.'
+     - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    effects:
+    - 'health_boost:0:20'
+  shield_speed:
+    type: 'shield'
+    displayName: '&6&l&nЩИТ СКОРОСТИ&6'
+    noRightUse: false
+    lore:
+    - ''
+    - ' &6&l▌ &fЭффект, дающийся игроку при использовании щита &4&l⇩'
+    - ''
+    - ' &6&l▌ &c&l① &6&lСкорость II &f&l<&6&lБесконечно&f&l>'
+    - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    effects:
+    - 'speed:1:20'
+  shield_strength:
+    type: 'shield'
+    displayName: '&6&l&nЩИТ СИЛЫ&6'
+    noRightUse: false
+    lore:
+    - ''
+    - ' &6&l▌ &fЭффект, дающийся игроку при использовании щита &4&l⇩'
+    - ''
+    - ' &6&l▌ &c&l① &6&lСила II &f&l<&6&lБесконечно&f&l>'
+    - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    effects:
+    - 'increase_damage:1:20'
+  sword_repulsion:
+    dropAfterDeath: false
+    type: 'diamond_sword'
+    displayName: '&6&l&nМЕЧ ОТТАЛКИВАНИЯ&6'
+    noRightUse: false
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на мече отталкивания &4&l⇩'
+      - ''
+      - ' &6&l▌ &fОстрота &6&lVIII'
+      - ' &6&l▌ &fОтдача &6&lIII'
+      - ' &6&l▌ &fЗаговор огня &6&lII'
+      - ' &6&l▌ &fПрочность &6&lVI'
+      - ' &6&l▌ &fПочинка.'
+      - ' &6&l▌ &c&lПроклятие утраты&f&l.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - 'DAMAGE_ALL:8'
+    - 'KNOCKBACK:3'
+    - 'FIRE_ASPECT:2'
+    - "DURABILITY:6"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  sword_booty:
+    dropAfterDeath: false
+    type: 'diamond_sword'
+    displayName: '&6&l&nМЕЧ ДОБЫЧИ&6'
+    noRightUse: false
+    lore:
+      - ''
+      - ' &6&l▌ &fЗачарования на мече добычи &4&l⇩'
+      - ''
+      - ' &6&l▌ &fОстрота &6&lV'
+      - ' &6&l▌ &fНебесная кара &6&lVII'
+      - ' &6&l▌ &fДобыча &6&lV'
+      - ' &6&l▌ &fПрочность &6&lV'
+      - ' &6&l▌ &fПочинка.'
+      - ' &6&l▌ &c&lПроклятие утраты&f&l.'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - 'DAMAGE_UNDEAD:7'
+    - 'DAMAGE_ALL:5'
+    - 'LOOT_BONUS_MOBS:5'
+    - "DURABILITY:5"
+    - "MENDING:1"
+    - "VANISHING_CURSE:1"
+  stick:
+    dropAfterDeath: false
+    type: 'stick'
+    displayName: '&6&l&nПАЛКА ЕБАЛКА&6'
+    noRightUse: false
+    lore:
+      - ''
+      - ' &6&l▌ &fОтдача &f&l➲ &6&l100'
+      - ''
+    flags:
+      - 'HIDE_ENCHANTS'
+    enchantments:
+    - 'KNOCKBACK:10000'

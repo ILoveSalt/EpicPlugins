@@ -1,0 +1,45 @@
+settings:
+  allow-custom-heads: false
+  target-distance: 6
+  allowed-while-off:
+    - WITHER_SKELETON_SKULL
+    - WITHER_SKELETON_WALL_SKULL
+  allowed-custom-head-name-parts:
+    - "визер"
+    - "vizer"
+    - "wither"
+
+event:
+  enabled: false
+  once-per-player: true
+  protect-heads: true
+  commands: []
+  per-id: {}
+
+event-heads: {}
+
+messages:
+  prefix: "&6&lHEADS &8- &f"
+  usage:
+    - "&6&lHEADS &8- &e/heads on &8- &frazreshit ustanovku kastomnyh golov"
+    - "&6&lHEADS &8- &e/heads off &8- &fzapretit kastomnye golovy, krome isklyuchenii"
+    - "&6&lHEADS &8- &e/heads setevent <id> &8- &fpometit golovu, na kotoruyu smotrish"
+    - "&6&lHEADS &8- &e/heads event <on|off> &8- &fvklyuchit ili vyklyuchit event"
+  no-permission: "&cNet prav."
+  players-only: "&cEta komanda tolko dlya igroka."
+  unknown-command: "&cNeizvestnaya komanda."
+  heads-on: "&aUstanovka vseh golov vklyuchena."
+  heads-off: "&cUstanovka kastomnyh golov vyklyuchena."
+  custom-head-blocked: "&cSeichas nelzya stavit kastomnye golovy."
+  event:
+    usage: "&eIspolzui: /heads event <on|off>"
+    on: "&aEvent s golovami vklyuchen."
+    off: "&cEvent s golovami vyklyuchen."
+    invalid-id: "&cID mozhet soderzhat tolko A-Z, 0-9, _ i -."
+    not-looking-at-head: "&cPosmotri na postavlennuyu golovu i povtori komandu."
+    set: "&aGolova &e%id% &apomechena kak event-golova."
+    found: "&aTy nashel event-golovu &e%id%&a!"
+    already-collected: "&eTy uzhe nahodil golovu &6%id%&e."
+    broadcast: ""
+    protected: "&cEvent-golovu nelzya slomat."
+    removed: "&eEvent-golova &6%id% &eudalena iz eventa."

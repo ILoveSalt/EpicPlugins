@@ -1,0 +1,100 @@
+message:
+  successfulGiveMessage: "§6§lГРАНТ: §fВы выдали игроку §6§l{1} §fпривилегию {2}"
+  groupNotAllowed: "§6§lГРАНТ: §fВаша привилегия не может использовать грант."
+  limit: "§6§lГРАНТ: §fВы превысили лимит."
+  priorityLow: "§6§lГРАНТ: §fПриоритет привилегии игрока, выше выдаваемой привилегии."
+  playerNotFound: "§6§lГРАНТ: §fИгрок не в сети."
+  isntCanInConfig: "§6§lГРАНТ: §fВы не можете выдать данную привилегию."
+  notForMe: "§6§lГРАНТ: §fНельзя выдать привилегию самому себе."
+  limits: "§6§lГРАНТ: &fВаши лимиты §f§l➲ %limits%"
+settings:
+  command: lp user %player% group set %group%
+  help:
+    - §r
+    - §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+    - §r
+    - §c§l⚠ ГРАНТ ПОСЛЕ ВАЙПА НЕ СБРАСЫВАЕТСЯ ⚠§c
+    - §r
+    - §6§l▌ §fВыдать привилегию §f§l➲ §6§l/grant give §f§l<§6§lникнейм§f§l> §f§l<§6§lпривилегия§f§l>
+    - §6§l▌ §fПолучить список собственных лимитов §f§l➲ §6§l/grant limits
+    - §r
+    - §c§l⚠ ГРАНТ ПОСЛЕ ВАЙПА НЕ СБРАСЫВАЕТСЯ ⚠§c
+    - §r
+    - §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+    - §r
+  titles:
+    enabled: true # отправлять ли тайтлы
+    title: §6§l{0} &fвыдал игроку §6§l{1} # текст верхней строки
+    subtitle: §fпривилегию {2} # текст нижней строки
+    fadeIn: 20 # время появление тайтла, в тиках (1 сек. = 20 тиков)
+    stay: 40 # время показа тайтла, в тиках (1 сек. = 20 тиков)
+    fadeOut: 20 # время исчезновения тайтла, в тиках (1 сек. = 20 тиков)
+groups_names: # названия групп
+  default: '§7§lИГРОК'
+  warrior: '§9§lВОИН'
+  prince: '§e§lПРИНЦ'
+  knight: '§6§lРЫЦАРЬ'
+  lord: '§a§lЛОРД'
+  triton: '§b§lТРИТОН'
+  zeus: '§c§lЗЕВС'
+  epic: '§e§l§nЭПИК'
+  dragon: '§5§l§nDRAGON'
+  staff: '§c§l§nSTAFF'
+  santa: '§b§l§nСАНТА'
+  helper: '§c§lЗЕВС'
+  moder: '§c§lЗЕВС'
+  stmoder: '§c§lЗЕВС'
+  admin: '§c§lЗЕВС'
+priorities: # приоритеты групп (обязательно должна быть default, даже если у вас нет такой группы)
+  default: 0
+  warrior: 1
+  prince: 2
+  knight: 3
+  lord: 4
+  triton: 5
+  zeus: 6
+  epic: 7
+  dragon: 8
+  staff: 9
+  santa: 10
+  helper: 11
+  moder: 12
+  stmoder: 13
+  admin: 14
+
+limits: # лимиты на выдачу групп
+  zeus:
+    triton: 1
+    lord: 10
+    prince: 5
+    knight: 3
+    warrior: 20
+  epic:
+    triton: 3
+    lord: 14
+    prince: 6
+    knight: 4
+    warrior: 40
+  dragon:
+    zeus: 1
+    triton: 5
+    lord: 20
+    prince: 6
+    knight: 4
+    warrior: 40
+  staff:
+    zeus: 2
+    epic: 1
+    triton: 10
+    lord: 40
+    prince: 12
+    knight: 8
+    warrior: 80
+  santa:
+    zeus: 4
+    epic: 2
+    triton: 20
+    lord: 80
+    prince: 24
+    knight: 16
+    warrior: 160

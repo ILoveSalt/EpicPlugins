@@ -1,0 +1,24 @@
+name: EpicHeadPlace
+version: '${version}'
+
+main: hgds.epicgrief.EpicHeadPlace
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+
+commands:
+  heads:
+    description: Manage custom head placement and head events.
+    usage: /<command> <on|off|setevent|event>
+    aliases: [ headplace, epicheads ]
+
+permissions:
+  epicheadplace.admin:
+    description: Allows managing EpicHeadPlace.
+    default: op
+    children:
+      epicheadplace.bypass: true
+  epicheadplace.bypass:
+    description: Allows placing custom player heads while placement is disabled.
+    default: op

@@ -1,0 +1,13 @@
+name: EpicItems
+version: '${version}'
+main: hgds.epicgrief.EpicItems
+api-version: '26.1.2'
+load: STARTUP
+authors: [ hgds_2 ]
+softdepend:
+  - WorldGuard
+  - WorldEdit
+  - AntiRelog
+commands:
+  customitems:
+    aliases: [trustitems, heatitems]

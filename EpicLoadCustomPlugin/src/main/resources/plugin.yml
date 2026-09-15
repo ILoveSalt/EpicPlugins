@@ -1,0 +1,9 @@
+name: EpicLoadCustomPlugin
+version: '${version}'
+description: Main EpicGrief plugin loader status monitor by hgds.
+
+main: hgds.epicgrief.EpicLoadCustomPlugin
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]

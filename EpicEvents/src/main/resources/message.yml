@@ -1,0 +1,22 @@
+config: 1.0
+
+help:
+  - '&7Available commands:'
+  - '&b/event help &7- Show this help message.'
+  - '&b/event telegram &7- Link your Telegram account for enhanced security and notifications.'
+  - '&b/vote &7- Проголосовать за следующий ивент.'
+
+loot:
+ addloot: 
+  - '&7Usage: &b/event addloot <event_name> <chance> <min> <max>'
+  - '&7Чтоб добавить предмет, надо держать его в руке и написать эту команду, где <event_name> - это имя ивента, к которому вы хотите добавить лут, <chance> - это шанс выпадения предмета в процентах, <min> - это минимальное количество предметов, которое может выпасть, <max> - это максимальное количество предметов, которое может выпасть.'
+  - '&7Example: &b/event addloot example_event 30 1 3'
+ removeloot:
+  - '&7Usage: &b/event removeloot <event_name>' #откроется gui где надо будет забрать предмет который хочешь удалить
+  - '&7Чтоб удалить предмет, надо написать эту команду, где <event_name> - это имя ивента, из которого вы хотите удалить лут.'
+  - '&7Example: &b/event removeloot example_event'
+ no_find_event:
+  - '&cEvent not found. Please check the event name and try again.'
+
+
+ 
