@@ -1,0 +1,25 @@
+name: EpicCustomizer
+version: '${version}'
+
+main: hgds.epicgrief.EpicCustomizer
+api-version: '26.1.2'
+load: STARTUP
+softdepend: [ Vault, PlaceholderAPI ]
+
+authors: [ hgds_2 ]
+
+commands:
+  customizer:
+    description: EpicCustomizer message customization command
+    usage: /<command> <set|clear|reload> <join|kill|leave> [id]
+
+permissions:
+  epiccustomizer.use:
+    description: Allows players to use customization commands
+    default: true
+  epiccustomizer.admin:
+    description: Full EpicCustomizer access
+    default: op
+  epiccustomizer.bypass:
+    description: Allows setting any customization without groups checks
+    default: op

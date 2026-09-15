@@ -1,0 +1,8 @@
+name: EpicDonateFixer
+version: '${version}'
+
+main: hgds.epicgrief.EpicDonateFixer
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]

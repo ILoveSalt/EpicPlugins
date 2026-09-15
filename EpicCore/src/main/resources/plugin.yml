@@ -1,0 +1,8 @@
+name: EpicCore
+version: '${version}'
+
+main: hgds.epicgrief.EpicCore
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]

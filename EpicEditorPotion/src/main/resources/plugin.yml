@@ -1,0 +1,30 @@
+name: EpicEditorPotion
+version: '${version}'
+main: hgds.epicgrief.EpicEditorPotion
+api-version: '26.1.2'
+load: STARTUP
+authors: [hgds_2]
+
+commands:
+  potions:
+    description: Управление кастомными зельями
+    usage: /potions <give|list|reload>
+    aliases: [potion, epotion]
+
+permissions:
+  epiceditorpotion.*:
+    description: Доступ ко всем командам EpicEditorPotion
+    default: op
+    children:
+      epiceditorpotion.give: true
+      epiceditorpotion.list: true
+      epiceditorpotion.reload: true
+  epiceditorpotion.give:
+    description: Выдача кастомных зелий
+    default: op
+  epiceditorpotion.list:
+    description: Просмотр списка кастомных зелий
+    default: true
+  epiceditorpotion.reload:
+    description: Перезагрузка конфигурации
+    default: op

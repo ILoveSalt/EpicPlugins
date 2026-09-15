@@ -1,0 +1,64 @@
+config_ver: 1.0
+
+database:
+  host:
+  port:
+  name:
+  user:
+  password:
+
+Telegram:
+  token_bot:
+  chat_id:
+  secret_key:
+
+site:
+  url:
+  secret_key:
+
+message:
+  prefix: '&7[&bEpicCore&7] &r'
+  no_permission: '&cYou do not have permission to use this command.'
+  player_only: '&cOnly players can use this command.'
+  console_only: '&cOnly the console can use this command.'
+  invalid_usage: '&cInvalid command usage. Please use: &7{usage}'
+  error_occurred: '&cAn error occurred while executing the command.'
+  reload_success: '&aConfiguration reloaded successfully.'
+  database_connected: '&aSuccessfully connected to the database.'
+  database_connection_failed: '&cFailed to connect to the database. Please check your configuration.'
+  telegram_connected: '&aSuccessfully connected to Telegram.'
+  telegram_connection_failed: '&cFailed to connect to Telegram. Please check your configuration.'
+  site_connected: '&aSuccessfully connected to the site.'
+  site_connection_failed: '&cFailed to connect to the site. Please check your configuration.'
+
+  Telegram_messages:
+    Usage: '&7Usage: &b/telegram <code>
+    Invalid_code: '&cInvalid code. Please check your Telegram configuration and try again.'
+    code_sent: '&aA code has been sent to your Telegram. Please check your messages and use the code to verify your account.'
+    code_verified: '&aYour Telegram account has been successfully verified.'
+    code_verification_failed: '&cFailed to verify your Telegram account. Please check the code and try again.'
+    no_usage: 
+     - '&7Если хотите обезопасить аккаунт от взлома, привяжите его к Telegram.'
+     - 'Это позволит вам получать уведомления о входе в аккаунт и других важных событиях, а также защитит его от несанкционированного доступа.'
+     - 'Чтобы привязать аккаунт, используйте команду &b/telegram <code>&7,'
+     - 'где <code> - это код, который вы получите в Telegram после запуска команды.'
+    check_usage: '&fПодтвердите вход в аккаунт в телеграмме!'
+    time_out: '&cВремя для подтверждения входа в аккаунт истекло. Пожалуйста, попробуйте снова.'
+    successfully_logged_in: '&aВы успешно подтвердили вход в аккаунт!'
+
+  Database_messages:
+    connection_success: '&aSuccessfully connected to the database.'
+    connection_failed: '&cFailed to connect to the database. Please check your configuration.'
+    data_saved: '&aData has been successfully saved to the database.'
+    data_retrieved: '&aData has been successfully retrieved from the database.'
+    data_deleted: '&aData has been successfully deleted from the database.'
+    data_updated: '&aData has been successfully updated in the database.'
+    no_data: '&cNo data found in the database.'
+    invalid_query: '&cInvalid database query. Please check your configuration and try again.'
+    
+
+
+
+
+
+

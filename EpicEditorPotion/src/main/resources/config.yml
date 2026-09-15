@@ -1,0 +1,39 @@
+potions:
+  shrek:
+    material: SPLASH_POTION
+    display_name: '&a&lЗЕЛЬЕ ШРЕКА'
+    lore:
+      - '&7Накладывает тяжёлые отрицательные эффекты.'
+      - '&8Бросьте зелье в цель.'
+    color: '#6AA84F'
+    glint: true
+    # Формат: ЭФФЕКТ:ВРЕМЯ_В_СЕКУНДАХ:УРОВЕНЬ
+    effects:
+      - 'slowness:5:5'
+      - 'weakness:5:5'
+      - 'wither:5:5'
+      - 'glowing:5:1'
+
+  stan:
+    material: SPLASH_POTION
+    display_name: '&b&lЗЕЛЬЕ СТАНА'
+    lore:
+      - '&7Замораживает и сильно замедляет цель.'
+      - '&8Бросьте зелье в цель.'
+    color: '#80E5FF'
+    glint: true
+    effects:
+      - 'freezing:5:1'
+      - 'slowness:5:5'
+
+message:
+  prefix: '&6&lЗЕЛЬЯ &8»'
+  no_perm: '%prefix% &cУ вас нет разрешения на эту команду.'
+  usage: '%prefix% &eИспользование: &f/potions give <игрок> <зелье> [количество]&7, &f/potions list&7, &f/potions reload'
+  player_not_found: '%prefix% &cИгрок &f%player% &cне найден.'
+  potion_not_found: '%prefix% &cЗелье &f%potion% &cне найдено.'
+  invalid_amount: '%prefix% &cКоличество должно быть числом от 1 до 64.'
+  given: '%prefix% &aВыдано &f%amount%x %potion% &aигроку &f%player%&a.'
+  received: '%prefix% &aВы получили &f%amount%x %potion%&a.'
+  list: '%prefix% &eДоступные зелья: &f%potions%'
+  reloaded: '%prefix% &aКонфигурация перезагружена. Загружено зелий: &f%amount%&a.'

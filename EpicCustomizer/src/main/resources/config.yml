@@ -1,0 +1,258 @@
+join:
+  join1:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &a&lзалетел на лучший сервер, и вам советует
+      играть только тут!'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  join2:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &a&lпришел сносить всем кабины, прячьтесь,
+      кто может!'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  join3:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &a&lзашел, чтобы потрапить, держитесь от
+      него подальше!'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  join4:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &a&lзашел, с полным карманом франков, бойтесь,
+      вы все будете убиты!'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  join5:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &a&lзашел, в состоянии алкогольного опьянения,
+      вот пьянь -_-'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+quit:
+  quit1:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &c&lполетел спать, ведь завтра рано вставать
+      и играть на лучшем сервере!'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  quit2:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &c&lслил кит в трапке и пошел плакать, надеемся,
+      что он еще вернется ;('
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  quit3:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &c&lпошел кушать, пожелайте мне приятного
+      аппетита, я еще вернусь!'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  quit4:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &c&lустал играть, полетел отдыхать, я еще вернусь!'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  quit5:
+    message:
+      - '&6&l▌ %prefix% &f%player% &f&l➲ &c&lне идет игра, пойдет разомнется'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+kill:
+  kill1:
+    message:
+      - '&6&l▌ %killer_prefix% &f%killer_name% &f&l➲ &c&lубил игрока &f&l➲ %death_prefix% &f%death_name%&c&l, тем самым отправив его в рай!'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  kill2:
+    message:
+      - '&6&l▌ %killer_prefix% &f%killer_name% &f&l➲ &c&lзагриферил игрока &f&l➲ %death_prefix% &f%death_name%'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  kill3:
+    message:
+      - '&6&l▌ %killer_prefix% &f%killer_name% &f&l➲ &c&lпрописал ALT + F4 игроку &f&l➲ %death_prefix% &f%death_name%'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  kill4:
+    message:
+      - '&6&l▌ %killer_prefix% &f%killer_name% &f&l➲ &c&lзакатал под асфальт игрока &f&l➲ %death_prefix% &f%death_name%'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+  kill5:
+    message:
+      - '&6&l▌ %killer_prefix% &f%killer_name% &f&l➲ &c&lвырвал сердце игроку %death_prefix% &f&l➲ &f%death_name%'
+    groups:
+      - zeus
+      - epic
+      - dragon
+      - staff
+      - santa
+      - helper
+      - moder
+      - stmoder
+      - youtube
+      - curator
+      - admin
+messages:
+  no-perm: '&6&lКАСТОМИЗАЦИЯ: &cУ вас нет разрешения на использование данной команды.'
+  only-players: '&6&lКАСТОМИЗАЦИЯ: &fДанная команда доступна только игрокам.'
+  usage: |-
+    &6&lКАСТОМИЗАЦИЯ: &f/customizer set <join|kill|leave> <id>
+    &6&lКАСТОМИЗАЦИЯ: &f/customizer clear <join|kill|leave>
+  type-null: '&6&lКАСТОМИЗАЦИЯ: &fДанный тип не найден.'
+  id-null: '&6&lКАСТОМИЗАЦИЯ: &fДанная кастомизация не найдена.'
+  group-absent: '&6&lКАСТОМИЗАЦИЯ: &fУ вас нет данной кастомизации.'
+  already-set: '&6&lКАСТОМИЗАЦИЯ: &fУ вас уже установлена данная кастомизация.'
+  save-error: '&6&lКАСТОМИЗАЦИЯ: &cНе удалось сохранить кастомизацию.'
+  reload-success: '&6&lКАСТОМИЗАЦИЯ: &aКонфигурация плагина успешно перезагружена.'
+  success-set:
+    join: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно поменяли сообщение о заходе.'
+    leave: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно поменяли сообщение о выходе.'
+    quit: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно поменяли сообщение о выходе.'
+    kill: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно поменяли сообщение о убийстве.'
+  success-clear:
+    join: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно стерли сообщение о заходе.'
+    leave: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно стерли сообщение о выходе.'
+    quit: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно стерли сообщение о выходе.'
+    kill: '&6&lКАСТОМИЗАЦИЯ: &fВы успешно стерли сообщение о убийстве.'

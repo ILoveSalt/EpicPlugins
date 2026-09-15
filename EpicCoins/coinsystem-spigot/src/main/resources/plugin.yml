@@ -1,0 +1,22 @@
+name: EpicCoins
+authors: [ hgds_2 ]
+version: ${project.version}
+api-version: '26.1.2'
+softdepend: [Vault, PlaceholderAPI]
+
+main: hgds.epicgrief.EpicCoins
+commands:
+  epiccoins:
+    aliases: [epiccoin, ecoins]
+    description: Shows EpicCoins plugin information.
+permissions:
+  epiccoins.admin:
+    default: op
+  epiccoins.coins.see:
+    default: true
+  epiccoins.coins.see.others:
+    default: op
+  epiccoins.coins.top:
+    default: true
+  epiccoins.coins.pay:
+    default: true
