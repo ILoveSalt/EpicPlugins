@@ -1,0 +1,116 @@
+options:
+  name: '&c&l⚠ &fМагический кейс с привилегиями &c&l⚠'
+  description:
+  - ''
+  - ' &6&l▌ &fВ магический кейс с привилегиями входят привилегии &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &c&lЗЕВС&c'
+  - ' &6&l▌ &c&l② &e&l&nЭПИК&e'
+  - ' &6&l▌ &c&l③ &5&l&nDRAGON&5'
+  - ' &6&l▌ &c&l④ &c&l&nSTAFF&c'
+  - ''
+  item: HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RiY2E0YjY5ZWFmOGRjYjdhYzM3MjgyMjhkZThhNjQ0NDA3ODcwMTMzNDJkZGFhYmMxYjAwZWViOGVlYzFlMiJ9fX0=
+  animator: wheel
+  useKeys: false
+  advanced:
+    wheelRadius: 1.9
+    wheelCapacity: 10
+    recurringPrizeLimit: 1
+    wheelTrails: 4
+    ascensionMethod: OUT
+    ascensionTime: 25
+    rotationMethod: IN_OUT
+    rotationTime: 180
+    peakRotationSpeed: 40
+    descensionMethod: OUT
+    descensionTime: 60
+    descentToThe: MID
+    removalInterrupt: 4
+    alwaysAdjustTheAngle: true
+    clickingSound: UI_BUTTON_CLICK
+    trailParticle: REDSTONE#
+onOpenActions:
+  - sound --play ENTITY_ENDERMAN_TELEPORT
+  - particle --play EXPLOSION_LARGE
+onAwardActions:
+  - particle --play EXPLOSION_NORMAL
+endActions:
+  - sound --play ENTITY_GENERIC_EXPLODE
+  - particle --play EXPLOSION_LARGE
+awards:
+  zeus:
+    chance: 0
+    hologramText: '&fПривилегия &f&l➲ &c&lЗЕВС'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGQ1MWVlMTgxMDIwYjYyMzdiNDIzMTE4OWQ1Y2Q5Nzk0YWRhMTU3ZGY1NzE5NjQ3ZGM5YmJiMjgwMTk0NWY0OCJ9fX0='
+    actions:
+      - group --safe-set zeus
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &c&lЗЕВС &fиз &6&lМагического кейса
+      - message --broadcast -t  &8&l╚ &6&lс привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &c&lЗЕВС'
+  epic:
+    chance: 25
+    hologramText: '&fПривилегия &f&l➲ &e&l&nЭПИК&e'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJlMGRhZTY5ZDhmY2FiMTIxMjljODVkZTBjZTgxNDk0ZmVkZjUzMjJiNzI0NzUxOGE1ZjYzOWM3ZWZjMGJmZiJ9fX0='
+    actions:
+      - group --safe-set epic
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &e&l&nЭПИК&e &fиз &6&lМагического кейса
+      - message --broadcast -t  &8&l╚ &6&lс привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &e&l&nЭПИК&e'
+  dragon:
+    chance: 15
+    hologramText: '&fПривилегия &f&l➲ &5&l&nDRAGON&5'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE2YzZlMzU3NTk0ZWQzYTQxOGU0ZTE4MjIzYjEzMWNiMGEyYzY4NjQ0MTg0NjU4OGM1YTI0YTVmZjRjIn19fQ=='
+    actions:
+      - group --safe-set dragon
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &5&l&nDRAGON&5 &fиз &6&lМагического кейса
+      - message --broadcast -t  &8&l╚ &6&lс привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &5&l&nDRAGON&5'
+  staff:
+    chance: 5
+    hologramText: '&fПривилегия &f&l➲ &c&l&nSTAFF&c'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWE2YzZlMzU3NTk0ZWQzYTQxOGU0ZTE4MjIzYjEzMWNiMGEyYzY4NjQ0MTg0NjU4OGM1YTI0YTVmZjRjIn19fQ=='
+    actions:
+      - group --safe-set staff
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &c&l&nSTAFF&c &fиз &6&lМагического кейса
+      - message --broadcast -t  &8&l╚ &6&lс привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &c&l&nSTAFF&c'

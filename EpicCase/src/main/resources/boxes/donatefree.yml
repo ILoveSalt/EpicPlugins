@@ -1,0 +1,126 @@
+options:
+  name: '&c&l⚠ &fКейс с бесплатными привилегиями &c&l⚠'
+  description:
+  - ''
+  - ' &6&l▌ &fВ кейс с бесплатными привилегиями входят привилегии &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &9&lВОИН&9'
+  - ' &6&l▌ &c&l② &e&lПРИНЦ&e'
+  - ' &6&l▌ &c&l③ &6&lРЫЦАРЬ&6'
+  - ' &6&l▌ &c&l④ &a&lЛОРД&a'
+  - ' &6&l▌ &c&l⑤ &b&lТРИТОН&b'
+  - ''
+  item: HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RiY2E0YjY5ZWFmOGRjYjdhYzM3MjgyMjhkZThhNjQ0NDA3ODcwMTMzNDJkZGFhYmMxYjAwZWViOGVlYzFlMiJ9fX0=
+  animator: wheel
+  useKeys: false
+  advanced:
+    wheelRadius: 1.9
+    wheelCapacity: 10
+    recurringPrizeLimit: 1
+    wheelTrails: 4
+    ascensionMethod: OUT
+    ascensionTime: 25
+    rotationMethod: IN_OUT
+    rotationTime: 180
+    peakRotationSpeed: 40
+    descensionMethod: OUT
+    descensionTime: 60
+    descentToThe: MID
+    removalInterrupt: 4
+    alwaysAdjustTheAngle: true
+    clickingSound: UI_BUTTON_CLICK
+    trailParticle: REDSTONE#
+onOpenActions:
+  - sound --play ENTITY_ENDERMAN_TELEPORT
+  - particle --play EXPLOSION_LARGE
+onAwardActions:
+  - particle --play EXPLOSION_NORMAL
+endActions:
+  - sound --play ENTITY_GENERIC_EXPLODE
+  - particle --play EXPLOSION_LARGE
+awards:
+  warrior:
+    chance: 100
+    hologramText: '&fПривилегия &f&l➲ &9&lВОИН'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDg0ZDJjOThlNTk1MTRiYmIyNzJhOTQzNzQ5NDZkZTAxNDcxYjdhZjc4OWFhN2EzN2U2MjViZGFlMDZmYTc5MSJ9fX0='
+    actions:
+      - group --safe-set warrior
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &9&lВОИН &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс бесплатным привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  &c&l⚠ &fЕсли хотите также, выполните команду &f&l➲ &6&l&n/ＦＲＥＥ&6 &fили &6&l&n/ＰＡＲＫＯＵＲ&6 &c&l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &9&lВОИН'
+  prince:
+    chance: 0
+    hologramText: '&fПривилегия &f&l➲ &e&lПРИНЦ'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWJlMGRhZTY5ZDhmY2FiMTIxMjljODVkZTBjZTgxNDk0ZmVkZjUzMjJiNzI0NzUxOGE1ZjYzOWM3ZWZjMGJmZiJ9fX0='
+    actions:
+      - group --safe-set prince
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &e&lПРИНЦ &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс бесплатным привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  &c&l⚠ &fЕсли хотите также, выполните команду &f&l➲ &6&l&n/ＦＲＥＥ&6 &fили &6&l&n/ＰＡＲＫＯＵＲ&6 &c&l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &e&lПРИНЦ'
+  knight:
+    chance: 0
+    hologramText: '&fПривилегия &f&l➲ &6&lРЫЦАРЬ'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmE2NTM5NDRiZTEzNjAxMTU4MjkzOTlhNzcwZTM0ZWYxYmEyNTQ1YzRhYTdmM2JjOTI1M2ZmMWJkMzE5NTVmYyJ9fX0='
+    actions:
+      - group --safe-set knight
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &6&lРЫЦАРЬ &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс бесплатным привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  &c&l⚠ &fЕсли хотите также, выполните команду &f&l➲ &6&l&n/ＦＲＥＥ&6 &fили &6&l&n/ＰＡＲＫＯＵＲ&6 &c&l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &6&lРЫЦАРЬ'
+  lord:
+    chance: 50
+    hologramText: '&fПривилегия &f&l➲ &a&lЛОРД'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDgwODA1MjM3M2M0NjlmOGEzZWM2Y2Y5YTkzZWNkYmMzYjY5ZmY5MzI3MmU1NmI2MjEyNzYzNjU1NTQ2YWQ5MCJ9fX0='
+    actions:
+      - group --safe-set lord
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &a&lЛОРД &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс бесплатным привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  &c&l⚠ &fЕсли хотите также, выполните команду &f&l➲ &6&l&n/ＦＲＥＥ&6 &fили &6&l&n/ＰＡＲＫＯＵＲ&6 &c&l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &a&lЛОРД'
+  triton:
+    chance: 45
+    hologramText: '&fПривилегия &f&l➲ &b&lТРИТОН'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZlMzhjNTNmMDM3MmY0NDA0Y2ZlY2U2ZGUyZGQ1YTY0N2FhY2IwZGJhOTViNDhmMzAxMjE2MjRiNWRjYjQwZiJ9fX0='
+    actions:
+      - group --safe-set triton
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил привилегию &b&lТРИТОН &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс бесплатным привилегиями&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  &c&l⚠ &fЕсли хотите также, выполните команду &f&l➲ &6&l&n/ＦＲＥＥ&6 &fили &6&l&n/ＰＡＲＫＯＵＲ&6 &c&l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили привилегию &f&l➲ &b&lТРИТОН'

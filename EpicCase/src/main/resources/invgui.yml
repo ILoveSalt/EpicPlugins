@@ -1,0 +1,77 @@
+all_selection:
+  title: '&0&l&nМЕНЮ ВЫБОРА КЕЙСОВ'
+  stackItems: true
+  displayKeys: true
+  historyDisplayMode: AWARD
+  simpleHistoryTime: true
+  dynamic: true
+  schematic:
+    - a a a a a a a a a
+    - a a a a a a a a a
+    - a a a a X a a a a
+    - a a a a a a a a a
+    - a a a a a a a a a
+    - b b b b b b b b b
+  items:
+    b:
+      item: ORANGE_STAINED_GLASS_PANE
+      name: '&6&l&nEPICGRIEF&6'
+      desc: []
+    X:
+      item: BARRIER
+      name: '&c&l⚠ &fУ вас нет кейсов &c&l⚠'
+      desc:
+        - ''
+        - ' &6&l▌ &fУ вас нет кейсов, которые можно открыть.'
+        - ''
+        - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU&6'
+        - ''
+key_selection:
+  title: '&8Меню выбора ключа'
+  stackItems: true
+  schematic:
+    - b b b b Q b b b b
+    - b a a a a a a a b
+    - b b b b b b b b b
+  items:
+    Q:
+      item: COMPASS
+      name: '&eВыберите ключ'
+      desc:
+        - '&7Выберите ключ, с помощью'
+        - '&7которого будете открывать'
+        - '&7выбранную коробку.'
+    b:
+      item: BLACK_STAINED_GLASS_PANE
+      name: ''
+      desc: []
+confirmation:
+  enabled: true
+  title: '&0&l&nПОДТВЕРЖДЕНИЕ'
+  schematic:
+    - s s s s Q s s s s
+    - s s s s s s s s s
+    - s A A A s D D D s
+    - s A A A s D D D s
+    - s A A A s D D D s
+    - s s s s s s s s s
+  items:
+    Q:
+      item: COMPASS
+      name: '&c&l⚠ &fПодтвердите открытие кейса &c&l⚠'
+      desc:
+        - ''
+        - ' &6&l▌ &fНажмите на &a&lзелёную &fшерсть,'
+        - ' &6&l▌ &fесли вы хотите подтвердить открытие кейса.'
+        - ''
+        - ' &6&l▌ &fЕсли же вы передумали открывать кейс,'
+        - ' &6&l▌ &fнажмите на &c&lкрасную &fшерсть.'
+        - ''
+    A:
+      item: LIME_WOOL
+      name: '&a&lДА'
+      desc: []
+    D:
+      item: RED_WOOL
+      name: '&c&lНЕТ'
+      desc: []

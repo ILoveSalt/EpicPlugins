@@ -1,0 +1,10 @@
+effectors:
+  flame:
+    actions:
+      - particle --play FLAME --count 32 --spread 0.5 --exec-middle
+  lightning:
+    actions:
+      - thunderbolt --effect --exec-middle
+  celebration:
+    actions:
+      - firework --shape BALL_LARGE --colors YELLOW,ORANGE --flicker --exec-middle

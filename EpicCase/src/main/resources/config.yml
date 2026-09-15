@@ -1,0 +1,28 @@
+language: RUSSIAN
+debug:
+  enabled: false
+datastorage: default
+sql:
+  host: localhost
+  port: 3306
+  username: root
+  password:
+  database: case
+  parameters: useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC&autoReconnect=true
+groups:
+  - admin
+  - stmoder
+  - moder
+  - helper
+  - youtube
+  - dragon
+  - epic
+  - zeus
+  - triton
+  - lord
+  - knight
+  - prince
+  - warrior
+  - default
+
+lp_group_set: lp user %user% group set %group%

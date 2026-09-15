@@ -1,0 +1,26 @@
+name: EpicCase
+version: '${project.version}'
+
+main: hgds.epicgrief.EpicCase
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+description: Modern case system compatible with TreasureCoCaseReloaded resources
+softdepend: [ DecentHolograms, HolographicDisplays, PlaceholderAPI, Vault, ProtocolLib, LuckPerms ]
+
+commands:
+  ecase:
+    description: EpicCase case command
+    usage: /ecase
+    aliases: [ epiccase, case, cases, tccr, tccrel, treasurecocasereloaded ]
+
+permissions:
+  epiccase.use:
+    default: true
+  epiccase.admin:
+    default: op
+  epiccase.command.open:
+    default: true
+  epiccase.command.manage:
+    default: op

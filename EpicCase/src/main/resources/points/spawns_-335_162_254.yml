@@ -1,0 +1,17 @@
+id: spawns_-335_162_254
+location:
+  world: spawns
+  x: -335
+  y: 162
+  z: 254
+selector: INVENTORY
+openByDefault: ''
+available: []
+showOnlyAvailable: false
+hologram:
+  height: 2.0
+  type: normal
+  lines:
+  - "t:&c&l! &6&lКЕЙСЫ &c&l!"
+  - ""
+  - "t:&4&l>> &fНажмите, чтобы открыть меню кейсов &4&l<<"

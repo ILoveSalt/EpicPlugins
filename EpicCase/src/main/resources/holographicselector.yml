@@ -1,0 +1,10 @@
+item:
+  - 't:%coloredName%'
+  - 'i:%item%'
+  - 't:%amount%'
+empty:
+  - 't:&cУ вас нет доступных кейсов'
+  - 'i:BARRIER'
+guidance:
+  title: ''
+  subtitle: '&fЛКМ: выбрать, ПКМ: открыть'

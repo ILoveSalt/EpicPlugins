@@ -1,0 +1,376 @@
+﻿options:
+  name: '&c&l⚠ &fКейс с Титулами Рик и Морти &c&l⚠'
+  description:
+  - ''
+  - ' &6&l▌ &fВ кейс с титулами рик и морти входят титулы &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &7&lКроненбер&7'
+  - ' &6&l▌ &c&l② &a&lЮнити&a'
+  - ' &6&l▌ &c&l③ &a&lШептун&a'
+  - ' &6&l▌ &c&l④ &e&lМорти&e'
+  - ' &6&l▌ &c&l⑤ &e&lТоксик&e'
+  - ' &6&l▌ &c&l⑥ &7&lДжерри&7'
+  - ' &6&l▌ &c&l⑦ &c&lПлюмбус&c'
+  - ' &6&l▌ &c&l⑧ &a&lШвифт&a'
+  - ' &6&l▌ &c&l⑨ &9&lМисикс&9'
+  - ' &6&l▌ &c&l⑩ &9&lЗемля&9'
+  - ' &6&l▌ &c&l⑪ &9&lБет&9'
+  - ' &6&l▌ &c&l⑫ &a&lСаммер&a'
+  - ' &6&l▌ &c&l⑬ &6&lРик&6'
+  - ' &6&l▌ &c&l⑭ &6&lЯгуар&6'
+  - ' &6&l▌ &c&l⑮ &9&lНаука&9'
+  - ' &6&l▌ &c&l⑯ &7&lДжессика&7'
+  - ' &6&l▌ &c&l⑰ &e&lПортал&e'
+  - ''
+  item: HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGFlZGNiMDgxZjdhMmIzYWI4Njk4MzFiYzcwMzkzZWMyMDgyOGVjZTI1MjE4YTJmZDFjM2JmYjk1YWNjYWJmOCJ9fX0=
+  animator: wheel
+  useKeys: false
+  advanced:
+    wheelRadius: 1.9
+    wheelCapacity: 10
+    recurringPrizeLimit: 1
+    wheelTrails: 4
+    ascensionMethod: OUT
+    ascensionTime: 25
+    rotationMethod: IN_OUT
+    rotationTime: 180
+    peakRotationSpeed: 40
+    descensionMethod: OUT
+    descensionTime: 60
+    descentToThe: MID
+    removalInterrupt: 4
+    alwaysAdjustTheAngle: true
+    clickingSound: UI_BUTTON_CLICK
+    trailParticle: REDSTONE#
+onOpenActions:
+  - sound --play ENTITY_ENDERMAN_TELEPORT
+  - particle --play EXPLOSION_LARGE
+onAwardActions:
+  - particle --play EXPLOSION_NORMAL
+endActions:
+  - sound --play ENTITY_GENERIC_EXPLODE
+  - particle --play EXPLOSION_LARGE
+awards:
+  1:
+    chance: 50
+    hologramText: '&fТитул &f&l➲ &7Кроненберг'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ1ZmQyYzM3MzZhZjRiZDI4MTEyOTY2NjFlMGNiNDliYWIyY2ZhNjVmNWM5ZTU5OGFhNDNiZWJmYTFlYTM2OCJ9fX0='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.1
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &7Кроненберг &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &7Кроненберг'
+  2:
+    chance: 50
+    hologramText: '&fТитул &f&l➲ &aЮнити'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ1ZmQyYzM3MzZhZjRiZDI4MTEyOTY2NjFlMGNiNDliYWIyY2ZhNjVmNWM5ZTU5OGFhNDNiZWJmYTFlYTM2OCJ9fX0='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.2
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &aЮнити &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &aЮнити'
+  3:
+    chance: 50
+    hologramText: '&fТитул &f&l➲ &aШептун'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ1ZmQyYzM3MzZhZjRiZDI4MTEyOTY2NjFlMGNiNDliYWIyY2ZhNjVmNWM5ZTU5OGFhNDNiZWJmYTFlYTM2OCJ9fX0='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.3
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &aШептун &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &aШептун'
+  4:
+    chance: 50
+    hologramText: '&fТитул &f&l➲ &eМорти'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ1ZmQyYzM3MzZhZjRiZDI4MTEyOTY2NjFlMGNiNDliYWIyY2ZhNjVmNWM5ZTU5OGFhNDNiZWJmYTFlYTM2OCJ9fX0='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.4
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &eМорти &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &eМорти'
+  5:
+    chance: 50
+    hologramText: '&fТитул &f&l➲ &eТоксик'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQ1ZmQyYzM3MzZhZjRiZDI4MTEyOTY2NjFlMGNiNDliYWIyY2ZhNjVmNWM5ZTU5OGFhNDNiZWJmYTFlYTM2OCJ9fX0='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.5
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &eТоксик &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &eТоксик'
+  6:
+    chance: 30
+    hologramText: '&fТитул &f&l➲ &7Джерри'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU0ODRmNGI2MzY3Yjk1YmIxNjI4ODM5OGYxYzhkZDZjNjFkZTk4OGYzYTgzNTZkNGMzYWU3M2VhMzhhNDIifX19'
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &7Джерри &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &7Джерри'
+  7:
+    chance: 30
+    hologramText: '&fТитул &f&l➲ &cПлюмбус'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU0ODRmNGI2MzY3Yjk1YmIxNjI4ODM5OGYxYzhkZDZjNjFkZTk4OGYzYTgzNTZkNGMzYWU3M2VhMzhhNDIifX19'
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.7
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &cПлюмбус &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &cПлюмбус'
+  8:
+    chance: 30
+    hologramText: '&fТитул &f&l➲ &aШвифт'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU0ODRmNGI2MzY3Yjk1YmIxNjI4ODM5OGYxYzhkZDZjNjFkZTk4OGYzYTgzNTZkNGMzYWU3M2VhMzhhNDIifX19'
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.8
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &aШвифт &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &aШвифт'
+  9:
+    chance: 30
+    hologramText: '&fТитул &f&l➲ &9Мисикс'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU0ODRmNGI2MzY3Yjk1YmIxNjI4ODM5OGYxYzhkZDZjNjFkZTk4OGYzYTgzNTZkNGMzYWU3M2VhMzhhNDIifX19'
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.9
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &9Мисикс &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &9Мисикс'
+  10:
+    chance: 15
+    hologramText: '&fТитул &f&l➲ &9Земля'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODU0ODRmNGI2MzY3Yjk1YmIxNjI4ODM5OGYxYzhkZDZjNjFkZTk4OGYzYTgzNTZkNGMzYWU3M2VhMzhhNDIifX19'
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.10
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &9Земля &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &9Земля'
+  11:
+    chance: 15
+    hologramText: '&fТитул &f&l➲ &9Бет'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhMTc3ZjFiNzRjYTU3YTFjY2U5MzhlOGQ5OTRiYzFmNjM3ZTVmNjljODJlZmYyOTYxMmExM2JhOGIyZGQ3In19fQ=='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.11
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &9Бет &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &9Бет'
+  12:
+    chance: 15
+    hologramText: '&fТитул &f&l➲ &aСаммер'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhMTc3ZjFiNzRjYTU3YTFjY2U5MzhlOGQ5OTRiYzFmNjM3ZTVmNjljODJlZmYyOTYxMmExM2JhOGIyZGQ3In19fQ=='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.12
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &aСаммер &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &aСаммер'
+  13:
+    chance: 15
+    hologramText: '&fТитул &f&l➲ &6Рик'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhMTc3ZjFiNzRjYTU3YTFjY2U5MzhlOGQ5OTRiYzFmNjM3ZTVmNjljODJlZmYyOTYxMmExM2JhOGIyZGQ3In19fQ=='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.13
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &6Рик &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &6Рик'
+  14:
+    chance: 15
+    hologramText: '&fТитул &f&l➲ &6Ягуар'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhMTc3ZjFiNzRjYTU3YTFjY2U5MzhlOGQ5OTRiYzFmNjM3ZTVmNjljODJlZmYyOTYxMmExM2JhOGIyZGQ3In19fQ=='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.14
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &6Ягуар &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &6Ягуар'
+  15:
+    chance: 15
+    hologramText: '&fТитул &f&l➲ &9Наука'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhMTc3ZjFiNzRjYTU3YTFjY2U5MzhlOGQ5OTRiYzFmNjM3ZTVmNjljODJlZmYyOTYxMmExM2JhOGIyZGQ3In19fQ=='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.15
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &9Наука &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &9Наука'
+  16:
+    chance: 15
+    hologramText: '&fТитул &f&l➲ &7Джессика'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhMTc3ZjFiNzRjYTU3YTFjY2U5MzhlOGQ5OTRiYzFmNjM3ZTVmNjljODJlZmYyOTYxMmExM2JhOGIyZGQ3In19fQ=='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.16
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &7Джессика &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &7Джессика'
+  17:
+    chance: 15
+    hologramText: '&fТитул &f&l➲ &eПортал'
+    hologramItem: 'HEAD --from eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmVhMTc3ZjFiNzRjYTU3YTFjY2U5MzhlOGQ5OTRiYzFmNjM3ZTVmNjljODJlZmYyOTYxMmExM2JhOGIyZGQ3In19fQ=='
+    actions:
+      - execute -c lp user %username% permission set suffix.rick.17
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - message --broadcast -t  &8&l╔ &fИгрок &6&l%username% &fполучил титул &eПортал &fиз &6&lКейса
+      - message --broadcast -t  &8&l╚ &6&lс титулами Рик и Морти&f&l.
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l⚠ §f§lПРОХОДЯТ ОГРОМНЫЕ СКИДКИ ПО ПРОМОКОДУ §b§l§nWIPE§b §f§lНА ЦЕЛЫХ §a§l§n50%§a §c§l⚠
+      - message --broadcast -t &f
+      - message --broadcast -t  §c§l❤ §fНаш сайт для покупок §f§l➲ §6§l§nEPICGRIEF.SU§6
+      - message --broadcast -t &f
+      - message --broadcast -t §c▄§6▀§e▄§a▀§b▄§9▀§d▄§c▀§6▄§e▀§a▄§b▀§9▄§d▀§c▄§6▀§e▄§a▀§b▄§9▀§d▄
+      - message --broadcast -t &f
+      - 'title -f &c&l⚠ &6&lПоздравляем &c&l⚠ -s &fВы успешно получили титул &f&l➲ &eПортал'

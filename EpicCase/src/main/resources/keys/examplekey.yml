@@ -1,0 +1,7 @@
+name: '&aПример ключа'
+item: TRIPWIRE_HOOK
+description:
+  - '&7Отдельный ключ для открытия'
+  - '&7указанных ниже кейсов.'
+canOpen:
+  - example
