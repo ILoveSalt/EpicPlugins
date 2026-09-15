@@ -1,0 +1,18 @@
+limitDefault: 3
+limits:
+- default:2
+- warrior:6
+- prince:8
+- knight:10
+- lord:12
+- triton:20
+- zeus:30
+- epic:100
+- dragon:150
+- staff:10000
+- santa:10000
+- youtube:10000
+- helper:10000
+- moder:10000
+- stmoder:10000
+- madmin:10000

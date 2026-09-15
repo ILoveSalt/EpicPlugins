@@ -1,0 +1,6 @@
+name: EpicFurnace
+version: '${version}'
+
+main: hgds.epicgrief.Main
+api-version: '26.1.2'
+load: POSTWORLD

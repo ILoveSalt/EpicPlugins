@@ -1,0 +1,6 @@
+name: Furnace
+author: hgds_2
+version: 1.0
+main: hgds.epicgrief.Main
+commands:
+  efurnace:

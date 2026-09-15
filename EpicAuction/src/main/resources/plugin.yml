@@ -1,0 +1,6 @@
+name: EpicAuction
+main: hgds.epicgrief.market.Market
+version: '${version}'
+api-version: '26.1'
+authors: [Galaxy773]
+softdepend: [VaultUnlocked, Vault, LuckPerms]
