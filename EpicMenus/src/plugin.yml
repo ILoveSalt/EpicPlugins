@@ -1,0 +1,13 @@
+name: EpicMenu
+version: 26.1.2
+main: me.megamichiel.animatedmenu.AnimatedMenuPlugin
+authors: [megamichiel, zinov]
+depend: [EpicLib]
+softdepend: [Vault, PlayerPoints, PlaceholderAPI, AnimationLib, HeadDatabase, ActionAPI, GemsEconomy, TokenManager, Coins, PointsAPI, EpicCoins]
+api-version: '26.1.2'
+
+commands:
+  animatedmenu:
+    description: EpicMenu command
+    usage: /<command>
+    aliases: [epicmenu, emenu]

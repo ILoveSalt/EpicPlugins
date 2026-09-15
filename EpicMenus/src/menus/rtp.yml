@@ -1,0 +1,130 @@
+﻿Menu-Name: '&0&l&nРАНДОМНАЯ ТЕЛЕПОРТАЦИЯ'
+Open-Sound: BLOCK_ENCHANTMENT_TABLE_USE
+Open-Sound-Pitch: 2
+Rows: 6
+Command: 
+  Name: rtp
+  Fallback: '123'
+Items:
+- Slot: 3, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFkZDRmZTRhNDI5YWJkNjY1ZGZkYjNlMjEzMjFkNmVmYTZhNmI1ZTdiOTU2ZGI5YzVkNTljOWVmYWIyNSJ9fX0='
+  Name: '&6&l&nОБЫЧНАЯ РАНДОМНАЯ ТЕЛЕПОРТАЦИЯ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fРандомно телепортирует вас по карте на маленькие координаты.'
+  - ''
+  - ' &6&l▌ &fДоступно от привилегии &f&l➲ &7&lИГРОК'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы телепортироваться.'
+  - ''
+  Commands:
+  - 'akyloffrtp:rtp default'
+- Slot: 7, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFkZDRmZTRhNDI5YWJkNjY1ZGZkYjNlMjEzMjFkNmVmYTZhNmI1ZTdiOTU2ZGI5YzVkNTljOWVmYWIyNSJ9fX0='
+  Name: '&6&l&nРАНДОМНАЯ ТЕЛЕПОРТАЦИЯ РЯДОМ С ИГРОКОМ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fТелепортирует вас рядом с рандомным игроком.'
+  - ''
+  - ' &6&l▌ &fДоступно от привилегии &f&l➲ &b&lТРИТОН'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы телепортироваться.'
+  - ''
+  Commands:
+  - 'akyloffrtp:rtp near'
+- Slot: 5, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjFkZDRmZTRhNDI5YWJkNjY1ZGZkYjNlMjEzMjFkNmVmYTZhNmI1ZTdiOTU2ZGI5YzVkNTljOWVmYWIyNSJ9fX0='
+  Name: '&6&l&nДАЛЬНАЯ РАНДОМНАЯ ТЕЛЕПОРТАЦИЯ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fРандомно телепортирует вас по карте на дальние координаты.'
+  - ''
+  - ' &6&l▌ &fДоступно от привилегии &f&l➲ &b&lТРИТОН'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы телепортироваться.'
+  - ''
+  Commands:
+  - 'akyloffrtp:rtp far'
+- Slot: 4, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDliMmJlZTM5YjZlZjQ3ZTE4MmQ2ZjFkY2E5ZGVhODQyZmNkNjhiZGE5YmFjYzZhNmQ2NmE4ZGNkZjNlYyJ9fX0='
+  Name: '&6&l&nВЕРНУТЬСЯ НАЗАД&6'
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы вернуться назад.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+  - 'menu: menu'
+- Slot: 6, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+  Name: '&6&l&nЗАКРЫТЬ МЕНЮ&6'
+  close: true
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы закрыть меню.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+- Slot: 
+  - 0, 1
+  - 0, 2
+  - 2, 1
+  - 1, 6
+  - 1, 5
+  - 2, 6
+  - 8, 1
+  - 9, 1
+  - 9, 2
+  - 9, 5
+  - 9, 6
+  - 8, 6
+  - 4, 1
+  - 5, 1
+  - 6, 1
+  - 5, 6
+  Material: stained_glass_pane:1:15
+  Name: '&6&l&nEPICGRIEF'  
+- Slot: 
+  - 1, 3
+  - 1, 4
+  - 3, 1
+  - 7, 1
+  - 9, 3
+  - 9, 4
+  - 3, 6
+  - 7, 6
+  Material: stained_glass_pane:1:4
+  Name: '&6&l&nEPICGRIEF'  
+- Slot: 
+  - 2, 2
+  - 2, 3
+  - 2, 4
+  - 2, 5
+  - 3, 5
+  - 4, 5
+  - 5, 5
+  - 6, 2
+  - 6, 3
+  - 6, 4
+  - 6, 5
+  - 8, 2
+  - 8, 3
+  - 8, 4
+  - 8, 5
+  - 7, 5
+  - 3, 2
+  - 3, 4
+  - 4, 2
+  - 4, 3
+  - 4, 4
+  - 5, 2
+  - 5, 4
+  - 7, 2
+  - 7, 4
+  Material: stained_glass_pane:1:1
+  Name: '&6&l&nEPICGRIEF'  

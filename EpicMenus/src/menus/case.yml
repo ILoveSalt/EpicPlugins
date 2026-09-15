@@ -1,0 +1,312 @@
+﻿Menu-Name: '&0&l&nКЕЙСЫ'
+Open-Sound: BLOCK_ENCHANTMENT_TABLE_USE
+Open-Sound-Pitch: 2
+Rows: 6
+Command: 
+  Name: case; cases
+  Fallback: '123'
+Items:
+- Slot: 2, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lКЕЙС С ПРИВИЛЕГИЯМИ'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ кейс с привилегиями входят привилегии &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &e&lПРИНЦ&e'
+  - ' &6&l▌ &c&l② &6&lРЫЦАРЬ&6'
+  - ' &6&l▌ &c&l③ &a&lЛОРД&a'
+  - ' &6&l▌ &c&l④ &b&lТРИТО&b'
+  - ' &6&l▌ &c&l⑤ &c&lЗЕВС&c'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n30 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 4, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lКЕЙС С ДОНАТНОЙ ВАЛЮТОЙ (ФРАНКИ)'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ кейс с донатной валютой франки входят франки &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &6&l100 франков&6'
+  - ' &6&l▌ &c&l② &6&l500 франков&6'
+  - ' &6&l▌ &c&l③ &6&l800 франков&6'
+  - ' &6&l▌ &c&l④ &6&l1200 франков&6'
+  - ' &6&l▌ &c&l⑤ &6&l2000 франков&6'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n15 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 3, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lМАГИЧЕСКИЙ КЕЙС С ПРИВИЛЕГИЯМИ'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ магический кейс с привилегиями входят привилегии &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &c&lЗЕВС&c'
+  - ' &6&l▌ &c&l② &e&l&nЭПИК&e'
+  - ' &6&l▌ &c&l③ &5&l&nDRAGON&5'
+  - ' &6&l▌ &c&l④ &c&l&nSTAFF&c'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n250 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 6, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lКЕЙС С АНИМЕ ТИТУЛАМИ'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ кейс с аниме титулами входят титулы &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &e&lКун&e'
+  - ' &6&l▌ &c&l② &a&lБратик&a'
+  - ' &6&l▌ &c&l③ &a&lНя&a'
+  - ' &6&l▌ &c&l④ &d&lСемпай&d'
+  - ' &6&l▌ &c&l⑤ &a&lНаруто&a'
+  - ' &6&l▌ &c&l⑥ &a&lГаара&a'
+  - ' &6&l▌ &c&l⑦ &c&lКиллер Би&c'
+  - ' &6&l▌ &c&l⑧ &6&lХашимара&6'
+  - ' &6&l▌ &c&l⑨ &6&lОноки&6'
+  - ' &6&l▌ &c&l⑩ &a&lМайто&a'
+  - ' &6&l▌ &c&l⑪ &c&lРок Ли&c'
+  - ' &6&l▌ &c&l⑫ &b&lОбито&b'
+  - ' &6&l▌ &c&l⑬ &a&lШинки&a'
+  - ' &6&l▌ &c&l⑭ &c&lСай&c'
+  - ' &6&l▌ &c&l⑮ &a&lТаюя&a'
+  - ' &6&l▌ &c&l⑯ &a&lГурен&a'
+  - ' &6&l▌ &c&l⑰ &6&lСаске&6'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n7 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 7, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lКЕЙС С НОВОГОДНИМИ ТИТУЛАМИ'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ кейс с новогодними титулами входят титулы &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &b&lСнеговик&b'
+  - ' &6&l▌ &c&l② &b&lЛядышка&b'
+  - ' &6&l▌ &c&l③ &2&lЁлка&2'
+  - ' &6&l▌ &c&l④ &b&lСнег&b'
+  - ' &6&l▌ &c&l⑤ &4&l#2024&4'
+  - ' &6&l▌ &c&l⑥ &e&lОливье&e'
+  - ' &6&l▌ &c&l⑦ &a&lЧудесный&a'
+  - ' &6&l▌ &c&l⑧ &c&lСанта&c'
+  - ' &6&l▌ &c&l⑨ &5&lДед-мороз&5'
+  - ' &6&l▌ &c&l⑩ &9&lНовый год&9'
+  - ' &6&l▌ &c&l⑪ &d&lЗакат&d'
+  - ' &6&l▌ &c&l⑫ &5&lЧудо&5'
+  - ' &6&l▌ &c&l⑬ &2&lЗагадочный&2'
+  - ' &6&l▌ &c&l⑭ &6&lПодарок&6'
+  - ' &6&l▌ &c&l⑮ &3&lСнежное чудо&3'
+  - ' &6&l▌ &c&l⑯ &d&lУкрашение&d'
+  - ' &6&l▌ &c&l⑰ &c&lКока-Кола&c'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n7 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 4, 4
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lКЕЙС С ПРИВАТНЫМИ ТИТУЛАМИ'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ кейс с приватными титулами входят титулы &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &5&lMag&5'
+  - ' &6&l▌ &c&l② &b&lEz&b'
+  - ' &6&l▌ &c&l③ &2&lPvp&2'
+  - ' &6&l▌ &c&l④ &d&l:3&d'
+  - ' &6&l▌ &c&l⑤ &e&lLikes　Combo&e'
+  - ' &6&l▌ &c&l⑥ &9&l<3&9'
+  - ' &6&l▌ &c&l⑦ &3&lAble&3'
+  - ' &6&l▌ &c&l⑧ &a&lPower&a'
+  - ' &6&l▌ &c&l⑨ &8&lForce&8'
+  - ' &6&l▌ &c&l⑩ &b&lSpeed&b'
+  - ' &6&l▌ &c&l⑪ &c&lCube&c'
+  - ' &6&l▌ &c&l⑫ &5&lDonate&5'
+  - ' &6&l▌ &c&l⑬ &d&lSupreme&d'
+  - ' &6&l▌ &c&l⑭ &c&lEmperor&c'
+  - ' &6&l▌ &c&l⑮ &a&lKiller&a'
+  - ' &6&l▌ &c&l⑯ &c&lPro&c'
+  - ' &6&l▌ &c&l⑰ &6&lFire&6'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n7 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 6, 4
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lКЕЙС С ЛЕТНИМИ ТИТУЛАМИ'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ кейс с летними титулами входят титулы &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &e&lПляж&e'
+  - ' &6&l▌ &c&l② &a&lОтдых&a'
+  - ' &6&l▌ &c&l③ &e&lСолнышко&e'
+  - ' &6&l▌ &c&l④ &e&lИюнь&e'
+  - ' &6&l▌ &c&l⑤ &e&lИюль&e'
+  - ' &6&l▌ &c&l⑥ &c&lАвгуст&c'
+  - ' &6&l▌ &c&l⑦ &5&lЗагар&5'
+  - ' &6&l▌ &c&l⑧ &9&lМоре&9'
+  - ' &6&l▌ &c&l⑨ &6&lЛагерь&6'
+  - ' &6&l▌ &c&l⑩ &7&lДача&7'
+  - ' &6&l▌ &c&l⑪ &e&lПиво&e'
+  - ' &6&l▌ &c&l⑫ &b&lНебо&b'
+  - ' &6&l▌ &c&l⑬ &3&lГавайи&3'
+  - ' &6&l▌ &c&l⑭ &e&lСочи&e'
+  - ' &6&l▌ &c&l⑮ &d&lСмузи&d'
+  - ' &6&l▌ &c&l⑯ &4&lЛЕТО #2024&4'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n7 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 8, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lКЕЙС С ТИТУЛАМИ РИК И МОРТИ'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ кейс с титулами рик и морти входят титулы &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &7&lКроненбер&7'
+  - ' &6&l▌ &c&l② &a&lЮнити&a'
+  - ' &6&l▌ &c&l③ &a&lШептун&a'
+  - ' &6&l▌ &c&l④ &e&lМорти&e'
+  - ' &6&l▌ &c&l⑤ &e&lТоксик&e'
+  - ' &6&l▌ &c&l⑥ &7&lДжерри&7'
+  - ' &6&l▌ &c&l⑦ &c&lПлюмбус&c'
+  - ' &6&l▌ &c&l⑧ &a&lШвифт&a'
+  - ' &6&l▌ &c&l⑨ &9&lМисикс&9'
+  - ' &6&l▌ &c&l⑩ &9&lЗемля&9'
+  - ' &6&l▌ &c&l⑪ &9&lБет&9'
+  - ' &6&l▌ &c&l⑫ &a&lСаммер&a'
+  - ' &6&l▌ &c&l⑬ &6&lРик&6'
+  - ' &6&l▌ &c&l⑭ &6&lЯгуар&6'
+  - ' &6&l▌ &c&l⑮ &9&lНаука&9'
+  - ' &6&l▌ &c&l⑯ &7&lДжессика&7'
+  - ' &6&l▌ &c&l⑰ &e&lПортал&e'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n7 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 5, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGRjYzE4OTYzM2M3ODljYjZkNWU3OGQxM2E1MDQzYjI2ZTdiNDBjZGI3Y2ZjNGUyM2FhMjI3OTU3NDk2N2I0In19fQ=='
+  Name: '&6&lМАГИЧЕСКИЙ КЕЙС С ДОНАТНОЙ ВАЛЮТОЙ (ФРАНКИ)'
+  Lore:
+  - ''
+  - ' &6&l▌ &fВ магический кейс с донатной валютой франки входят франки &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &6&l1000 франков&6'
+  - ' &6&l▌ &c&l② &6&l1500 франков&6'
+  - ' &6&l▌ &c&l③ &6&l2000 франков&6'
+  - ' &6&l▌ &c&l④ &6&l3000 франков&6'
+  - ' &6&l▌ &c&l⑤ &6&l4000 франков&6'
+  - ' &6&l▌ &c&l⑥ &6&l6000 франков&6'
+  - ''
+  - ' &c&l❤ &fСтоимость кейса &f&l➲ &6&l&n110 рублей'
+  - ' &c&l❤ &fПокупка на сайте &f&l➲ &6&l&nEPICGRIEF.SU'
+  - ''
+  Commands:
+  - 'message: &6&lПОКУПКА: &fСайт для покупки &f&l➲ &6&l&nEPICGRIEF.SU'
+- Slot: 4, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDliMmJlZTM5YjZlZjQ3ZTE4MmQ2ZjFkY2E5ZGVhODQyZmNkNjhiZGE5YmFjYzZhNmQ2NmE4ZGNkZjNlYyJ9fX0='
+  Name: '&6&l&nВЕРНУТЬСЯ НАЗАД'
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы вернуться назад.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+  - 'menu: donate'
+- Slot: 6, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+  Name: '&6&l&nЗАКРЫТЬ МЕНЮ'
+  close: true
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы закрыть меню.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+- Slot: 
+  - 0, 1
+  - 0, 2
+  - 2, 1
+  - 1, 6
+  - 1, 5
+  - 2, 6
+  - 8, 1
+  - 9, 1
+  - 9, 2
+  - 9, 5
+  - 9, 6
+  - 8, 6
+  - 4, 1
+  - 5, 1
+  - 6, 1
+  - 5, 6
+  Material: stained_glass_pane:1:15
+  Name: '&6&l&nEPICGRIEF'  
+- Slot: 
+  - 1, 3
+  - 1, 4
+  - 3, 1
+  - 7, 1
+  - 9, 3
+  - 9, 4
+  - 3, 6
+  - 7, 6
+  Material: stained_glass_pane:1:4
+  Name: '&6&l&nEPICGRIEF'  
+- Slot: 
+  - 2, 2
+  - 3, 2
+  - 4, 2
+  - 5, 2
+  - 6, 2
+  - 7, 2
+  - 8, 2
+  - 2, 4
+  - 2, 5
+  - 3, 4
+  - 3, 5
+  - 4, 5
+  - 5, 5
+  - 6, 5
+  - 7, 4
+  - 7, 5
+  - 8, 4
+  - 8, 5
+  - 5, 4
+  Material: stained_glass_pane:1:1
+  Name: '&6&l&nEPICGRIEF'  

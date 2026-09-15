@@ -1,0 +1,326 @@
+﻿Menu-Name: '&0&l&nПРОДАЖА #1'
+Open-Sound: BLOCK_ENCHANTMENT_TABLE_USE
+Open-Sound-Pitch: 2
+Rows: 6
+Command: 
+  Name: sell;sell1
+  Fallback: '123'
+Items:
+- Slot: 3, 2
+  Material: iron_ingot:32:0
+  Name: '&6&l&nЖЕЛЕЗНЫЙ СЛИТОК&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество железных слитков &f&l➲ &6&l32 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l500 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: iron_ingot:32:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nЖЕЛЕЗНЫЙ СЛИТОК X32&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 500'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nЖЕЛЕЗНЫЙ СЛИТОК X32&f&l.'
+- Slot: 4, 2
+  Material: gold_ingot:32:0
+  Name: '&6&l&nЗОЛОТОЙ СЛИТОК&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество золотых слитков &f&l➲ &6&l32 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l700 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: gold_ingot:32:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nЗОЛОТОЙ СЛИТОК X32&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 700'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&n&6&lЗОЛОТОЙ СЛИТОК X32&f&l.'
+- Slot: 5, 2
+  Material: coal_ore:32:0
+  Name: '&6&l&nУГОЛЬНАЯ РУДА&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество угольных руд &f&l➲ &6&l32 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l350 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: coal_ore:32:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nУГОЛЬНАЯ РУДА X32&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 350'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nУГОЛЬНАЯ РУДА X32&f&l.'
+- Slot: 6, 2
+  Material: diamond_ore:32:0
+  Name: '&6&l&nАЛМАЗНАЯ РУДА&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество алмазных руд &f&l➲ &6&l32 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l750 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: diamond_ore:32:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nАЛМАЗНАЯ РУДА X32&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 750'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nАЛМАЗНАЯ РУДА X32&f&l.'
+- Slot: 7, 2
+  Material: emerald_ore:32:0
+  Name: '&6&l&nИЗУМРУДНАЯ РУДА&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество изумрудных руд &f&l➲ &6&l32 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l1500 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: emerald_ore:32:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nИЗУМРУДНАЯ РУДА X32&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 1500'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nИЗУМРУДНАЯ РУДА X32&f&l.'
+- Slot: 3, 3
+  Material: golden_apple:8:0
+  Name: '&6&l&nЗОЛОТОЕ ЯБЛОКО&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество золотых яблок &f&l➲ &6&l8 &fШтук.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l850 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: golden_apple:8:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nЗОЛОТОЕ ЯБЛОКО X8&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 850'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nЗОЛОТОЕ ЯБЛОКО X8&f&l.'
+- Slot: 4, 3
+  Material: fish:32:2
+  Name: '&6&l&nРЫБА-КЛОУН&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество рыб-клоунов &f&l➲ &6&l32 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l1999 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: fish:32:2
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nРЫБА-КЛОУН X32&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 1999'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nРЫБА-КЛОУН X32&f&l.'
+- Slot: 5, 3
+  Material: water_bucket:3:0
+  Name: '&6&l&nВЕДРО ВОДЫ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество ведра воды &f&l➲ &6&l3 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l250 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: water_bucket:3:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nВЕДРО ВОДЫ X3&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 250'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nВЕДРО ВОДЫ X3&f&l.'
+- Slot: 6, 3
+  Material: obsidian:64:0
+  Name: '&6&l&nОБСИДИАН&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество обсидиана &f&l➲ &6&l64 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l1000 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: obsidian:64:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nОБСИДИАН X64&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 1000'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&n&6&lОБСИДИАН X64&f&l.'
+- Slot: 7, 3
+  Material: dye:64:3
+  Name: '&6&l&nКАКАО-БОБЫ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество какао-бобов &f&l➲ &6&l64 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l850 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: dye:64:3
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nКАКАО-БОБЫ X64&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 850'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nКАКАО-БОБЫ X64&f&l.'
+- Slot: 3, 4
+  Material: dye:64:2
+  Name: '&6&l&nЗЕЛЕНЫЙ КРАСИТЕЛЬ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество зеленых красителей &f&l➲ &6&l64 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l100 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: dye:64:2
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nЗЕЛЕНЫЙ КРАСИТЕЛЬ X64&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 100'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&n&6&lЗЕЛЕНЫЙ КРАСИТЕЛЬ X64&f&l.'
+- Slot: 4, 4
+  Material: sugar_cane:64:0
+  Name: '&6&l&nТРОСТНИК&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество тростников &f&l➲ &6&l64 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l500 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: sugar_cane:64:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nТРОСТНИК X64&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 500'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nТРОСТНИК X64&f&l.'
+- Slot: 5, 4
+  Material: wheat:64:0
+  Name: '&6&l&nПШЕНИЦА&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество пшеницы &f&l➲ &6&l64 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l650 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: wheat:64:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nПШЕНИЦА X64&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 650'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nПШЕНИЦА X64&f&l.'
+- Slot: 6, 4
+  Material: potato:64:0
+  Name: '&6&l&nКАРТОФЕЛЬ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество картофеля &f&l➲ &6&l64 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l600 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: potato:64:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nКАРТОФЕЛЬ X64&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 600'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nКАРТОФЕЛЬ X64&f&l.'
+- Slot: 7, 4
+  Material: carrot:64:0
+  Name: '&6&l&nМОРКОВЬ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКоличество моркови &f&l➲ &6&l64 &fШтуки.'
+  - ' &6&l▌ &fСтоимость &f&l➲ &6&l600 ⛃'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы продать.'
+  - ''
+  Item: carrot:64:0
+  Item-message: '&6&lСКУПЩИК: &fУ вас нет предмета &f&l➲ &6&l&nМОРКОВЬ X64&f&l, &fв инвентаре.'
+  Close: on-failure
+  Commands:
+  - 'console: eco give %player_name% 600'
+  - 'message: &6&lСКУПЩИК: &fВы успешно продали предмет &f&l➲ &6&l&nМОРКОВЬ X64&f&l.'
+- Slot: 5, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTQxZmY2YmM2N2E0ODEyMzJkMmU2NjllNDNjNGYwODdmOWQyMzA2NjY1YjRmODI5ZmI4Njg5MmQxM2I3MGNhIn19fQ=='
+  Name: '&6&l&nВПЕРЕД&6'
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы перейти вперед.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+  - 'menu: sell2'
+- Slot: 3, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDliMmJlZTM5YjZlZjQ3ZTE4MmQ2ZjFkY2E5ZGVhODQyZmNkNjhiZGE5YmFjYzZhNmQ2NmE4ZGNkZjNlYyJ9fX0='
+  Name: '&6&l&nВЕРНУТЬСЯ НАЗАД&6'
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы вернуться назад.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+  - 'menu: shop'
+- Slot: 7, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+  Name: '&6&l&nЗАКРЫТЬ МЕНЮ&6'
+  close: true
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы закрыть меню.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+- Slot: 
+  - 0, 1
+  - 0, 2
+  - 2, 1
+  - 1, 6
+  - 1, 5
+  - 2, 6
+  - 8, 1
+  - 9, 1
+  - 9, 2
+  - 9, 5
+  - 9, 6
+  - 8, 6
+  - 4, 1
+  - 5, 1
+  - 6, 1
+  Material: stained_glass_pane:1:15
+  Name: '&6&l&nEPICGRIEF'  
+- Slot: 
+  - 1, 3
+  - 1, 4
+  - 3, 1
+  - 7, 1
+  - 9, 3
+  - 9, 4
+  - 4, 6
+  - 6, 6
+  Material: stained_glass_pane:1:4
+  Name: '&6&l&nEPICGRIEF'  
+- Slot: 
+  - 2, 2
+  - 2, 3
+  - 2, 4
+  - 2, 5
+  - 3, 5
+  - 4, 5
+  - 5, 5
+  - 6, 5
+  - 7, 5
+  - 8, 2
+  - 8, 3
+  - 8, 4
+  - 8, 5
+  Material: stained_glass_pane:1:1
+  Name: '&6&l&nEPICGRIEF' 

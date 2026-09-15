@@ -1,0 +1,377 @@
+﻿Menu-Name: '&0&l&nХАЛЯВА'
+Open-Sound: BLOCK_ENCHANTMENT_TABLE_USE
+Open-Sound-Pitch: 2
+Rows: 6
+Command: 
+  Name: getcase;reward;free
+  Fallback: '123'
+Items:
+- Slot: 3, 2
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #1'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n1'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fБесплатный кейс с привилегиями &f&l➲ &6&l1 Штука&f&l.'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l20 минут&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения награды, выполните команду &f&l➲ &6&l/reward-1'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-1'
+- Slot: 4, 2
+  Material: skull:2:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #2'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n2'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fБесплатный кейс с привилегиями &f&l➲ &6&l2 Штуки&f&l.'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l40 минут&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения награды, выполните команду &f&l➲ &6&l/reward-2'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-2'
+- Slot: 5, 2
+  Material: skull:3:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #3'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n3'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fПлатный кейс с франками &f&l➲ &6&l1 Штука&f&l.'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l1 час&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения награды, выполните команду &f&l➲ &6&l/reward-3'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-3'
+- Slot: 3, 3
+  Material: skull:4:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #4'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n4'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fПлатный кейс с франками &f&l➲ &6&l2 Штуки&f&l.'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l1 час 40 минут&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения награды, выполните команду &f&l➲ &6&l/reward-4'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-4'
+- Slot: 4, 3
+  Material: skull:5:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #5'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n5'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fПлатный кейс с привилегиями &f&l➲ &6&l1 Штука&f&l.'
+  - ''
+  - ' &c&l⚠ &f&lБОЛЬШОЙ ШАНС ВЫБИТЬ ПРИВИЛЕГИЮ &f&l➲ &c&lЗЕВС &c&l⚠'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l2 часа&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения награды, выполните команду &f&l➲ &6&l/reward-5'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-5'
+- Slot: 5, 3
+  Material: skull:6:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n6'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fПлатный кейс с привилегиями &f&l➲ &6&l2 Штуки&f&l.'
+  - ''
+  - ' &c&l⚠ &f&lБОЛЬШОЙ ШАНС ВЫБИТЬ ПРИВИЛЕГИЮ &f&l➲ &c&lЗЕВС &c&l⚠'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l2 часа 40 минут&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения награды, выполните команду &f&l➲ &6&l/reward-6'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-6'
+- Slot: 3, 4
+  Material: skull:7:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #7'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n7'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fФранки &f&l➲ &6&l300'
+  - ' &6&l▌ &c&l② &fМонеты &f&l➲ &6&l25000'
+  - ' &6&l▌ &c&l③ &fКейс с аниме титулами &f&l➲ &6&l1 Штука&f&l.'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l3 часа&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения награды, выполните команду &f&l➲ &6&l/reward-7'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-7'
+- Slot: 4, 4
+  Material: skull:8:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #8'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n8'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fФранки &f&l➲ &6&l600'
+  - ' &6&l▌ &c&l② &fМонеты &f&l➲ &6&l50000'
+  - ' &6&l▌ &c&l③ &fКейс с приватными титулами &f&l➲ &6&l1 Штука&f&l.'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l3 часа 40 минут&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения награды, выполните команду &f&l➲ &6&l/reward-8'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-8'
+- Slot: 5, 4
+  Material: skull:9:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2RmZjk4NmY4OWE4ZWVhNmFlMmMzMjBjNjg4YzI0NjY2YzNhYmExYjc3MzhmZTg5Y2UzNmMyZmJmYTM2NiJ9fX0='
+  Name: '&6&lНАГРАДА #9'
+  Lore:
+  - ''
+  - ' &6&l▌ &fУровень награды &f&l➲ &6&l&n9'
+  - ''
+  - ' &4&l⇩ &fНаграды за &6&l&nнаигранное время&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fФранки &f&l➲ &6&l900'
+  - ' &6&l▌ &c&l② &fМонеты &f&l➲ &6&l75000'
+  - ' &6&l▌ &c&l③ &fКейс с титулами рик и морти &f&l➲ &6&l1 Штука&f&l.'
+  - ' &6&l▌ &c&l④ &fКейс с новогодними титулами &f&l➲ &6&l1 Штука&f&l.'
+  - ''
+  - ' &4&l⇩ &fДля получения &6&l&nнаграды&6 &4&l⇩'
+  - ' &6&l▌ &c&l① &fНеобходимо отыграть на сервере &f&l➲ &6&l4 часа&f&l.'
+  - ''
+  - ' &c&l❤ &fДля получения, выполните команду &6&l/reward-9'
+  - ''
+  Commands:
+  - 'message: &6&lХАЛЯВА: &fДля получения, выполните команду &f&l➲ &6&l/reward-9'
+- Slot: 7, 2
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTFhNWJkNmZjZDE3OTY4NTZiZDhhNGM2OTk4ODc5NGY4ZWM0NjY0ZTU1MDk4ZDhjZGU5YzdhNzg0MjNjNzFmIn19fQ=='
+  Name: '&6&l&nЛАКИ БЛОКИ&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &f&lПОЛУЧИТЕ &f&l➲ &a&l10₣ &f&lЗА ЛОМАНИЕ ЛАКИ БЛОКА.'
+  - ' &6&l▌ &f&lПОЛУЧИТЕ &f&l➲ &6&l500⛃ &f&lЗА ЛОМАНИЕ ЛАКИ БЛОКА.'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы телепортироваться.'
+  - ''
+  Commands:
+  - 'warp lucky'
+- Slot: 7, 3
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmMzOWVlNGNhMTU4OTFkMWFlYmY4ODVhOTgwYmJhZmI3M2QyMjUzOWViN2VkODI5MTMyNWNhMWI3YmFiNzAifX19'
+  Name: '&6&l&nЦАРЬ ГОРЫ'
+  Lore:
+  - ''
+  - ' &6&l▌ &f&lПОЛУЧИТЕ &f&l➲ &a&l10-15₣ &f&lЗА ЗАНЯТИЕ ЦАРЯ ГОРЫ.'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы телепортироваться.'
+  - ''
+  Commands:
+  - 'warp king'
+- Slot: 7, 4
+  Material: diamond_sword
+  Name: '&6&l&nХАЛЯВНАЯ ТОПКА&6'
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы получить.'
+  Commands:
+  - 'kit free'
+- Slot: 8, 4
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzk1M2I2YzY4NDQ4ZTdlNmI2YmY4ZmIyNzNkNzIwM2FjZDhlMWJlMTllODE0ODFlYWQ1MWY0NWRlNTlhOCJ9fX0='
+  Name: '&6&l&nБОСС&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКаждые &6&l30 минут &fна &6&lПвП-Арене &fпоявляется &f&l➲ &c&lВЫБИВАТЕЛЬ КОСТЕЙ'
+  - ' &6&l▌ &fИгрок, который убьет его, получит &f&l➲ &6&lФранки&f&l, &6&lмонеты&f&l,'
+  - ' &6&l▌ &6&lдонатерские вещи&f&l.'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы телепортироваться.'
+  - ''
+  Commands:
+  - 'warp pvp'
+- Slot: 8, 2
+  Material: gold_block
+  Name: '&6&l&nЗОЛОТОЙ БЛОК&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКаждые &6&l20 минут &fв &6&lобычном мире &fпоявляется &f&l➲ &e&lЗОЛОТОЙ БЛОК'
+  - ' &6&l▌ &fИгрок, который простоит до конца, получит &f&l➲ &6&lМонеты&f&l, &6&lресурсы&f&l.'
+  - ''
+- Slot: 8, 3
+  Material: chest
+  Name: '&6&l&nАИР ДРОП&6'
+  Lore:
+  - ''
+  - ' &6&l▌ &fКаждый &6&lчас &fв &6&lобычном мире &fпоявляется &f&l➲ &6&lАИР ДРОП'
+  - ' &6&l▌ &fИгрок, который простоит до конца, получит &f&l➲ &6&lДонатерские вещи&f&l.'
+  - ''
+- Slot: 7, 5
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYThjNjRkNzg0YTZkODJhZjgyODc5YjliODY0ZGE2YzY4MjJkYzkxOWRmNjVjMzg3YWI0Mzk5MDU5MDhiNWM0NCJ9fX0='
+  Name: '&6&l&nРАЗДАЧА ФРАНКОВ ЗА ОНЛАЙН&6'
+  Lore:
+  - ''
+  - ' &c&l⚠ &6&l&nЗОВИТЕ ДРУЗЕЙ&6 &c&l⚠ &f&lКАЖДЫЕ &6&l&n+10 ОНЛАЙНА&6 &f&lРАЗДАЧА &6&l&nФРАНКОВ&6 &c&l⚠'
+  - ''
+- Slot: 3, 5
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNmJkNzNkNjE2ZDIxYzE5MzAxZjJmMDc2Y2JjNTQ3YzdjMWI1MWJkNWUxYTQ1ZDdjNTlkNWFkYjgyODA4ZSJ9fX0='
+  Name: '&c&l⚠ &a&l&nПОЛУЧИТЕ 1000 ФРАНКОВ БЕСПЛАТНО&a &c&l⚠'
+  Lore:
+  - ''
+  - ' &6&l▌ &fНеобходимо выполнить пару легких действий &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &fПерейдите в наше сообщество во &9&lВКонтакте &f&l➲'
+  - ' &6&l▌ &6&lhttps://vk.com/epicgrief_ru'
+  - ' &6&l▌ &c&l② &fПодпишитесь на наше сообщество во &9&lВКонтакте &f&l➲'
+  - ' &6&l▌ &6&lhttps://vk.com/epicgrief_ru'
+  - ' &6&l▌ &c&l③ &fПривяжите свой аккаунт к сообществу во &9&lВКонтакте&f&l.'
+  - ''
+  - ' &6&l▌ &fКак привязать аккаунт к сообществу во &9&lВКонтакте &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &fВыполните в чате игры команду &f&l➲ &6&l/addvk'
+  - ' &6&l▌ &c&l② &fПодтвердите привязку аккаунта, код для подверждения'
+  - ' &6&l▌ &fпривязки будет написан у вас в чате игры, для подтверждения'
+  - ' &6&l▌ &fпривязки аккаунта напишите код в личные сообщения сообщества'
+  - ' &6&l▌ &fво &9&lВКонтакте &f&l➲ &6&lhttps://vk.com/epicgrief_ru'
+  - ' &6&l▌ &fПример &f&l➲ &6&l/code &f&lВАШ КОД'
+  - ' &6&l▌ &c&l③ &fВаш аккаунт успешно привязан к боту во &9&lВКонтакте&f&l, &fавтоматически'
+  - ' &6&l▌ &fвключена &6&lДвух-этапная &fавторизация.'
+  - ' &6&l▌ &c&l④ &fДля получения награды за привязку аккаунта, нажмите на данную голову,'
+  - ' &6&l▌ &fлибо же выполните в чате игры команду &f&l➲ &6&l/account reward vk'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы получить награду.'
+  - ''
+  Commands:
+  - 'account reward vk'
+- Slot: 4, 5
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2ViM2E1Mzk5MzdmOGU4ZTExNzAzNGE3MTczYmRkZWQ1YTAzMjNjOTc5NGFhZWRmMTkxODczMWY0Zjg3MjliYiJ9fX0='
+  Name: '&c&l⚠ &a&l&nПОЛУЧИТЕ 2000 ФРАНКОВ БЕСПЛАТНО&a &c&l⚠'
+  Lore:
+  - ''
+  - ' &6&l▌ &fНеобходимо выполнить пару легких действий &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &fПерейдите в нашего бота в &9&lTelegram &f&l➲'
+  - ' &6&l▌ &6&lhttps://t.me/epicgrief_binding_bot'
+  - ' &6&l▌ &c&l② &fПривяжите свой аккаунт к боту в &9&lTelegram&f&l.'
+  - ''
+  - ' &6&l▌ &fКак привязать аккаунт к боту в &9&lTelegram &4&l⇩'
+  - ''
+  - ' &6&l▌ &c&l① &fВыполните в чате игры команду &f&l➲ &6&l/addtg'
+  - ' &6&l▌ &c&l② &fПодтвердите привязку аккаунта, код для подверждения'
+  - ' &6&l▌ &fпривязки аккаунта будет написан у вас в чате игры, для подтверждения'
+  - ' &6&l▌ &fпривязки аккаунта напишите код боту в &9&lТелеграмм &f&l➲'
+  - ' &6&l▌ &6&lhttps://t.me/epicgrief_binding_bot'
+  - ' &6&l▌ &fПример &f&l➲ &6&l/code &f&lВАШ КОД'
+  - ' &6&l▌ &c&l③ &fВаш аккаунт успешно привязан к боту в &9&lТелеграмм&f&l, &fавтоматически'
+  - ' &6&l▌ &fвключена &6&lДвух-этапная &fавторизация.'
+  - ' &6&l▌ &c&l④ &fДля получения награды за привязку аккаунта, нажмите на данную голову,'
+  - ' &6&l▌ &fлибо же выполните команду в чате игры &f&l➲ &6&l/account reward tg'
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы получить награду.'
+  - ''
+  Commands:
+  - 'account reward tg'
+- Slot: 4, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDliMmJlZTM5YjZlZjQ3ZTE4MmQ2ZjFkY2E5ZGVhODQyZmNkNjhiZGE5YmFjYzZhNmQ2NmE4ZGNkZjNlYyJ9fX0='
+  Name: '&6&l&nВЕРНУТЬСЯ НАЗАД&6'
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы вернуться назад.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+  - 'menu: menu'
+- Slot: 6, 6
+  Material: skull:1:3
+  Skull-Owner: 'eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvM2VkMWFiYTczZjYzOWY0YmM0MmJkNDgxOTZjNzE1MTk3YmUyNzEyYzNiOTYyYzk3ZWJmOWU5ZWQ4ZWZhMDI1In19fQ=='
+  Name: '&6&l&nЗАКРЫТЬ МЕНЮ&6'
+  close: true
+  Lore:
+  - ''
+  - ' &c&l❤ &fНажмите, чтобы закрыть меню.'
+  - ''
+  Commands:
+  - 'sound: BLOCK_ENCHANTMENT_TABLE_USE 3 3'
+- Slot: 
+  - 0, 1
+  - 0, 2
+  - 2, 1
+  - 1, 6
+  - 1, 5
+  - 2, 6
+  - 8, 1
+  - 9, 1
+  - 9, 2
+  - 9, 5
+  - 9, 6
+  - 8, 6
+  - 4, 1
+  - 5, 1
+  - 6, 1
+  - 5, 6
+  Material: stained_glass_pane:1:15
+  Name: '&6&l&nEPICGRIEF'  
+- Slot: 
+  - 1, 3
+  - 1, 4
+  - 3, 1
+  - 7, 1
+  - 9, 3
+  - 9, 4
+  - 3, 6
+  - 7, 6
+  Material: stained_glass_pane:1:4
+  Name: '&6&l&nEPICGRIEF'  
+- Slot: 
+  - 2, 2
+  - 2, 3
+  - 2, 4
+  - 2, 5
+  - 5, 5
+  - 6, 2
+  - 6, 3
+  - 6, 4
+  - 6, 5
+  - 8, 5
+  Material: stained_glass_pane:1:1
+  Name: '&6&l&nEPICGRIEF'  
