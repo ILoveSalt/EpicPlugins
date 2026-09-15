@@ -1,0 +1,222 @@
+# EpicCooldown — кулдауны на команды по группам
+#
+# Права:
+#   epiccooldown.bypass - игрок с этим правом игнорирует все кулдауны
+#   epiccooldown.admin  - доступ к команде /epiccooldowns (reload, save, clear, clearall)
+#
+# Определение группы:
+#   Если установлен VaultUnlocked (или Vault) — берётся основная группа игрока
+#   через его API. Если его нет — группа определяется по праву group.<имя группы>.
+
+# Автосохранение кулдаунов каждые N минут (0 - отключить)
+autosave-minutes: 5
+
+time:
+  days: '&6&l%size% &fдень'
+  minutes: '&6&l%size% &fминут(ы)'
+  seconds: '&6&l%size% &fсекунд(ы)'
+  hours: '&6&l%size% &fчас(а)'
+  now: '&6&lсейчас'
+
+groups:
+  knight:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+  lord:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+  dragon:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 10800
+    essentials:broadcast: 10800
+    broadcast: 10800
+    bc: 10800
+    ban: 3600
+    tempban: 3600
+    tempmute: 3600
+    mute: 3600
+    kick: 3600
+    unban: 3600
+    fly: 10
+    god: 10
+    vanish: 10
+    unbanip: 3600
+  staff:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 5400
+    essentials:broadcast: 5400
+    broadcast: 5400
+    bc: 5400
+    ban: 1800
+    tempban: 1800
+    tempmute: 1800
+    mute: 1800
+    kick: 1800
+    unban: 1800
+    fly: 10
+    god: 10
+    vanish: 10
+    unbanip: 1800
+  santa:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 2700
+    essentials:broadcast: 2700
+    broadcast: 2700
+    bc: 2700
+    ban: 900
+    tempban: 900
+    tempmute: 900
+    mute: 900
+    kick: 900
+    unban: 900
+    fly: 10
+    god: 10
+    vanish: 10
+    unbanip: 900
+  epic:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 10800
+    essentials:broadcast: 10800
+    broadcast: 10800
+    bc: 10800
+    ban: 18000
+    tempban: 18000
+    tempmute: 18000
+    mute: 18000
+    kick: 18000
+    unban: 18000
+    fly: 10
+    god: 10
+    vanish: 10
+  zeus:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 10800
+    essentials:broadcast: 10800
+    broadcast: 10800
+    bc: 10800
+    ban: 18000
+    tempban: 18000
+    tempmute: 18000
+    mute: 18000
+    kick: 18000
+    unban: 18000
+    fly: 10
+    god: 10
+    vanish: 10
+  triton:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 10800
+    essentials:broadcast: 10800
+    broadcast: 10800
+    bc: 10800
+    ban: 18000
+    tempban: 18000
+    tempmute: 18000
+    kick: 18000
+    unban: 18000
+  youtube_no:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 10800
+    essentials:broadcast: 3600
+    broadcast: 3600
+    bc: 3600
+    ban: 18000
+    tempban: 18000
+    tempmute: 18000
+    mute: 18000
+    kick: 18000
+    unban: 18000
+    fly: 60
+    god: 60
+    vanish: 60
+  helper:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 10800
+    essentials:broadcast: 600
+    broadcast: 600
+    bc: 600
+    ban: 60
+    tempban: 60
+    kick: 60
+    unban: 60
+    banip: 60
+    ipban: 60
+  moder:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 10800
+    essentials:broadcast: 600
+    broadcast: 600
+    bc: 600
+    ban: 0
+    tempban: 0
+    kick: 0
+    unban: 0
+    banip: 0
+    ipban: 0
+  stmoder:
+    day: 300
+    night: 300
+    sun: 300
+    rain: 300
+    afk: 300
+    setwarp: 10800
+    essentials:broadcast: 600
+    broadcast: 600
+    bc: 600
+    ban: 0
+    tempban: 0
+    kick: 0
+    unban: 0
+    banip: 0
+    ipban: 0
+messages:
+  prefix: '&6&lЗАДЕРЖКА: '
+  cooldown: '&fДанная команда будет доступна через &f&l➲ %time%;title:&6&lЗАДЕРЖКА%nl%&fПройдет через: %time%'
+  no-permission: '&fУ вас нет прав на эту команду.'
+  usage: '&fКоманды: &e/epiccooldowns reload&f, &e/epiccooldowns save&f, &e/epiccooldowns clear <игрок>&f, &e/epiccooldowns clearall'
+  reloaded: '&fКонфиг перезагружен.'
+  saved: '&fКулдауны сохранены (&e%count%&f).'
+  cleared: '&fКулдауны игрока &e%player% &fочищены.'
+  cleared-all: '&fВсе кулдауны очищены.'

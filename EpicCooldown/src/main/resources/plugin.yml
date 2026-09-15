@@ -1,0 +1,14 @@
+name: EpicCooldown
+version: '${version}'
+main: hgds.epicgrief.CooldownPlugin
+api-version: '26.1'
+authors: [WinLocker]
+description: 'Кулдауны на команды для групп (Vault/VaultUnlocked).'
+website: https://vk.com/winlocker02
+softdepend: [Vault]
+commands:
+  epiccooldowns:
+    description: 'Управление кулдаунами EpicCooldown'
+    usage: '/epiccooldowns <reload|save|clear|clearall>'
+    aliases: [ecooldowns]
+    permission: epiccooldown.admin
