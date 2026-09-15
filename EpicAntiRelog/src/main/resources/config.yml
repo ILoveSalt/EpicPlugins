@@ -1,0 +1,122 @@
+config-version: '1.0'
+
+messages:
+  #Для того, чтобы отключить сообщение, оставьте его пустым
+  pvp-started: '&e&lANTIRELOG &8▪ &fВы начали &eпвп'
+  pvp-started-title: '&c⚠ &eАнтиРелог &c⚠'
+  pvp-started-subtitle: Вы вошли в режим &eпвп
+  pvp-stopped: '&e&lANTIRELOG &8▪ &ePVP &fокончено'
+  pvp-stopped-title: '&c⚠ &eАнтиРелог &c⚠'
+  pvp-stopped-subtitle: Вы вышли из режима &eпвп
+  pvp-stopped-actionbar: '&eПвп &fокончено, Вы снова можете использовать команды и
+    выходить из игры!'
+  in-pvp-bossbar: '&fРежим &eбоя &f- &e%time% &e%formated-sec%.'
+  in-pvp-actionbar: ''
+  pvp-leaved: '&e&lANTIRELOG &8▪ &fИгрок &e%player% &fпокинул игру во время &eпвп &fи был наказан.'
+  commands-disabled: '&e&lANTIRELOG &8▪ &fВы не можете использовать команды в &eпвп. &fПодождите
+    &e%time% %formated-sec%.'
+  item-cooldown: '&e&lANTIRELOG &8▪ &fВы сможете использовать этот предмет через &e%time% %formated-sec%.'
+  item-disabled-in-pvp: '&e&lANTIRELOG &8▪ &fВы не можете использовать этот предмет в &eпвп &fрежиме'
+  item-teleported: '&e&lANTIRELOG &8▪ &fВы были телепортированы на &eспавн&f.'
+  #Данное сообщение будет появляться только тогда, когда настроена функция 'commands-on-powerups-disable'
+  pvp-started-with-powerups: '&e&lANTIRELOG &8▪ &fВы начали &eпвп &fс включеным &eGM/FLY/и тд &fи за это получили
+    негативный эффект.'
+  ban-error: '&e&lBAN &8▪ &c&lВы не можете использовать -s.'
+firework-cooldown: 0
+totem-cooldown: 0
+cancel-interact-with-entities: false
+#Кулдавн для обычных золотых яблок во время пвп.
+golden-apple-cooldown: 5
+#Кулдавн для зачарованых золотых яблок во время пвп.
+#Значение 0 отключает кулдаун; -1 отключает использование во время пвп
+enchanted-golden-apple-cooldown: 60
+#Кулдавн для жемчугов края во время пвп.
+#Значение 0 отключает кулдаун; -1 отключает использование во время пвп
+ender-pearl-cooldown: 20
+#Кулдавн для корусов во время пвп.
+#https://minecraft-ru.gamepedia.com/Плод_коруса
+#Значение 0 отключает кулдаун; -1 отключает использование во время пвп
+chorus-cooldown: 5
+#Длительность пвп
+pvp-time: 30
+#Отключить ли возможность писать команды в пвп?
+disable-commands-in-pvp: true
+#Команды которые можно писать во время пвп
+#Команды писать без '/' (кол-во '/' - 1)
+#Плагин будет пытаться сам определить алисы для команд (msg,tell,m), но для некоторых команд возможно придется самому прописать алиасы
+#commands-whitelist:
+#- command
+#- command2
+#- /expand
+commands-whitelist:
+  - msg
+  - m
+  - w
+  - tell
+  - near
+commands-whitelist-bypass:
+  - mute
+  - tempmute
+  - ban
+  - tempbanip
+  - tepmban
+  - banip
+  - clearchat
+  - kick
+  - unban
+  - unmute
+#Убивать ли игрока если он вышел во время пвп?
+kill-on-leave: true
+#Убивать ли игрока если его кикнули во время пвп?
+kill-on-kick: true
+#Выполнять ли команды, если игрока кикнули во время пвп?
+run-commands-on-kick: true
+#Какой текст должен быть впричине кика, чтобы его убило/выполнились команды. Если пусто, то будет убивать/выполняться команды всегда
+kick-messages: []
+#Какие команды запускать от консоли при выходе игрока во время пвп?
+#commands-on-leave:
+#- command1
+#- command2 %player%
+commands-on-leave:
+  - kill %player%
+#Отключать ли у игрока который ударил FLY, GM, GOD, VANISH?
+disable-powerups: true
+#Какие команды выполнять, если были отключены усиления у игрока
+#Данную настройку можно использовать например для того, чтобы наложить на игрока отрицательный эффект, если он начал пвп в ГМ/ФЛАЕ/и тд
+#commands-on-powerups-disable:
+#- command1 %player%
+#- effect give %player% weakness 10
+commands-on-powerups-disable: []
+#Отключать ли возможность телепортироваться во время пвп?
+disable-teleports-in-pvp: false
+#Игнорировать ли PVP deny во время пвп между игроками?
+ignore-worldguard: false
+#Включать ли игроку, который не участвует в пвп и удрарил другого игрока в pvp, pvp режим
+#Если два игрока дерутся на територии где PVP deny и их ударить, то у того кто ударил так-же включится PVP режим
+join-pvp-in-worldguard: false
+#Скрывать ли сообщения о заходе игроков?
+hide-join-message: true
+#Скрывать ли сообщения о выходе игроков?
+hide-leave-message: true
+#Скрывать ли сообщение о смерти игроков?
+hide-death-message: true
+#Миры в котором плагин не работает
+disabledWorlds:
+  - world1
+  - world2
+
+noKickMessage: '§e§lANTIRELOG §8▪ §fТы не можешь кикнуть игрока который в КТ!'
+not_pvp_command:
+  - /ban
+  - /lban
+  - /tempban
+  - /ltempban
+  - /kick
+  - /lkick
+  - /tban
+item:
+  material: CHORUS_FRUIT
+  display: '&5&lЛИВАЛКА В КТ'
+  lore:
+    - '&8▪ &fПри нажатии &eПКМ &fтелепортирует'
+    - '&8▪ &fвас на спавн'

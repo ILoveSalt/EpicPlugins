@@ -1,0 +1,22 @@
+name: EpicAnimationChat
+version: '1.0'
+
+main: hgds.epicgrief.EpicAnimationChat
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [hgds_2]
+
+softdepend: [TAB]
+
+commands:
+  epicanimationchat:
+    description: Reload and inspect TAB chat animations
+    usage: /epicanimationchat <reload|list|preview>
+    aliases: [eac, animationchat]
+    permission: epicanimationchat.admin
+
+permissions:
+  epicanimationchat.admin:
+    description: Allows management of EpicAnimationChat
+    default: op

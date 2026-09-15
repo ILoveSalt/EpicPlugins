@@ -1,0 +1,30 @@
+name: EpicAntiRelog
+version: '${version}'
+
+main: hgds.epicAntiRelog.EpicAntiRelog
+api-version: '26.1.2'
+load: STARTUP
+depend: [ EpicLoadCustomPlugin ]
+softdepend: [ EpicSpawn ]
+
+authors: [ hgds_2 ]
+
+commands:
+  epicantirelog:
+    description: EpicAntiRelog admin commands.
+    usage: /<command> give [player] [amount]
+    aliases: [ antirelog, ear ]
+
+permissions:
+  epicantirelog.bypass.commands:
+    description: Allows using bypass commands from commands-whitelist-bypass during PVP.
+    default: op
+  epicantirelog.commands.bypass:
+    description: Allows using bypass commands from commands-whitelist-bypass during PVP.
+    default: op
+  epicantirelog.command.give:
+    description: Allows giving the configured EpicAntiRelog item.
+    default: op
+  epicantirelog.command.reload:
+    description: Allows reloading EpicAntiRelog config.
+    default: op

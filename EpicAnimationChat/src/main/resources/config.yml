@@ -1,0 +1,10 @@
+tab:
+  # Relative paths start in the server's plugins directory.
+  animations-file: "TAB/animations.yml"
+  default-change-interval-millis: 100
+  auto-reload:
+    enabled: true
+    check-interval-ticks: 100
+
+chat:
+  enabled: true

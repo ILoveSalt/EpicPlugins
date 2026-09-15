@@ -1,0 +1,15 @@
+hgds\epicAntiRelog\message\MessageService.class
+hgds\epicAntiRelog\command\ParsedCommand.class
+hgds\epicAntiRelog\listener\AntiRelogListener.class
+hgds\epicAntiRelog\command\ConfigItemCommand$GiveRequest.class
+hgds\epicAntiRelog\item\CooldownRule.class
+hgds\epicAntiRelog\combat\CombatTag.class
+hgds\epicAntiRelog\punishment\PunishmentService.class
+hgds\epicAntiRelog\combat\CombatService.class
+hgds\epicAntiRelog\config\AntiRelogSettings.class
+hgds\epicAntiRelog\command\ConsoleCommandService.class
+hgds\epicAntiRelog\command\CombatCommandService.class
+hgds\epicAntiRelog\item\ItemService$1.class
+hgds\epicAntiRelog\item\ItemService.class
+hgds\epicAntiRelog\command\ConfigItemCommand.class
+hgds\epicAntiRelog\EpicAntiRelog.class
