@@ -1,0 +1,92 @@
+# chat.color - Разрешить использовать цвета в чате
+# chat.bypass - Игнорировать ограничение (CAPS, SPAM, ALLOWED_TEXT, ALLOWED_SYMBOLS, BLACKLIST)
+
+chats: # кастомные чаты
+  adminchat:
+    command: true
+    format: "§c§l[ADMIN CHAT]§r {prefix}{sender}{suffix} §8> §7{message}"
+    permission: "chat.admin"
+    range: -1
+  global:
+    prefix: '!'
+    format: "§f§l<§6§lG§f§l> %vault_prefix% {sender} %vault_suffix% §f§l➲ §f{message}"
+    range: -1
+  default:
+    format: "§f§l<§6§lL§f§l> %vault_prefix% {sender} %vault_suffix% §f§l➲ §f{message}"
+    range: 100
+message: "§f§l<§3§l✉§f§l> §6§l{sender} §f§l➲ §6§l{to} §f§l➲ §f{message}"
+playTime:
+  time: 300 # Сколько секунд должен проиграть игрок, чтобы писать в чат
+  blockedCommands:
+    - "m"
+    - "tell"
+    - "reply"
+caps: 50 # После какого процента посылать нахуй
+spam:
+  percent: 90.0 # После какого процента посылать нахуй
+  time: 3.0 # между сообщенями сколько не прошло
+allowedText: '^[A-Za-z.!@?#\"$%§:;() *\+,\/;\-=[\\\]\^_{|}<>\u0400-\u04FF1-9-0]]*$' # по деф разрешена кириллица и англ (если будет пустая проверка будет отключена)
+allowedSymbols: # разрешенные символы
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '!'
+  - '@'
+  - '#'
+  - '$'
+  - '%'
+  - '^'
+  - '§'
+  - '*'
+  - '('
+  - ')'
+  - '_'
+  - '-'
+  - '='
+  - '+'
+  - '"'
+  - '№'
+  - ';'
+  - ':'
+  - '?'
+  - '*'
+  - "'"
+  - '❤'
+blackList:
+  - "ru"
+  - "su"
+  - "рф"
+  - "ua"
+  - "tk"
+  - "ga"
+  - "cf"
+  - "ml"
+
+messages:
+  SPAM: '§6§lЧАТ: §fНе пишите сообщения так быстро.'
+  PLAY_TIME: '§6§lЧАТ: §fДля использования чата необходимо отыграть §f§l➲ §6§l%s§f§l.'
+  CAPS: '§6§lЧАТ: §fНе используйте капс.'
+  UNALLOWED_SYMBOL: '§6§lЧАТ: §fНе используйте запрещенные символы.'
+  BLACKWORD: '§6§lЧАТ: §fНе рекламируйте сервера.'
+  REPLY_USE: '§6§lЧАТ: §fПравильное использование команды §f§l➲ §6§l/r §f§l<§6§lсообщение§f§l>'
+  MESSAGE_USE: '§6§lЧАТ: §fПравильное использование команды §f§l➲ §6§l/msg §f§l<§6§lсообщение§f§l>'
+  REPLY_NONE: '§6§lЧАТ: §fИгрока нет на сервере.'
+  PLAYER_OFFLINE: '§6§lЧАТ: §fИгрока нет на сервере'
+  MESSAGE_SELF: '§6§lЧАТ: §fНельзя написать сообщение самому себе.'
+  adminchat_NO_PERM: '§6§lЧАТ: §cУ вас нет разрешения на использование данной команды.'
+  PLAY_ACTIONBAR: '§fЧат будет доступен через §f§l➲ §6§l%s§f§l.'
+  PLAY_ACTIONBAR_FINISH: '§aТеперь вам доступен чат.'
+  SPY_OFF: '§6§lЧАТ: §fСлежка успешно §c§lвыключена§f§l.'
+  SPY_ON: '§6§lЧАТ: §fСлежка успешно §a§lвключена§f§l.'
+  SPY: '§6§lЧАТ: §f§l<§6§l{sender} §f§l➲ §6§l{player}§f§l> §fСообщение §f§l➲ §6§l{msg}'
+  NO_PERMISSION: '§6§lЧАТ: §cУ вас нет разрешения на использование данной команды.'
+  MESSAGE_DISABLED: '§6§lЧАТ: §fУ данного игрока отключены личные сообщения.'
+  MESSAGE_OFF: '§6§lЧАТ: §fВы успешно §c§lотключили §fличные сообщения.'
+  MESSAGE_ON: '§6§lЧАТ: §fВы успешно §a§lвключили §fличные сообщения.'

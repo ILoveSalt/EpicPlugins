@@ -1,0 +1,47 @@
+vanish:
+    pickup-items: true # Запретить подбирать вещи
+    block-place: true # Запретить ставить блоки
+
+god:
+    pickup-items: true # Запретить подбирать вещи
+    block-place: true # Запретить ставить блоки
+
+fly:
+    pickup-items: true # Запретить подбирать вещи
+    block-place: true # Запретить ставить блоки
+
+blocked-spawn-block:
+- "OBSIDIAN"
+
+message-vanish-pickup: '&e&lFIXER &8▪ &fВы не можете подбирать вещи в режиме &e/vanish&f.'
+message-god-pickup: '&e&lFIXER &8▪ &fВы не можете подбирать вещи в режиме &e/god&f.'
+message-fly-pickup: '&e&lFIXER &8▪ &fВы не можете подбирать вещи в режиме &e/fly&f.'
+message-vanish-place: '&e&lFIXER &8▪ &fВы не можете ставить блоки в режиме &e/vanish&f.'
+message-god-place: '&e&lFIXER &8▪ &fВы не можете ставить блоки в режиме &e/god&f.'
+message-fly-place: '&e&lFIXER &8▪ &fВы не можете ставить блоки в режиме &e/fly&f.'
+message-vanish-cmdblock: '&e&lFIXER &8▪ &fВы не можете использовать эту команду в режиме &e/vanish&f.'
+message-god-cmdblock: '&e&lFIXER &8▪ &fВы не можете использовать эту команду в режиме &e/god&f.'
+message-fly-cmdblock: '&e&lFIXER &8▪ &fВы не можете использовать эту команду в режиме &e/fly&f.'
+non_working_command:
+- tpa
+- call
+- tpaccept
+- tpyes
+- rg claim
+- wand
+- pos1
+- pos2
+- rg addmember
+- rg addowner
+- rg removemember
+- rg removeowner
+- etpyes
+- etpaccept
+- w
+cooldown-pickup: 0
+
+сooldown-command:
+  vanish: 30
+  god: 30
+  fly: 30
+  

@@ -1,0 +1,40 @@
+name: EpicChat
+version: '${version}'
+
+main: hgds.epicgrief.EpicChat
+api-version: '26.1.2'
+load: STARTUP
+
+authors: [ hgds_2 ]
+softdepend: [ Vault, PlaceholderAPI ]
+
+commands:
+  epicchat:
+    description: EpicChat service command
+    aliases: [ chat ]
+  msg:
+    description: Send a private message
+    aliases: [ m, tell, w, pm, message ]
+  reply:
+    description: Reply to the last private message
+    aliases: [ r ]
+  msgtoggle:
+    description: Toggle private messages
+    aliases: [ togglemsg, togglepm ]
+  socialspy:
+    description: Toggle private message spy
+    aliases: [ spy ]
+  adminchat:
+    description: Configured admin chat channel
+
+permissions:
+  chat.color:
+    default: false
+  chat.bypass:
+    default: op
+  chat.spy:
+    default: op
+  chat.admin:
+    default: op
+  epicchat.reload:
+    default: op
