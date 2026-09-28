@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио - Данил Зиновьев</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gh: {
+                            bg: '#0d1117',
+                            card: '#161b22',
+                            border: '#30363d',
+                            text: '#c9d1d9',
+                            muted: '#8b949e',
+                            btn: '#21262d',
+                            btnHover: '#30363d',
+                        },
+                        ghLight: {
+                            bg: '#ffffff',
+                            card: '#f6f8fa',
+                            border: '#d0d7de',
+                            text: '#1f2328',
+                            muted: '#636c76',
+                            btn: '#f3f4f6',
+                            btnHover: '#e5e7eb',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        :root {
+            --accent-color: #58a6ff;
+            --accent-hover: #388bfd;
+            --accent-light-bg: rgba(88, 166, 255, 0.15);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        .text-accent {
+            color: var(--accent-color) !important;
+        }
+
+        .bg-accent {
+            background-color: var(--accent-color) !important;
+        }
+
+        .bg-accent-hover:hover {
+            background-color: var(--accent-hover) !important;
+        }
+
+        .bg-accent-light {
+            background-color: var(--accent-light-bg) !important;
+        }
+
+        .border-accent {
+            border-color: var(--accent-color) !important;
+        }
+
+        .tab-active {
+            border-bottom: 2px solid var(--accent-color);
+            font-weight: 600;
+            color: var(--accent-color) !important;
+        }
+
+        /* Custom scrollbars */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: rgba(0,0,0,0.1);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 4px;
+        }
+        .light ::-webkit-scrollbar-thumb {
+            background: #c0c0c0;
+        }
+    </style>
+</head>
+<body class="bg-gh-bg text-gh-text light:bg-ghLight-bg light:text-ghLight-text transition-colors duration-200 min-h-screen flex flex-col">
+
+    <header class="bg-[#161b22] border-b border-gh-border text-white px-4 py-2.5 sticky top-0 z-50 transition-colors duration-200 light:bg-[#f6f8fa] light:border-ghLight-border light:text-ghLight-text">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            
+            <div class="flex items-center gap-2">
+                <i class="fab fa-github text-2xl"></i>
+                <span class="font-bold text-sm hidden sm:inline-block">danil-zinoviev</span>
+            </div>
+
+            <!-- Color Palette Customizer & Dark/Light Switcher -->
+            <div class="flex items-center gap-3">
+                <span class="text-xs text-gh-muted hidden md:inline-block">Цвет страницы:</span>
+                
+                <!-- Color Swatches -->
+                <div class="flex items-center gap-1.5 bg-gh-bg p-1 rounded-md border border-gh-border light:bg-white light:border-ghLight-border">
+                    <button onclick="setAccentColor('#58a6ff')" class="w-5 h-5 rounded-full bg-[#58a6ff] hover:scale-110 transition-transform" title="Синий"></button>
+                    <button onclick="setAccentColor('#238636')" class="w-5 h-5 rounded-full bg-[#238636] hover:scale-110 transition-transform" title="Зеленый"></button>
+                    <button onclick="setAccentColor('#bc8cff')" class="w-5 h-5 rounded-full bg-[#bc8cff] hover:scale-110 transition-transform" title="Фиолетовый"></button>
+                    <button onclick="setAccentColor('#d29922')" class="w-5 h-5 rounded-full bg-[#d29922] hover:scale-110 transition-transform" title="Оранжевый"></button>
+                    <button onclick="setAccentColor('#f78166')" class="w-5 h-5 rounded-full bg-[#f78166] hover:scale-110 transition-transform" title="Кораловый"></button>
+                    
+                    <!-- Native Color Picker Input -->
+                    <label class="relative w-5 h-5 rounded-full overflow-hidden cursor-pointer border border-gh-border hover:scale-110 transition-transform" title="Выбрать свой цвет">
+                        <input type="color" id="customColorPicker" onchange="setAccentColor(this.value)" class="absolute inset-0 opacity-0 cursor-pointer w-full h-full">
+                        <div class="w-full h-full bg-gradient-to-tr from-pink-500 via-red-500 to-yellow-400"></div>
+                    </label>
+                </div>
+
+                <div class="h-4 w-px bg-gh-border light:bg-ghLight-border"></div>
+
+                <!-- Dark / Light Mode Toggle -->
+                <button id="themeToggleBtn" class="p-1.5 text-gh-muted hover:text-gh-text rounded-md hover:bg-gh-btn border border-transparent hover:border-gh-border transition-all light:hover:bg-ghLight-btn light:hover:border-ghLight-border">
+                    <i class="fas fa-moon text-base" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="border-b border-gh-border bg-[#0d1117] pt-2 px-4 transition-colors duration-200 light:bg-white light:border-ghLight-border sticky top-[49px] z-40">
+        <div class="max-w-7xl mx-auto flex items-center space-x-1 sm:space-x-6 overflow-x-auto no-scrollbar text-sm">
+            <button onclick="switchTab('overview')" id="tab-overview" class="tab-btn tab-active px-3 py-2.5 flex items-center gap-2 transition-all whitespace-nowrap">
+                <i class="fas fa-book-open text-gh-muted"></i>
+                <span>Главная</span>
+            </button>
+            <button onclick="switchTab('projects')" id="tab-projects" class="tab-btn px-3 py-2.5 flex items-center gap-2 text-gh-muted hover:text-gh-text transition-all whitespace-nowrap light:hover:text-ghLight-text">
+                <i class="fas fa-bookmark text-gh-muted"></i>
+                <span>Работы и Проекты</span>
+                <span id="repoCountBadge" class="bg-gh-btn border border-gh-border px-2 py-0.5 rounded-full text-xs font-semibold text-gh-text light:bg-ghLight-btn light:border-ghLight-border light:text-ghLight-text">0</span>
+            </button>
+            <button onclick="switchTab('skills')" id="tab-skills" class="tab-btn px-3 py-2.5 flex items-center gap-2 text-gh-muted hover:text-gh-text transition-all whitespace-nowrap light:hover:text-ghLight-text">
+                <i class="fas fa-code text-gh-muted"></i>
+                <span>Стек и Навыки</span>
+            </button>
+            <button onclick="switchTab('about')" id="tab-about" class="tab-btn px-3 py-2.5 flex items-center gap-2 text-gh-muted hover:text-gh-text transition-all whitespace-nowrap light:hover:text-ghLight-text">
+                <i class="fas fa-user text-gh-muted"></i>
+                <span>О себе</span>
+            </button>
+            <button onclick="switchTab('contact')" id="tab-contact" class="tab-btn px-3 py-2.5 flex items-center gap-2 text-gh-muted hover:text-gh-text transition-all whitespace-nowrap light:hover:text-ghLight-text">
+                <i class="fas fa-envelope text-gh-muted"></i>
+                <span>Контакты</span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 py-6 flex-1 w-full grid grid-cols-1 md:grid-cols-4 gap-6">
+
+        <aside class="md:col-span-1 space-y-4">
+            <div class="flex flex-col items-start gap-2 border-b border-gh-border pb-4 light:border-ghLight-border">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 rounded-full bg-accent text-white flex items-center justify-center font-bold text-sm">
+                        ДЗ
+                    </div>
+                    <span class="text-xs text-gh-muted">Профиль</span>
+                </div>
+                <h1 id="developerName" class="text-2xl font-bold text-gh-text light:text-ghLight-text">Данил Зиновьев</h1>
+                <h2 id="developerUsername" class="text-base text-gh-muted font-normal">@danil-zinoviev</h2>
+                <p id="developerTitle" class="text-sm text-gh-text mt-1 light:text-ghLight-text">Разработчик & Исследователь Компьютерных Систем</p>
+            </div>
+
+            <!-- Bio -->
+            <p id="developerBio" class="text-sm text-gh-text leading-relaxed light:text-ghLight-text">
+                Изучаю веб-технологии, архитектуру компьютерного железа, оптимизацию системы и современные инструменты разработки. 💻⚡
+            </p>
+
+            <!-- Profile Info Details -->
+            <div class="space-y-2.5 text-sm pt-2">
+                <div class="flex items-center gap-2.5 text-gh-muted">
+                    <i class="fas fa-laptop-code w-4 text-center text-accent"></i>
+                    <span class="text-gh-text light:text-ghLight-text">Компьютерные науки & Железо</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-gh-muted">
+                    <i class="fas fa-map-marker-alt w-4 text-center"></i>
+                    <span class="text-gh-text light:text-ghLight-text">Россия</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-gh-muted">
+                    <i class="fas fa-envelope w-4 text-center"></i>
+                    <a href="mailto:danil.zinoviev@example.com" class="hover:underline text-accent">danil.zinoviev@example.com</a>
+                </div>
+                <div class="flex items-center gap-2.5 text-gh-muted">
+                    <i class="fab fa-github w-4 text-center"></i>
+                    <a href="https://github.com" target="_blank" class="hover:underline text-accent">github.com/danil-zinoviev</a>
+                </div>
+            </div>
+        </aside>
+
+        <section class="md:col-span-3 space-y-6">
+
+            <!-- OVERVIEW TAB -->
+            <div id="view-overview" class="view-content space-y-6">
+                <!-- README Banner -->
+                <div class="bg-gh-card border border-gh-border rounded-lg p-5 light:bg-ghLight-card light:border-ghLight-border">
+                    <div class="flex items-center justify-between mb-3 border-b border-gh-border pb-2 light:border-ghLight-border">
+                        <div class="flex items-center gap-2 text-sm text-gh-muted">
+                            <i class="fas fa-info-circle"></i>
+                            <span class="font-semibold text-gh-text light:text-ghLight-text">danil-zinoviev / README.md</span>
+                        </div>
+                    </div>
+                    <div class="text-sm space-y-3 leading-relaxed">
+                        <h2 class="text-xl font-bold text-gh-text light:text-ghLight-text">
+                            Привет! Я Данил Зиновьев 👋
+                        </h2>
+                        <p class="text-gh-muted">
+                            Добро пожаловать в моё интерактивное портфолио! В разделе <button onclick="switchTab('projects')" class="text-accent underline font-medium">Работы и Проекты</button> вы можете детально изучить каждый проект. Нажмите на проект, чтобы открыть его <strong>многостраничный просмотр</strong> (с разделами Архитектура, Описание, Тесты и Демо).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Pinned Grid -->
+                <div>
+                    <div class="flex items-center justify-between mb-3">
+                        <h2 class="text-base font-semibold text-gh-text light:text-ghLight-text">Избранные Работы</h2>
+                        <span class="text-xs text-accent cursor-pointer hover:underline" onclick="switchTab('projects')">Посмотреть все работы</span>
+                    </div>
+
+                    <div id="pinnedGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- REPOSITORIES & MULTI-PAGE PROJECT VIEWER TAB -->
+            <div id="view-projects" class="view-content hidden space-y-4">
+                
+                <!-- MODE 1: Projects List View -->
+                <div id="projectsListView" class="space-y-4">
+                    <div class="flex flex-col sm:flex-row gap-3 border-b border-gh-border pb-4 light:border-ghLight-border">
+                        <div class="relative flex-1">
+                            <input type="text" id="projectSearchInput" oninput="filterProjects()" placeholder="Найти работу или проект..." 
+                                class="w-full bg-gh-bg border border-gh-border rounded-md px-3 py-1.5 text-sm text-gh-text focus:outline-none focus:border-accent light:bg-white light:border-ghLight-border light:text-ghLight-text">
+                        </div>
+                        <div class="flex gap-2">
+                            <select id="languageFilter" onchange="filterProjects()" class="bg-gh-btn border border-gh-border text-gh-text text-sm rounded-md px-3 py-1.5 focus:outline-none light:bg-ghLight-btn light:border-ghLight-border light:text-ghLight-text">
+                                <option value="all">Все Категории</option>
+                                <option value="Hardware">Hardware / Железо</option>
+                                <option value="TypeScript">TypeScript</option>
+                                <option value="Go">Go</option>
+                                <option value="Python">Python</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="projectsList" class="divide-y divide-gh-border light:divide-ghLight-border">
+                        <!-- Dynamic Repositories List -->
+                    </div>
+                </div>
+
+                <!-- MODE 2: Multi-Page Project Detail View -->
+                <div id="projectDetailView" class="hidden space-y-4">
+                    <!-- Project Detail Header & Breadcrumb -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-gh-border pb-4 light:border-ghLight-border">
+                        <div class="flex items-center gap-2 flex-wrap">
+                            <button onclick="closeProjectDetail()" class="text-gh-muted hover:text-gh-text text-sm flex items-center gap-1.5 px-2 py-1 rounded bg-gh-btn border border-gh-border light:bg-ghLight-btn light:border-ghLight-border">
+                                <i class="fas fa-arrow-left"></i> Назад к списку
+                            </button>
+                            <span class="text-gh-muted">/</span>
+                            <span id="detailRepoName" class="font-bold text-lg text-accent">название-проекта</span>
+                            <span class="border border-gh-border text-gh-muted text-xs px-2 py-0.5 rounded-full">Публичный проект</span>
+                        </div>
+
+                        <!-- Project Page Navigation Controls -->
+                        <div class="flex items-center gap-2">
+                            <button id="prevProjectBtn" onclick="navigateProject(-1)" class="bg-gh-btn hover:bg-gh-btnHover border border-gh-border text-xs px-2.5 py-1.5 rounded text-gh-text light:bg-ghLight-btn light:border-ghLight-border">
+                                <i class="fas fa-chevron-left mr-1"></i> Назад
+                            </button>
+                            <span id="projectCounter" class="text-xs text-gh-muted">1 из 6</span>
+                            <button id="nextProjectBtn" onclick="navigateProject(1)" class="bg-gh-btn hover:bg-gh-btnHover border border-gh-border text-xs px-2.5 py-1.5 rounded text-gh-text light:bg-ghLight-btn light:border-ghLight-border">
+                                Вперед <i class="fas fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Project Multi-Page Sub-Tabs Header -->
+                    <div class="flex items-center gap-2 border-b border-gh-border overflow-x-auto pb-1 light:border-ghLight-border">
+                        <button onclick="switchProjectSubTab('overview')" id="psubtab-overview" class="project-subtab px-3 py-2 text-xs font-semibold rounded-t-md border-b-2 border-accent text-accent bg-gh-card light:bg-ghLight-card">
+                            <i class="fas fa-book-open mr-1"></i> README / Обзор
+                        </button>
+                        <button onclick="switchProjectSubTab('features')" id="psubtab-features" class="project-subtab px-3 py-2 text-xs font-semibold text-gh-muted hover:text-gh-text">
+                            <i class="fas fa-list-check mr-1"></i> Ключевые Темы
+                        </button>
+                        <button onclick="switchProjectSubTab('architecture')" id="psubtab-architecture" class="project-subtab px-3 py-2 text-xs font-semibold text-gh-muted hover:text-gh-text">
+                            <i class="fas fa-microchip mr-1"></i> Архитектура / Схема
+                        </button>
+                        <button onclick="switchProjectSubTab('demo')" id="psubtab-demo" class="project-subtab px-3 py-2 text-xs font-semibold text-gh-muted hover:text-gh-text">
+                            <i class="fas fa-flask mr-1"></i> Тесты и Демо
+                        </button>
+                        <button onclick="switchProjectSubTab('releases')" id="psubtab-releases" class="project-subtab px-3 py-2 text-xs font-semibold text-gh-muted hover:text-gh-text">
+                            <i class="fas fa-history mr-1"></i> Заметки и Записи
+                        </button>
+                    </div>
+
+                    <!-- Project Sub-Page View Containers -->
+                    <div class="bg-gh-card border border-gh-border rounded-lg p-6 light:bg-ghLight-card light:border-ghLight-border min-h-[350px]">
+                        
+                        <!-- Sub-Page 1: README -->
+                        <div id="psubview-overview" class="psubview space-y-4">
+                            <h3 id="detailProjectTitle" class="text-xl font-bold text-gh-text light:text-ghLight-text"></h3>
+                            <p id="detailProjectDesc" class="text-gh-muted leading-relaxed text-sm"></p>
+                            
+                            <div class="p-4 bg-gh-bg border border-gh-border rounded-md text-xs font-mono space-y-2 light:bg-white light:border-ghLight-border">
+                                <div class="text-gh-muted"># Быстрый старт / Быстрый запуск</div>
+                                <div class="text-accent" id="detailCloneCmd">git clone https://github.com/danil-zinoviev/project.git</div>
+                                <div class="text-gh-text">cd project && npm install && npm run start</div>
+                            </div>
+
+                            <div class="pt-3">
+                                <h4 class="text-xs font-bold text-gh-muted uppercase tracking-wider mb-2">Технологии и Метки</h4>
+                                <div id="detailTechTags" class="flex flex-wrap gap-2"></div>
+                            </div>
+                        </div>
+
+                        <!-- Sub-Page 2: Features -->
+                        <div id="psubview-features" class="psubview hidden space-y-4">
+                            <h3 class="text-lg font-bold text-gh-text light:text-ghLight-text">Ключевые Разделы и Возможности</h3>
+                            <ul id="detailFeaturesList" class="space-y-3 text-sm text-gh-muted">
+                                <!-- Populated dynamically -->
+                            </ul>
+                        </div>
+
+                        <!-- Sub-Page 3: Architecture -->
+                        <div id="psubview-architecture" class="psubview hidden space-y-4">
+                            <h3 class="text-lg font-bold text-gh-text light:text-ghLight-text">Техническая Схема и Конструкция</h3>
+                            <p id="detailArchText" class="text-sm text-gh-muted leading-relaxed"></p>
+                            <div class="p-4 bg-gh-bg border border-gh-border rounded-md font-mono text-xs text-gh-text space-y-1 light:bg-white light:border-ghLight-border overflow-x-auto">
+                                <div class="text-accent">[ Процессор (CPU) ] ─── (PCIe Gen4/Gen5) ───► [ Видеокарта (GPU) ]</div>
+                                <div class="pl-24 text-gh-muted">│</div>
+                                <div class="pl-20 text-gh-muted">▼ (DDR4 / DDR5 Bus)</div>
+                                <div class="text-emerald-400">[ Оперативная память (RAM) ] ──► [ NVMe SSD Накопитель ]</div>
+                            </div>
+                        </div>
+
+                        <!-- Sub-Page 4: Demo -->
+                        <div id="psubview-demo" class="psubview hidden space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h3 class="text-lg font-bold text-gh-text light:text-ghLight-text">Интерактивный Модуль / Демо</h3>
+                                <a id="externalDemoLink" href="#" target="_blank" class="text-xs bg-accent text-white px-3 py-1.5 rounded font-medium hover:opacity-90">Открыть внешнюю ссылку <i class="fas fa-external-link-alt ml-1"></i></a>
+                            </div>
+                            <div class="border border-gh-border rounded-lg overflow-hidden bg-gh-bg light:bg-white light:border-ghLight-border">
+                                <div class="bg-gh-btn border-b border-gh-border px-3 py-2 flex items-center gap-2 text-xs text-gh-muted light:bg-ghLight-btn light:border-ghLight-border">
+                                    <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+                                    <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+                                    <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+                                    <span class="ml-2 font-mono text-[11px]" id="demoSandboxUrl">https://demo.danil-zinoviev.ru</span>
+                                </div>
+                                <div class="p-8 text-center space-y-3">
+                                    <i class="fas fa-microchip text-4xl text-accent"></i>
+                                    <h4 class="font-bold text-gh-text text-base light:text-ghLight-text" id="demoSandboxTitle">Интерактивная среда запущена</h4>
+                                    <p class="text-xs text-gh-muted max-w-md mx-auto">Данный модуль позволяет тестировать и анализировать параметры работы системы.</p>
+                                    <button onclick="showToast('Запуск тестирования...')" class="bg-accent text-white text-xs px-4 py-2 rounded font-medium hover:opacity-90">
+                                        Запустить тесты
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Sub-Page 5: Releases -->
+                        <div id="psubview-releases" class="psubview hidden space-y-4">
+                            <h3 class="text-lg font-bold text-gh-text light:text-ghLight-text">История изменений и Записи</h3>
+                            <div id="detailReleasesList" class="space-y-4">
+                                <!-- Populated dynamically -->
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- SKILLS TAB -->
+            <div id="view-skills" class="view-content hidden space-y-6">
+                <div class="bg-gh-card border border-gh-border rounded-lg p-5 light:bg-ghLight-card light:border-ghLight-border">
+                    <h2 class="text-lg font-bold text-gh-text mb-4 light:text-ghLight-text flex items-center gap-2">
+                        <i class="fas fa-layer-group text-accent"></i> Стек Технологий & Навыки
+                    </h2>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <h3 class="text-xs font-semibold text-gh-muted uppercase tracking-wider mb-3">Железо & Системы</h3>
+                            <div class="flex flex-wrap gap-2" id="skillsHardware"></div>
+                        </div>
+                        <div>
+                            <h3 class="text-xs font-semibold text-gh-muted uppercase tracking-wider mb-3">Разработка & Инструменты</h3>
+                            <div class="flex flex-wrap gap-2" id="skillsFrontend"></div>
+                        </div>
+                        <div>
+                            <h3 class="text-xs font-semibold text-gh-muted uppercase tracking-wider mb-3">Backend & Базы Данных</h3>
+                            <div class="flex flex-wrap gap-2" id="skillsBackend"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ABOUT TAB -->
+            <div id="view-about" class="view-content hidden space-y-6">
+                <div class="bg-gh-card border border-gh-border rounded-lg p-6 space-y-6 light:bg-ghLight-card light:border-ghLight-border">
+                    <div>
+                        <h2 class="text-xl font-bold text-gh-text light:text-ghLight-text mb-3">О себе</h2>
+                        <p class="text-gh-text light:text-ghLight-text leading-relaxed text-sm">
+                            Здравствуйте! Меня зовут Данил Зиновьев. Я активно увлекаюсь компьютерными технологиями, изучением архитектуры современного ПК-железа, оптимизацией операционных систем и разработкой веб-приложений.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-md font-bold text-gh-text light:text-ghLight-text mb-4 border-b border-gh-border pb-2 light:border-ghLight-border">
+                            <i class="fas fa-graduation-cap text-accent mr-2"></i> Направления исследований
+                        </h3>
+                        <div class="space-y-4 border-l-2 border-gh-border pl-4 ml-2 light:border-ghLight-border">
+                            <div class="relative">
+                                <div class="absolute -left-[21px] top-1.5 w-3 h-3 rounded-full bg-accent border-2 border-gh-bg"></div>
+                                <h4 class="font-bold text-gh-text light:text-ghLight-text">Анализ & Оптимизация ПК Железа</h4>
+                                <p class="text-xs text-gh-muted mt-1">Тестирование процессоров, видеокарт, разгон оперативной памяти, настройка таймингов и систем охлаждения.</p>
+                            </div>
+                            <div class="relative">
+                                <div class="absolute -left-[21px] top-1.5 w-3 h-3 rounded-full bg-emerald-500 border-2 border-gh-bg"></div>
+                                <h4 class="font-bold text-gh-text light:text-ghLight-text">Веб-разработка & Программирование</h4>
+                                <p class="text-xs text-gh-muted mt-1">Создание современных клиент-серверных приложений, интерактивных интерфейсов и скриптов автотиматизации.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT TAB -->
+            <div id="view-contact" class="view-content hidden space-y-6">
+                <div class="bg-gh-card border border-gh-border rounded-lg p-6 light:bg-ghLight-card light:border-ghLight-border">
+                    <h2 class="text-xl font-bold text-gh-text light:text-ghLight-text mb-2">Связаться со мной</h2>
+                    <p class="text-sm text-gh-muted mb-6">Оставьте сообщение с помощью формы ниже или отправьте письмо на почту!</p>
+
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gh-muted uppercase mb-1">Ваше Имя</label>
+                            <input type="text" required placeholder="Имя" 
+                                class="w-full bg-gh-bg border border-gh-border rounded-md p-2.5 text-sm text-gh-text focus:outline-none focus:border-accent light:bg-white light:border-ghLight-border light:text-ghLight-text">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gh-muted uppercase mb-1">Email</label>
+                            <input type="email" required placeholder="email@domain.com" 
+                                class="w-full bg-gh-bg border border-gh-border rounded-md p-2.5 text-sm text-gh-text focus:outline-none focus:border-accent light:bg-white light:border-ghLight-border light:text-ghLight-text">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gh-muted uppercase mb-1">Сообщение</label>
+                            <textarea rows="4" required placeholder="Напишите ваше сообщение..." 
+                                class="w-full bg-gh-bg border border-gh-border rounded-md p-2.5 text-sm text-gh-text focus:outline-none focus:border-accent light:bg-white light:border-ghLight-border light:text-ghLight-text"></textarea>
+                        </div>
+                        <button type="submit" class="bg-accent text-white px-5 py-2 rounded-md text-sm font-semibold transition-opacity hover:opacity-90 flex items-center gap-2">
+                            <i class="fas fa-paper-plane"></i> Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <div id="toastNotification" class="fixed bottom-5 right-5 bg-gh-card border border-gh-border text-gh-text px-4 py-3 rounded-lg shadow-xl translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3 z-50 light:bg-white light:border-ghLight-border light:text-ghLight-text">
+        <i id="toastIcon" class="fas fa-check-circle text-emerald-400"></i>
+        <span id="toastMessage" class="text-sm font-medium">Уведомление</span>
+    </div>
+
+    <script>
+        const projectsData = [
+            {
+                id: 1,
+                name: "Изучаю компьютерное железо",
+                description: "Подробное руководство и практический журнал по архитектуре ПК, тестированию CPU/GPU, подбору комплектующих и настройке охлаждения.",
+                language: "Hardware",
+                langColor: "#f34b7d",
+                isPinned: true,
+                topics: ["pc-hardware", "cpu-architecture", "gpu-benchmarks", "ram-overclocking", "pc-building"],
+                demoUrl: "https://example.com/hardware-guide",
+                features: [
+                    "Анализ архитектур процессоров (x86_64, ARM, AMD Zen, Intel Core)",
+                    "Сравнение производительности видеокарт в стресс-тестах и играх",
+                    "Настройка таймингов и частот DDR4 / DDR5 оперативной памяти",
+                    "Гайды по обслуживанию и кабель-менеджменту при сборке ПК"
+                ],
+                architecture: "Исследование шин передачи данных (PCIe 4.0/5.0), взаимодействия контроллера памяти процессора (IMC) с чипами RAM и расчета теплопакета (TDP).",
+                releases: [
+                    { version: "v2.0", note: "Добавлены гайды по выбору бп с сертификатом 80 PLUS Gold и настройке Fan Curve." },
+                    { version: "v1.0", note: "Запущен базовый модуль замеров температуры и тестирования стресс-устойчивости." }
+                ]
+            },
+            {
+                id: 2,
+                name: "hyper-engine",
+                description: "Высокопроизводительный 3D движок на TypeScript для графики в браузере через WebGL и WebGPU.",
+                language: "TypeScript",
+                langColor: "#3178c6",
+                isPinned: true,
+                topics: ["webgl", "webgpu", "typescript", "3d-graphics", "rendering-engine"],
+                demoUrl: "https://example.com/demo1",
+                features: [
+                    "Рендерер WebGPU с автоматическим переключением на WebGL2",
+                    "Компилятор шейдеров GLSL / WGSL",
+                    "Обработка теней и постабстракция при 60 FPS"
+                ],
+                architecture: "Модульная архитектура с оптимизированным выделением памяти через WebAssembly.",
+                releases: [
+                    { version: "v2.1.0", note: "Добавлена поддержка WebGPU частиц." }
+                ]
+            },
+            {
+                id: 3,
+                name: "cloud-native-mesh",
+                description: "Легковесный фреймворк на Go для микросервисов с автоматической защитой и телеметрией.",
+                language: "Go",
+                langColor: "#00ADD8",
+                isPinned: true,
+                topics: ["golang", "microservices", "grpc", "kubernetes", "security"],
+                demoUrl: "https://example.com/demo2",
+                features: [
+                    "Защищенное шифрование mTLS между сервисами",
+                    "Балансировка нагрузки HTTP/2 и gRPC",
+                    "Интеграция с Prometheus"
+                ],
+                architecture: "Использует архитектуру eBPF для минимальной нагрузки на процессор.",
+                releases: [
+                    { version: "v1.4.0", note: "Релиз модуля сетевого ускорения." }
+                ]
+            },
+            {
+                id: 4,
+                name: "react-flow-ui",
+                description: "Библиотека UI компонентов в стиле GitHub Dark с поддержкой кастомных тем.",
+                language: "TypeScript",
+                langColor: "#3178c6",
+                isPinned: false,
+                topics: ["react", "tailwind", "design-system", "accessibility", "ui-kit"],
+                demoUrl: "https://example.com/demo3",
+                features: [
+                    "Более 40 доступных адаптивных компонентов",
+                    "Поддержка переключения тем через CSS переменные"
+                ],
+                architecture: "Собрано на основе Radix UI и Tailwind CSS.",
+                releases: [
+                    { version: "v3.0.1", note: "Обновлена палитра цветов." }
+                ]
+            },
+            {
+                id: 5,
+                name: "py-neural-quant",
+                description: "Фреймворк алгоритмического анализа данных на Python и PyTorch.",
+                language: "Python",
+                langColor: "#3572A5",
+                isPinned: false,
+                topics: ["python", "pytorch", "machine-learning", "finance", "algo-trading"],
+                demoUrl: "https://example.com/demo4",
+                features: [
+                    "Анализ временных рядов с помощью Transformer моделей",
+                    "Симулятор бектестинга"
+                ],
+                architecture: "Обработка потоков данных через асинхронный asyncio.",
+                releases: [
+                    { version: "v0.9.0", note: "Первый релиз модели." }
+                ]
+            }
+        ];
+
+        const skillsData = {
+            hardware: ["Архитектура ПК", "CPU / GPU Benchmarking", "Разгон RAM & BCLK", "Системы охлаждения", "Диагностика железа", "BIOS / UEFI"],
+            frontend: ["HTML5 / CSS3", "JavaScript", "TypeScript", "React", "Tailwind CSS", "Vite"],
+            backend: ["Node.js", "Python", "Go", "PostgreSQL", "Git", "Docker"]
+        };
+
+        let currentProjectIndex = 0;
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderPinnedProjects();
+            renderAllProjects(projectsData);
+            renderSkills();
+            setupTheme();
+            updateRepoCount();
+        });
+
+        // Set Dynamic Accent Color
+        function setAccentColor(hex) {
+            document.documentElement.style.setProperty('--accent-color', hex);
+            document.documentElement.style.setProperty('--accent-hover', hex);
+            document.documentElement.style.setProperty('--accent-light-bg', hex + '20');
+            showToast(`Цвет страницы обновлен!`);
+        }
+
+        function switchTab(tabName) {
+            document.querySelectorAll('.view-content').forEach(view => view.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('tab-active');
+                btn.classList.add('text-gh-muted');
+            });
+
+            const targetView = document.getElementById(`view-${tabName}`);
+            const targetBtn = document.getElementById(`tab-${tabName}`);
+
+            if (targetView && targetBtn) {
+                targetView.classList.remove('hidden');
+                targetBtn.classList.add('tab-active');
+                targetBtn.classList.remove('text-gh-muted');
+            }
+
+            closeProjectDetail();
+        }
+
+        function renderPinnedProjects() {
+            const container = document.getElementById('pinnedGrid');
+            const pinned = projectsData.filter(p => p.isPinned);
+
+            container.innerHTML = pinned.map((project) => `
+                <div onclick="openProjectDetail(${project.id})" class="bg-gh-card border border-gh-border rounded-md p-4 flex flex-col justify-between hover:border-accent cursor-pointer transition-all light:bg-ghLight-card light:border-ghLight-border">
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="flex items-center gap-2">
+                                <i class="fas fa-bookmark text-gh-muted text-xs"></i>
+                                <span class="font-semibold text-accent text-sm hover:underline">${project.name}</span>
+                            </div>
+                            <i class="fas fa-thumbtack text-xs text-gh-muted"></i>
+                        </div>
+                        <p class="text-xs text-gh-muted mb-4 line-clamp-2">${project.description}</p>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-2 text-xs text-gh-muted">
+                            <span class="w-2.5 h-2.5 rounded-full inline-block" style="background-color: ${project.langColor}"></span>
+                            <span>${project.language}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderAllProjects(projects) {
+            const container = document.getElementById('projectsList');
+
+            if (projects.length === 0) {
+                container.innerHTML = `<div class="text-center py-12 text-gh-muted">Работы не найдены.</div>`;
+                return;
+            }
+
+            container.innerHTML = projects.map((project) => `
+                <div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                    <div class="space-y-2 max-w-2xl">
+                        <div class="flex items-center gap-2">
+                            <button onclick="openProjectDetail(${project.id})" class="font-bold text-lg text-accent hover:underline text-left">
+                                ${project.name}
+                            </button>
+                        </div>
+                        <p class="text-sm text-gh-muted">${project.description}</p>
+                        
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            ${project.topics.map(topic => `
+                                <span class="bg-accent-light text-accent text-xs font-medium px-2 py-0.5 rounded-full">
+                                    ${topic}
+                                </span>
+                            `).join('')}
+                        </div>
+
+                        <div class="flex items-center gap-3 text-xs text-gh-muted pt-1">
+                            <span class="flex items-center gap-1.5">
+                                <span class="w-2.5 h-2.5 rounded-full inline-block" style="background-color: ${project.langColor}"></span>
+                                ${project.language}
+                            </span>
+                        </div>
+                    </div>
+
+                    <button onclick="openProjectDetail(${project.id})" class="bg-gh-btn hover:bg-gh-btnHover border border-gh-border text-xs px-3 py-1.5 rounded-md text-gh-text flex items-center gap-1.5 light:bg-ghLight-btn light:border-ghLight-border">
+                        Открыть работу <i class="fas fa-chevron-right text-accent"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        // Open Multi-Page Project Detail
+        function openProjectDetail(id) {
+            switchTab('projects');
+            
+            currentProjectIndex = projectsData.findIndex(p => p.id === id);
+            if (currentProjectIndex === -1) currentProjectIndex = 0;
+
+            document.getElementById('projectsListView').classList.add('hidden');
+            document.getElementById('projectDetailView').classList.remove('hidden');
+
+            loadProjectDetails(projectsData[currentProjectIndex]);
+        }
+
+        function closeProjectDetail() {
+            document.getElementById('projectsListView').classList.remove('hidden');
+            document.getElementById('projectDetailView').classList.add('hidden');
+        }
+
+        function loadProjectDetails(project) {
+            document.getElementById('detailRepoName').innerText = project.name;
+            document.getElementById('detailProjectTitle').innerText = project.name;
+            document.getElementById('detailProjectDesc').innerText = project.description;
+            document.getElementById('detailCloneCmd').innerText = `git clone https://github.com/danil-zinoviev/${project.id === 1 ? 'pc-hardware-study' : 'project'}.git`;
+            document.getElementById('projectCounter').innerText = `${currentProjectIndex + 1} из ${projectsData.length}`;
+
+            document.getElementById('externalDemoLink').href = project.demoUrl;
+            document.getElementById('demoSandboxTitle').innerText = `${project.name}`;
+            document.getElementById('demoSandboxUrl').innerText = `https://demo.danil-zinoviev.ru/${project.name}`;
+            document.getElementById('detailArchText').innerText = project.architecture;
+
+            document.getElementById('detailTechTags').innerHTML = project.topics.map(t => `
+                <span class="bg-accent-light text-accent text-xs font-semibold px-2.5 py-1 rounded-md">${t}</span>
+            `).join('');
+
+            document.getElementById('detailFeaturesList').innerHTML = project.features.map(f => `
+                <li class="flex items-start gap-2">
+                    <i class="fas fa-check text-accent mt-1"></i>
+                    <span>${f}</span>
+                </li>
+            `).join('');
+
+            document.getElementById('detailReleasesList').innerHTML = project.releases.map(r => `
+                <div class="border-l-2 border-accent pl-3 space-y-1">
+                    <div class="font-bold text-sm text-gh-text light:text-ghLight-text">${r.version}</div>
+                    <div class="text-xs text-gh-muted">${r.note}</div>
+                </div>
+            `).join('');
+
+            switchProjectSubTab('overview');
+        }
+
+        function navigateProject(direction) {
+            currentProjectIndex += direction;
+            if (currentProjectIndex < 0) currentProjectIndex = projectsData.length - 1;
+            if (currentProjectIndex >= projectsData.length) currentProjectIndex = 0;
+            
+            loadProjectDetails(projectsData[currentProjectIndex]);
+        }
+
+        function switchProjectSubTab(subTabName) {
+            document.querySelectorAll('.psubview').forEach(v => v.classList.add('hidden'));
+            document.querySelectorAll('.project-subtab').forEach(b => {
+                b.classList.remove('border-b-2', 'border-accent', 'text-accent', 'bg-gh-card', 'light:bg-ghLight-card');
+                b.classList.add('text-gh-muted');
+            });
+
+            const targetView = document.getElementById(`psubview-${subTabName}`);
+            const targetBtn = document.getElementById(`psubtab-${subTabName}`);
+
+            if (targetView && targetBtn) {
+                targetView.classList.remove('hidden');
+                targetBtn.classList.add('border-b-2', 'border-accent', 'text-accent', 'bg-gh-card', 'light:bg-ghLight-card');
+                targetBtn.classList.remove('text-gh-muted');
+            }
+        }
+
+        function filterProjects() {
+            const query = document.getElementById('projectSearchInput').value.toLowerCase();
+            const langVal = document.getElementById('languageFilter').value;
+
+            let filtered = projectsData.filter(project => {
+                const matchesSearch = project.name.toLowerCase().includes(query) || 
+                                      project.description.toLowerCase().includes(query);
+                const matchesLang = langVal === 'all' || project.language === langVal;
+                return matchesSearch && matchesLang;
+            });
+
+            renderAllProjects(filtered);
+        }
+
+        function renderSkills() {
+            const renderCategory = (elementId, skills) => {
+                const el = document.getElementById(elementId);
+                if (!el) return;
+                el.innerHTML = skills.map(skill => `
+                    <span class="bg-gh-btn border border-gh-border text-gh-text px-3 py-1.5 rounded-md text-xs font-semibold flex items-center gap-2 hover:border-accent light:bg-ghLight-btn light:border-ghLight-border light:text-ghLight-text">
+                        <i class="fas fa-check-circle text-accent text-[10px]"></i> ${skill}
+                    </span>
+                `).join('');
+            };
+
+            renderCategory('skillsHardware', skillsData.hardware);
+            renderCategory('skillsFrontend', skillsData.frontend);
+            renderCategory('skillsBackend', skillsData.backend);
+        }
+
+        function updateRepoCount() {
+            document.getElementById('repoCountBadge').innerText = projectsData.length;
+        }
+
+        function setupTheme() {
+            const toggleBtn = document.getElementById('themeToggleBtn');
+            const icon = document.getElementById('themeIcon');
+
+            toggleBtn.addEventListener('click', () => {
+                const isDark = document.documentElement.classList.toggle('dark');
+                document.documentElement.classList.toggle('light', !isDark);
+                icon.className = isDark ? 'fas fa-moon text-base' : 'fas fa-sun text-base text-amber-400';
+            });
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toastNotification');
+            document.getElementById('toastMessage').innerText = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            setTimeout(() => toast.classList.add('translate-y-20', 'opacity-0'), 3000);
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            showToast("Сообщение успешно отправлено!");
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
