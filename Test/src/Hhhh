@@ -1,0 +1,103 @@
+fun main() {
+    print("Введите количество стран для анализа: ")
+    val count = readln().toIntOrNull() ?: 0
+
+    if (count <= 0) {
+        println("Неверное количество стран.")
+        return
+    }
+
+    var maxAreaCountry = ""
+    var maxArea = -1.0
+
+    var maxPopCountry = ""
+    var maxPopulation = -1L
+
+    var totalPopulation = 0L
+
+    val asia = mutableListOf<String>()
+    val africa = mutableListOf<String>()
+    val europe = mutableListOf<String>()
+    val northAmerica = mutableListOf<String>()
+    val southAmerica = mutableListOf<String>()
+    val australia = mutableListOf<String>()
+    val unknownContinent = mutableListOf<String>()
+
+    var i = 1
+    while (i <= count) {
+        println("\n--- Ввод данных для страны №$i ---")
+        
+        print("Название страны: ")
+        val name = readln()
+
+        print("Площадь (в кв. км): ")
+        val area = readln().toDoubleOrNull() ?: 0.0
+
+        print("Население (человек): ")
+        val population = readln().toLongOrNull() ?: 0L
+
+        print("Континент: ")
+        val continent = readln().trim().lowercase()
+
+        totalPopulation += population
+
+        if (area > maxArea) {
+            maxArea = area
+            maxAreaCountry = name
+        }
+
+        if (population > maxPopulation) {
+            maxPopulation = population
+            maxPopCountry = name
+        }
+
+        if (continent == "азия") {
+            asia.add(name)
+        } else if (continent == "африка") {
+            africa.add(name)
+        } else if (continent == "европа") {
+            europe.add(name)
+        } else if (continent == "северная америка") {
+            northAmerica.add(name)
+        } else if (continent == "южная америка") {
+            southAmerica.add(name)
+        } else if (continent == "австралия" || continent == "океания") {
+            australia.add(name)
+        } else {
+            unknownContinent.add(name)
+        }
+
+        i++
+    }
+
+    val averagePopulation = totalPopulation.toDouble() / count
+
+    println("\n========== РЕЗУЛЬТАТЫ АНАЛИЗА ==========")
+    println("Самая большая по площади страна: $maxAreaCountry ($maxArea кв. км)")
+    println("Страна с наибольшим населением: $maxPopCountry ($maxPopulation чел.)")
+    println("Среднее население стран: $averagePopulation чел.")
+
+    println("\n--- Страны по континентам ---")
+    
+    val continents = listOf("Азия", "Африка", "Европа", "Северная Америка", "Южная Амерка", "Австралия", "Другие/Неизвестно")
+    val lists = listOf(asia, africa, europe, northAmerica, southAmerica, australia, unknownContinent)
+
+    for (index in continents.indices) {
+        val continentName = continents[index]
+        val countryList = lists[index]
+        
+        print("$continentName: ")
+        if (countryList.isEmpty()) {
+            println("нет данных")
+        } else {
+          
+            var first = true
+            for (country in countryList) {
+                if (!first) print(", ")
+                print(country)
+                first = false
+            }
+            println()
+        }
+    }
+}
