@@ -1,0 +1,46 @@
+package hgds.hgdsEngine_lost.utils
+
+import java.util.regex.Pattern
+
+// 1. Мощная функция обработки: поддерживает &6 и &#FF5555 (HEX)
+fun String.hgdsColor(): String {
+    var result = this
+
+    // Регулярное выражение для поиска HEX кодов формата &#FFFFFF или &#ffffff
+    val hexPattern = Pattern.compile("&#([A-Fa-f0-9]{6})")
+    val matcher = hexPattern.matcher(result)
+    while (matcher.find()) {
+        val hexCode = matcher.group(1)
+        val r = hexCode.substring(0, 2).toInt(16)
+        val g = hexCode.substring(2, 4).toInt(16)
+        val b = hexCode.substring(4, 6).toInt(16)
+        // Конвертируем в ANSI TrueColor последовательность
+        val ansiHex = "\u001B[38;2;$r;$g;${b}m"
+        result = result.replace("&#$hexCode", ansiHex)
+    }
+
+    // Стандартные коды Minecraft &0-&f
+    val codes = mapOf(
+        "&0" to "\u001B[30m", "&1" to "\u001B[34m", "&2" to "\u001B[32m", 
+        "&3" to "\u001B[36m", "&4" to "\u001B[31m", "&5" to "\u001B[35m", 
+        "&6" to "\u001B[33m", "&7" to "\u001B[37m", "&8" to "\u001B[90m", 
+        "&9" to "\u001B[94m", "&a" to "\u001B[92m", "&b" to "\u001B[96m", 
+        "&c" to "\u001B[91m", "&d" to "\u001B[95m", "&e" to "\u001B[93m", 
+        "&f" to "\u001B[97m", "&r" to "\u001B[0m"
+    )
+    
+    codes.forEach { (mcCode, ansiCode) ->
+        result = result.replace(mcCode, ansiCode)
+    }
+    
+    return result + "\u001B[0m"
+}
+
+// 2. АВТО-ФУНКЦИИ: Заменяют стандартный println. Они сами красят текст!
+fun printColor(message: Any?) {
+    print(message.toString().hgdsColor())
+}
+
+fun printColorln(message: Any?) {
+    println(message.toString().hgdsColor())
+}
